@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className={`${inter.className} min-h-screen bg-gray-50 flex flex-col`}>
+      <body className={`${inter.className} min-h-screen bg-gray-50 flex flex-col antialiased`}>
         <header className="gradient-paradise shadow-lg">
           <div className="max-w-7xl mx-auto px-6 py-4">
             {/* Main header row */}
