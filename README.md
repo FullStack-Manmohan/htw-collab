@@ -1,51 +1,57 @@
-# Interest Knowledge Graph Generator
+# Interest Knowledge Graph - Next.js
 
-A Python-based tool that creates an interactive semantic knowledge graph from hierarchical interest data, visualizing relationships between topics based on conceptual similarity.
+A modern Next.js application that creates an interactive semantic knowledge graph from hierarchical interest data, visualizing relationships between topics based on conceptual similarity.
 
 ## 🌟 Features
 
 - **Two-Level Hierarchical Structure**: Displays main categories and their sub-interests
 - **Semantic Similarity Calculation**: Uses TF-IDF and cosine similarity to find conceptual relationships
 - **Interactive Web Visualization**: Beautiful, responsive graph interface with pan, zoom, and node selection
-- **Adjustable Similarity Threshold**: Control the density of connections in real-time
+- **Real-time Threshold Adjustment**: Control the density of connections dynamically
 - **Graph Statistics**: View node count, edge count, and category distribution
-- **Export Capabilities**: Save graph data as JSON for further analysis
+- **Most Connected Nodes**: See which interests have the most connections
+- **Modern UI**: Beautiful gradient design with smooth animations
+
+## 🚀 Tech Stack
+
+- **Next.js 14**: React framework with App Router
+- **TypeScript**: Type-safe development
+- **Tailwind CSS**: Utility-first styling
+- **vis-network**: Interactive network visualization
+- **Built-in TF-IDF**: Custom implementation for semantic similarity
 
 ## 📦 Installation
 
 1. **Clone or download this repository**
 
-2. **Install required packages**:
+2. **Install dependencies**:
 ```bash
-pip install -r requirements.txt
+npm install
 ```
 
 ## 🚀 Quick Start
 
-### Option 1: Run the Web Application
+### Development Mode
 
-Start the interactive web application:
+Start the development server:
 
 ```bash
-python app.py
+npm run dev
 ```
 
 Then open your browser and navigate to:
 ```
-http://localhost:5000
+http://localhost:3000
 ```
 
-### Option 2: Generate Graph Directly
+### Production Build
 
-Run the standalone script to generate the graph:
+Build for production:
 
 ```bash
-python semantic_graph_generator.py
+npm run build
+npm start
 ```
-
-This will create:
-- `interest_graph.html` - Interactive visualization
-- `graph_data.json` - Graph data in JSON format
 
 ## 📊 Understanding the Graph
 
@@ -66,28 +72,9 @@ This will create:
 
 ## 🛠️ Customization
 
-### Adjusting the Similarity Algorithm
+### Modifying Interests
 
-Edit `semantic_graph_generator.py` to modify:
-
-1. **Similarity calculation** (lines ~120-140):
-   - Adjust TF-IDF parameters
-   - Modify n-gram range
-   - Change max features
-
-2. **Keyword expansions** (lines ~60-110):
-   - Add domain-specific abbreviations
-   - Include more semantic keywords
-   - Customize for your field
-
-3. **Visual styling** (lines ~200-250):
-   - Change node colors and sizes
-   - Modify edge styling
-   - Adjust physics simulation
-
-### Adding New Interests
-
-Edit `interest_list.txt`:
+Edit `public/interest_list.txt`:
 - Main categories: Start at the beginning of the line
 - Sub-interests: Indent with a tab character
 
@@ -98,29 +85,50 @@ New Category
 	Sub-interest 2
 ```
 
-## 📁 File Structure
+### Adjusting the Algorithm
+
+Edit `lib/graphGenerator.ts` to modify:
+
+1. **Similarity calculation** (~line 150-200):
+   - Adjust TF-IDF parameters
+   - Modify tokenization logic
+   - Change similarity thresholds
+
+2. **Keyword expansions** (~line 30-75):
+   - Add domain-specific abbreviations
+   - Include more semantic keywords
+   - Customize for your field
+
+3. **Visual styling** (~line 240-280):
+   - Change node colors and sizes
+   - Modify edge styling
+   - Adjust physics simulation
+
+## 📁 Project Structure
 
 ```
 .
-├── interest_list.txt           # Input: Hierarchical interest data
-├── semantic_graph_generator.py # Core graph generation logic
-├── app.py                      # Flask web application
-├── templates/
-│   └── index.html             # Web interface
-├── static/                    # Generated files
-│   ├── interest_graph.html    # Graph visualization
-│   └── graph_data.json        # Graph data export
-├── requirements.txt           # Python dependencies
-└── README.md                  # This file
+├── app/
+│   ├── api/
+│   │   └── generate-graph/
+│   │       └── route.ts        # API endpoint for graph generation
+│   ├── page.tsx                # Main page component
+│   └── layout.tsx              # Root layout
+├── components/
+│   └── GraphVisualization.tsx  # Graph visualization component
+├── lib/
+│   └── graphGenerator.ts       # Core graph generation logic
+├── public/
+│   └── interest_list.txt       # Input: Hierarchical interest data
+├── package.json                # Dependencies
+└── README.md                   # This file
 ```
 
-## 🔧 API Endpoints (Web App)
+## 🔧 API Endpoints
 
-- `GET /` - Main interface
-- `GET /graph` - Graph visualization iframe
-- `POST /generate_graph` - Regenerate with new threshold
-- `GET /graph_data` - Get graph data as JSON
-- `GET /categories` - List all categories
+- `POST /api/generate-graph` - Generate graph with custom threshold
+  - Body: `{ threshold: 0.15 }`
+  - Returns: Graph data with nodes, edges, and statistics
 
 ## 🎯 Use Cases
 
@@ -129,6 +137,20 @@ New Category
 3. **Career Planning**: Discover connections between different fields
 4. **Knowledge Management**: Organize and understand domain relationships
 5. **Team Building**: Find complementary skills and interests
+
+## 🎨 Features
+
+### Interactive Controls
+- **Threshold Slider**: Adjust similarity threshold in real-time
+- **Regenerate Button**: Apply new threshold settings
+- **Statistics Display**: Live node, edge, and category counts
+- **Most Connected Panel**: View top connected interests
+
+### Graph Interactions
+- **Pan**: Click and drag to move around
+- **Zoom**: Scroll to zoom in/out
+- **Select**: Click nodes to highlight connections
+- **Hover**: View connection strength on edges
 
 ## 🐛 Troubleshooting
 
@@ -139,17 +161,16 @@ New Category
 - **Solution**: Lower the similarity threshold (0.1-0.15)
 
 **Issue**: Categories not showing sub-interests
-- **Solution**: Check that sub-interests are properly indented with tabs in `interest_list.txt`
+- **Solution**: Check that sub-interests are properly indented with tabs in `public/interest_list.txt`
 
-**Issue**: Import errors
-- **Solution**: Ensure all packages are installed: `pip install -r requirements.txt`
+**Issue**: Build errors
+- **Solution**: Ensure Node.js 18+ is installed and run `npm install`
 
 ## 📈 Performance Tips
 
 - For large datasets (>500 nodes), increase similarity threshold to reduce edges
-- Close other browser tabs when viewing complex graphs
-- Use Chrome or Firefox for best performance
-- Adjust physics settings in the code for faster stabilization
+- The graph uses physics simulation for layout - allow it to stabilize
+- Modern browsers (Chrome, Firefox, Edge) provide best performance
 
 ## 🤝 Contributing
 
@@ -167,7 +188,7 @@ This project is open source and available for educational and commercial use.
 ## 🙏 Acknowledgments
 
 Built with:
-- NetworkX for graph operations
-- Pyvis for interactive visualization
-- Scikit-learn for similarity calculations
-- Flask for web application framework
+- Next.js for the React framework
+- vis-network for graph visualization
+- Tailwind CSS for styling
+- TypeScript for type safety

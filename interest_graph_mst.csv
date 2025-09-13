@@ -1,0 +1,57 @@
+0: AEC (Architecture Eng & Construction)
+1: AR/VR & Metaverse
+2: Art and Culture
+3: Biohacking
+4: Bitcoin & Crypto
+5: Consulting & Professional Services
+6: Creative Coding
+7: Education & EdTech
+8: Financial Literacy
+9: Gaming & Entertainment
+10: Government & Public Sector
+11: Hawaiian Art and Culture
+12: Investment & Venture Capital
+13: Leadership
+14: Marketing & AdTech
+15: Media & Communications
+16: Mental Health and Wellness
+17: Mindfulness and Meditation
+18: Networking Skills
+19: Personal Branding
+20: Productivity Hacks
+21: Project Management
+22: Public Speaking
+23: Real Estate & PropTech
+24: Software & Technology
+25: Stoicism
+26: Student
+27: Sustainability and Ecology
+28: Time Management
+5,21,10
+16,17,10
+0,23,15
+5,13,15
+12,8,15
+24,6,15
+26,28,15
+13,22,15
+22,19,15
+28,20,15
+1,9,20
+4,8,20
+7,26,20
+14,19,20
+26,16,20
+21,28,20
+22,18,20
+27,0,25
+0,21,25
+1,24,25
+11,2,25
+2,15,25
+2,6,25
+14,15,25
+26,8,25
+17,25,25
+27,10,30
+20,3,35
