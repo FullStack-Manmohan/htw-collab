@@ -50,20 +50,20 @@ export default function GraphPage() {
 
   if (!currentUser) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-cyan-50 to-teal-50 flex items-center justify-center py-20">
-        <div className="text-center card max-w-md mx-auto">
+      <div className="min-h-screen htw-section bg-gray-50 flex items-center justify-center">
+        <div className="text-center htw-card max-w-md mx-auto p-8">
           <div className="text-5xl mb-6">🌺</div>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Welcome to HTW Collab!
+          <h2 className="card-title-feature mb-4">
+            WELCOME TO HTW COLLAB!
           </h2>
-          <p className="text-gray-600 mb-6">
+          <p className="body-secondary mb-6">
             Create your profile first to start exploring collaboration opportunities.
           </p>
           <a
             href="/submit"
-            className="btn-primary inline-flex items-center gap-2"
+            className="btn-primary inline-flex items-center gap-2 btn-hover"
           >
-            👤 Create Profile
+            👤 CREATE PROFILE
           </a>
         </div>
       </div>
@@ -71,52 +71,52 @@ export default function GraphPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-cyan-50 to-teal-50 py-8">
-      <div className="max-w-7xl mx-auto px-6">
+    <div className="min-h-screen htw-section bg-gray-50">
+      <div className="container-full">
         {/* Header */}
-        <div className="text-center mb-8">
-          <div className="text-5xl mb-4">🌊</div>
-          <h1 className="text-4xl font-bold text-gray-900 mb-3">
-            Interest Graph & Collaboration Hub
+        <div className="text-center mb-12">
+          <div className="text-5xl mb-6">🌊</div>
+          <h1 className="section-headline mb-4">
+            INTEREST GRAPH & COLLABORATION HUB
           </h1>
-          <p className="text-gray-600 text-lg max-w-3xl mx-auto">
+          <p className="body-primary max-w-3xl mx-auto">
             Explore the community through shared interests. Click on interests to filter people, 
             or click on people to start a collaboration.
           </p>
         </div>
 
         {/* Current User Info */}
-        <div className="card mb-8 max-w-3xl mx-auto">
+        <div className="htw-card mb-8 max-w-3xl mx-auto p-6">
           <div className="flex items-center gap-4">
-            <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center text-white font-bold text-xl">
+            <div className="w-16 h-16 bg-gradient-htw-primary rounded-full flex items-center justify-center text-white font-black text-xl">
               {currentUser.name.charAt(0)}
             </div>
             <div className="flex-1">
-              <h3 className="text-xl font-semibold text-gray-900">{currentUser.name}</h3>
-              <p className="text-blue-600 font-medium">{currentUser.role}</p>
+              <h3 className="card-title-feature text-htw-deep-sea">{currentUser.name}</h3>
+              <p className="text-htw-primary font-medium">{currentUser.role}</p>
               {currentUser.city && (
-                <p className="text-gray-500 text-sm flex items-center gap-1">
+                <p className="caption flex items-center gap-1">
                   📍 {currentUser.city}
                 </p>
               )}
             </div>
             <div className="badge-success">
-              Your Profile
+              YOUR PROFILE
             </div>
           </div>
         </div>
 
         {/* Interest Filter Chips */}
-        <div className="card mb-8">
+        <div className="htw-card mb-8 p-6">
           <div className="flex items-center gap-3 mb-4">
             <span className="text-lg">🎯</span>
-            <h2 className="text-lg font-semibold text-gray-900">Filter by Interest</h2>
+            <h2 className="card-title-compact">FILTER BY INTEREST</h2>
             {selectedInterest && (
               <button
                 onClick={() => setSelectedInterest(undefined)}
-                className="btn-ghost text-sm"
+                className="btn-secondary text-sm px-3 py-1"
               >
-                Clear filter
+                CLEAR FILTER
               </button>
             )}
           </div>
@@ -127,7 +127,7 @@ export default function GraphPage() {
                 key={interest}
                 onClick={() => handleInterestClick(interest)}
                 className={`chip transition-all duration-200 ${
-                  selectedInterest === interest ? 'chip-selected' : 'hover:bg-blue-50'
+                  selectedInterest === interest ? 'chip-selected' : 'hover:bg-htw-primary/10'
                 }`}
               >
                 {interest}
@@ -142,16 +142,16 @@ export default function GraphPage() {
         </div>
 
         {/* Main Content */}
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="content-grid-2 gap-8">
           {/* Interest Graph */}
           <div>
-            <div className="card">
+            <div className="htw-card p-6">
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center gap-2">
                   <span className="text-lg">🔗</span>
-                  <h2 className="text-lg font-semibold text-gray-900">Network Graph</h2>
+                  <h2 className="card-title-compact">NETWORK GRAPH</h2>
                 </div>
-                <div className="text-xs text-gray-500">
+                <div className="fine-print">
                   Blue: Interests • Orange: People
                 </div>
               </div>
@@ -168,8 +168,8 @@ export default function GraphPage() {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <span className="text-lg">👥</span>
-              <h2 className="text-lg font-semibold text-gray-900">
-                {selectedInterest ? `People interested in ${selectedInterest}` : "Community Members"}
+              <h2 className="card-title-compact">
+                {selectedInterest ? `PEOPLE INTERESTED IN ${selectedInterest.toUpperCase()}` : "COMMUNITY MEMBERS"}
               </h2>
             </div>
             
@@ -182,35 +182,35 @@ export default function GraphPage() {
         </div>
 
         {/* Instructions */}
-        <div className="mt-12 card bg-gradient-to-r from-blue-50 to-cyan-50 border-blue-200">
-          <h3 className="text-xl font-semibold text-gray-900 mb-4 text-center">
-            How to Collaborate
+        <div className="mt-16 htw-card bg-gradient-to-r from-htw-primary/5 to-htw-tech-blue/5 border-htw-primary/20 p-8">
+          <h3 className="section-headline text-center mb-8">
+            HOW TO COLLABORATE
           </h3>
-          <div className="grid md:grid-cols-3 gap-6 text-center">
+          <div className="content-grid-3 gap-8 text-center">
             <div>
-              <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-2xl mb-3 mx-auto">
+              <div className="w-16 h-16 bg-gradient-htw-primary rounded-full flex items-center justify-center text-3xl mb-4 mx-auto">
                 🎯
               </div>
-              <h4 className="font-semibold text-gray-900 mb-2">Filter by Interest</h4>
-              <p className="text-sm text-gray-600">
+              <h4 className="card-title-compact mb-3">FILTER BY INTEREST</h4>
+              <p className="body-secondary">
                 Click interest chips or graph nodes to find people with shared passions
               </p>
             </div>
             <div>
-              <div className="w-12 h-12 bg-cyan-500 rounded-full flex items-center justify-center text-2xl mb-3 mx-auto">
+              <div className="w-16 h-16 bg-gradient-htw-primary rounded-full flex items-center justify-center text-3xl mb-4 mx-auto">
                 👤
               </div>
-              <h4 className="font-semibold text-gray-900 mb-2">Connect with People</h4>
-              <p className="text-sm text-gray-600">
+              <h4 className="card-title-compact mb-3">CONNECT WITH PEOPLE</h4>
+              <p className="body-secondary">
                 Click on people in the graph or hit &quot;Collaborate&quot; on profile cards
               </p>
             </div>
             <div>
-              <div className="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center text-2xl mb-3 mx-auto">
+              <div className="w-16 h-16 bg-gradient-htw-primary rounded-full flex items-center justify-center text-3xl mb-4 mx-auto">
                 🚀
               </div>
-              <h4 className="font-semibold text-gray-900 mb-2">Create Events</h4>
-              <p className="text-sm text-gray-600">
+              <h4 className="card-title-compact mb-3">CREATE EVENTS</h4>
+              <p className="body-secondary">
                 Generate event drafts with automatic templates and action items
               </p>
             </div>

@@ -1,7 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Inter } from 'next/font/google';
+import { Inter, IBM_Plex_Sans_Condensed } from 'next/font/google';
 import HeaderKPIs from "../../components/HeaderKPIs";
 
 const inter = Inter({ 
@@ -10,40 +10,47 @@ const inter = Inter({
   variable: '--font-inter'
 });
 
+const ibmPlexCondensed = IBM_Plex_Sans_Condensed({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  display: 'swap',
+  variable: '--font-ibm-condensed'
+});
+
 export const metadata: Metadata = {
-  title: "HTW Collab Match",
-  description: "Connect, collaborate, and sprint at Honolulu Tech Week.",
+  title: "HTW Collab Match + Interest Graph",
+  description: "Connect, collaborate, and sprint at Honolulu Tech Week. Build your professional network and discover collaboration opportunities.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`${inter.variable} ${ibmPlexCondensed.variable}`}>
       <body className={`${inter.className} min-h-screen bg-gray-50 flex flex-col antialiased`}>
-        <header className="gradient-paradise shadow-lg">
-          <div className="max-w-7xl mx-auto px-6 py-4">
+        <header className="gradient-htw-dark shadow-lg">
+          <div className="container-full">
             {/* Main header row */}
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between py-4">
               {/* Logo/Brand */}
               <div className="flex items-center gap-3">
                 <span className="text-3xl">🌺</span>
                 <div>
-                  <div className="text-xl font-bold text-white">HTW Collab Match</div>
+                  <div className="text-xl font-black text-white font-ibm-condensed">HTW COLLAB MATCH</div>
                   <div className="text-sm text-white/80">Honolulu Tech Week</div>
                 </div>
               </div>
               
               {/* Desktop Navigation */}
               <nav className="hidden md:flex items-center gap-2">
-                <Link href="/" className="pill">
+                <Link href="/" className="pill focus-visible">
                   🏠 Home
                 </Link>
-                <Link href="/submit" className="pill">
+                <Link href="/submit" className="pill focus-visible">
                   👤 Profile
                 </Link>
-                <Link href="/graph" className="pill">
+                <Link href="/graph" className="pill focus-visible">
                   🌊 Graph
                 </Link>
-                <Link href="/events" className="pill">
+                <Link href="/events" className="pill focus-visible">
                   🤝 Events
                 </Link>
               </nav>
@@ -55,18 +62,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
 
             {/* Mobile Navigation */}
-            <div className="md:hidden mt-4 pt-4 border-t border-white/20">
+            <div className="md:hidden pb-4 border-t border-white/20 pt-4">
               <div className="flex justify-center gap-4">
-                <Link href="/" className="text-white/90 hover:text-white text-sm font-medium">
+                <Link href="/" className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200">
                   Home
                 </Link>
-                <Link href="/submit" className="text-white/90 hover:text-white text-sm font-medium">
+                <Link href="/submit" className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200">
                   Profile
                 </Link>
-                <Link href="/graph" className="text-white/90 hover:text-white text-sm font-medium">
+                <Link href="/graph" className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200">
                   Graph
                 </Link>
-                <Link href="/events" className="text-white/90 hover:text-white text-sm font-medium">
+                <Link href="/events" className="text-white/90 hover:text-white text-sm font-medium transition-colors duration-200">
                   Events
                 </Link>
               </div>
@@ -83,24 +90,24 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           {children}
         </main>
 
-        <footer className="bg-gray-900 text-white">
-          <div className="max-w-7xl mx-auto px-6 py-8">
+        <footer className="bg-htw-deep-sea text-white">
+          <div className="container-full py-8">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <div className="flex items-center gap-3">
                 <span className="text-2xl">🌺</span>
                 <div>
-                  <div className="font-semibold">HTW Collab Match</div>
-                  <div className="text-sm text-gray-400">
+                  <div className="font-black font-ibm-condensed text-lg">HTW COLLAB MATCH</div>
+                  <div className="text-sm text-white/80">
                     Connect, collaborate, create
                   </div>
                 </div>
               </div>
               
               <div className="text-center md:text-right">
-                <div className="text-sm text-gray-300">
+                <div className="text-sm text-white/90">
                   Made with aloha in Honolulu 🌴
                 </div>
-                <div className="text-xs text-gray-500 mt-1">
+                <div className="text-xs text-white/70 mt-1">
                   Fostering innovation across the Pacific
                 </div>
               </div>

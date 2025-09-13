@@ -2,14 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
 @layer base {
   :root {
-    --ocean-blue: #0ea5e9;
-    --sunset-orange: #f97316;
-    --palm-green: #059669;
-    --sand-beige: #fef3c7;
+    /* HTW Brand Colors */
+    --htw-primary: #00D4FF;
+    --htw-deep-sea: #003366;
+    --htw-tech-blue: #1E40AF;
   }
 
   html {
@@ -18,36 +16,169 @@
   }
 
   body {
-    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     @apply antialiased;
   }
 }
 
 @layer components {
-  /* Button System */
-  .btn {
-    @apply inline-flex items-center justify-center rounded-lg px-4 py-2 font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
+  /* HTW Typography Hierarchy */
+  .hero-headline {
+    @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-ibm-condensed text-htw-deep-sea;
   }
 
+  .section-headline {
+    @apply text-2xl md:text-3xl lg:text-4xl font-black font-ibm-condensed text-htw-deep-sea;
+  }
+
+  .section-headline-dark {
+    @apply text-2xl md:text-3xl lg:text-4xl font-black font-ibm-condensed text-white;
+  }
+
+  .card-title-feature {
+    @apply text-lg font-bold text-htw-deep-sea;
+  }
+
+  .card-title-compact {
+    @apply text-base font-bold text-htw-deep-sea;
+  }
+
+  .body-primary {
+    @apply text-lg leading-relaxed text-gray-700;
+  }
+
+  .body-secondary {
+    @apply text-base leading-relaxed text-gray-600;
+  }
+
+  .caption {
+    @apply text-sm text-gray-600;
+  }
+
+  .fine-print {
+    @apply text-xs text-gray-500;
+  }
+
+  /* HTW Button System */
   .btn-primary {
-    @apply btn bg-gradient-to-r from-blue-500 to-cyan-500 text-white hover:from-blue-600 hover:to-cyan-600 shadow-sm hover:shadow-md;
+    @apply bg-htw-primary text-htw-deep-sea font-bold px-6 py-3 rounded-lg 
+           hover:bg-htw-primary/90 transition-all duration-300 hover:scale-105;
   }
 
   .btn-secondary {
-    @apply btn bg-white text-gray-700 border border-gray-300 hover:bg-gray-50 hover:border-gray-400 shadow-sm;
+    @apply bg-transparent border-2 border-htw-primary text-htw-primary font-bold px-6 py-3 rounded-lg
+           hover:bg-htw-primary hover:text-htw-deep-sea transition-all duration-300;
   }
 
-  .btn-ghost {
-    @apply btn text-gray-600 hover:text-gray-900 hover:bg-gray-100;
+  /* HTW Card System */
+  .htw-card {
+    @apply bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden;
   }
 
-  /* Card System */
-  .card {
-    @apply bg-white rounded-xl border border-gray-200 shadow-sm p-6;
+  .htw-sponsor-card {
+    @apply bg-white rounded-lg shadow-sm hover:shadow-xl hover:-translate-y-2 
+           transition-all duration-500 p-6 flex items-center justify-center 
+           min-h-[140px] border-2 border-gray-200 hover:border-gray-400 
+           relative group overflow-hidden;
+  }
+
+  .htw-partner-card {
+    @apply bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100;
+  }
+
+  /* HTW Section Patterns */
+  .htw-section {
+    @apply py-16 sm:py-20 md:py-24 bg-white;
+  }
+
+  .htw-section-dark {
+    @apply py-16 sm:py-20 md:py-24 bg-gradient-to-br from-htw-deep-sea via-htw-tech-blue to-htw-deep-sea;
+  }
+
+  /* HTW Container Patterns */
+  .container-standard {
+    @apply container mx-auto px-4 sm:px-6;
+  }
+
+  .container-narrow {
+    @apply container mx-auto px-4 sm:px-6 max-w-4xl;
+  }
+
+  .container-wide {
+    @apply container mx-auto px-4 sm:px-6 max-w-6xl;
+  }
+
+  .container-full {
+    @apply container mx-auto px-4 sm:px-6 max-w-7xl;
+  }
+
+  /* HTW Grid Patterns */
+  .logo-grid-small {
+    @apply grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4;
+  }
+
+  .logo-grid-medium {
+    @apply grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4;
+  }
+
+  .logo-grid-large {
+    @apply grid grid-cols-2 md:grid-cols-3 gap-6;
+  }
+
+  .content-grid-2 {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-8;
+  }
+
+  .content-grid-3 {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+  }
+
+  /* HTW Animations & Transitions */
+  .transition-standard {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  .transition-slow {
+    @apply transition-all duration-500 ease-in-out;
+  }
+
+  .transition-fast {
+    @apply transition-all duration-200 ease-in-out;
   }
 
   .card-hover {
-    @apply card hover:shadow-md hover:border-gray-300 transition-all duration-200;
+    @apply hover:shadow-xl hover:-translate-y-2 transition-all duration-500;
+  }
+
+  .logo-hover {
+    @apply group-hover:scale-110 transition-all duration-500;
+  }
+
+  .btn-hover {
+    @apply hover:scale-105 transition-all duration-300;
+  }
+
+  /* HTW Navigation */
+  .nav-link {
+    @apply text-white/90 hover:text-white font-medium transition-colors duration-200 px-3 py-2 rounded-lg hover:bg-white/10;
+  }
+
+  /* HTW Logo Sizes */
+  .logo-small {
+    @apply max-w-full max-h-10 sm:max-h-12 object-contain;
+  }
+
+  .logo-medium {
+    @apply max-w-full max-h-14 object-contain;
+  }
+
+  .logo-large {
+    @apply max-w-full max-h-18 object-contain;
+  }
+
+  /* HTW Focus States */
+  .focus-visible {
+    @apply focus:outline-none focus:ring-2 focus:ring-htw-primary focus:ring-offset-2;
   }
 
   /* Badge & Chip System */
@@ -56,7 +187,7 @@
   }
 
   .badge-primary {
-    @apply badge bg-blue-100 text-blue-800;
+    @apply badge bg-htw-primary/20 text-htw-deep-sea;
   }
 
   .badge-success {
@@ -72,16 +203,11 @@
   }
 
   .chip-selected {
-    @apply chip bg-blue-100 text-blue-700 border border-blue-200;
+    @apply chip bg-htw-primary/20 text-htw-deep-sea border border-htw-primary/30;
   }
 
   .pill {
     @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-white/20 text-white hover:bg-white/30 transition-colors duration-200;
-  }
-
-  /* Navigation */
-  .nav-link {
-    @apply text-white/90 hover:text-white font-medium transition-colors duration-200 px-3 py-2 rounded-lg hover:bg-white/10;
   }
 
   /* Text Utilities */
@@ -105,7 +231,7 @@
 
   /* Form Elements */
   .form-input {
-    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors duration-200;
+    @apply w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-htw-primary focus:border-transparent transition-colors duration-200;
   }
 
   .form-textarea {
@@ -118,7 +244,15 @@
 }
 
 @layer utilities {
-  /* Hawaiian gradient backgrounds */
+  /* HTW Gradient Backgrounds */
+  .gradient-htw-primary {
+    background: linear-gradient(135deg, var(--htw-primary) 0%, var(--htw-tech-blue) 100%);
+  }
+
+  .gradient-htw-dark {
+    background: linear-gradient(135deg, var(--htw-deep-sea) 0%, var(--htw-tech-blue) 50%, var(--htw-deep-sea) 100%);
+  }
+
   .gradient-ocean {
     background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 50%, #0891b2 100%);
   }
@@ -128,7 +262,21 @@
   }
 
   .gradient-paradise {
-    background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 25%, #10b981 75%, #059669 100%);
+    background: linear-gradient(135deg, var(--htw-deep-sea) 0%, var(--htw-tech-blue) 25%, #10b981 75%, #059669 100%);
+  }
+
+  /* Marquee Animation */
+  .animate-scroll-left {
+    animation: scroll-left 30s linear infinite;
+  }
+
+  .animate-scroll-left:hover {
+    animation-play-state: paused;
+  }
+
+  @keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
   }
 
   /* Loading animations */

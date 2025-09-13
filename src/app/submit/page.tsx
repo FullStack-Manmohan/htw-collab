@@ -100,30 +100,30 @@ export default function SubmitPage() {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-cyan-50 to-teal-50 py-12">
-      <div className="max-w-2xl mx-auto px-6">
+    <div className="min-h-screen htw-section bg-gray-50">
+      <div className="container-narrow">
         {/* Header */}
-        <div className="text-center mb-8">
-          <div className="text-5xl mb-4">🌺</div>
-          <h1 className="text-4xl font-bold text-gray-900 mb-3">
-            Create Your Profile
+        <div className="text-center mb-12">
+          <div className="text-5xl mb-6">🌺</div>
+          <h1 className="section-headline mb-4">
+            CREATE YOUR PROFILE
           </h1>
-          <p className="text-gray-600 text-lg">
+          <p className="body-primary">
             Share your skills and interests to find amazing collaboration opportunities
           </p>
         </div>
 
-        <div className="card">
+        <div className="htw-card p-8">
           <form onSubmit={handleSubmit} className="space-y-8">
             {/* Basic Info Section */}
             <div>
-              <h2 className="text-xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
-                <span>👤</span> Basic Information
+              <h2 className="card-title-feature mb-6 flex items-center gap-2">
+                <span>👤</span> BASIC INFORMATION
               </h2>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="content-grid-2 gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-htw-deep-sea mb-2">
                     Full Name *
                   </label>
                   <input
@@ -137,7 +137,7 @@ export default function SubmitPage() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-htw-deep-sea mb-2">
                     Role *
                   </label>
                   <select
@@ -154,9 +154,9 @@ export default function SubmitPage() {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+              <div className="content-grid-2 gap-4 mt-4">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-htw-deep-sea mb-2">
                     City
                   </label>
                   <input
@@ -166,11 +166,11 @@ export default function SubmitPage() {
                     className="form-input"
                     placeholder="Your city"
                   />
-                  <p className="text-xs text-gray-500 mt-1">Default: Honolulu</p>
+                  <p className="fine-print mt-1">Default: Honolulu</p>
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                  <label className="block text-sm font-medium text-htw-deep-sea mb-2">
                     Availability
                   </label>
                   <select
@@ -186,7 +186,7 @@ export default function SubmitPage() {
               </div>
 
               <div className="mt-4">
-                <label className="block text-sm font-medium text-gray-700 mb-2">
+                <label className="block text-sm font-medium text-htw-deep-sea mb-2">
                   Bio
                 </label>
                 <textarea
@@ -196,7 +196,7 @@ export default function SubmitPage() {
                   className="form-textarea"
                   placeholder="Tell us about yourself and what you're passionate about..."
                 />
-                <p className="text-xs text-gray-500 mt-1">
+                <p className="fine-print mt-1">
                   Share your background, current projects, or what excites you about tech
                 </p>
               </div>
@@ -204,23 +204,23 @@ export default function SubmitPage() {
 
             {/* Skills Section */}
             <div>
-              <h2 className="text-xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
-                <span>⚡</span> Skills & Expertise *
+              <h2 className="card-title-feature mb-6 flex items-center gap-2">
+                <span>⚡</span> SKILLS & EXPERTISE *
               </h2>
               <SkillChips
                 skills={skills}
                 onChange={setSkills}
                 className="w-full"
               />
-              <p className="text-xs text-gray-500 mt-2">
+              <p className="fine-print mt-2">
                 Add your technical skills and mark your level: B=Beginner, I=Intermediate, A=Advanced
               </p>
             </div>
 
             {/* Interests Section */}
             <div>
-              <h2 className="text-xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
-                <span>🎯</span> Interests *
+              <h2 className="card-title-feature mb-6 flex items-center gap-2">
+                <span>🎯</span> INTERESTS *
               </h2>
               
               {/* Interest chips */}
@@ -234,7 +234,7 @@ export default function SubmitPage() {
                     <button
                       type="button"
                       onClick={() => removeInterest(interest)}
-                      className="ml-1 text-blue-600 hover:text-blue-800 font-bold"
+                      className="ml-1 text-htw-deep-sea hover:text-htw-deep-sea/80 font-bold"
                     >
                       ×
                     </button>
@@ -272,7 +272,7 @@ export default function SubmitPage() {
                         key={suggestion}
                         type="button"
                         onClick={() => addInterest(suggestion)}
-                        className="w-full text-left px-3 py-2 hover:bg-gray-100 focus:bg-gray-100 text-sm"
+                        className="w-full text-left px-3 py-2 hover:bg-gray-100 focus:bg-gray-100 body-secondary"
                       >
                         {suggestion}
                       </button>
@@ -281,7 +281,7 @@ export default function SubmitPage() {
                 )}
               </div>
 
-              <p className="text-xs text-gray-500 mt-2">
+              <p className="fine-print mt-2">
                 Popular: AI, Climate, Community, Web3, Design, Open Source
               </p>
             </div>
@@ -290,22 +290,22 @@ export default function SubmitPage() {
             <div className="flex flex-col sm:flex-row gap-4 pt-6">
               <button
                 type="submit"
-                className="btn-primary flex-1 text-lg py-3"
+                className="btn-primary flex-1 text-lg py-3 btn-hover"
               >
-                🚀 Save & Explore Graph
+                🚀 SAVE & EXPLORE GRAPH
               </button>
               <button
                 type="button"
                 onClick={handleReset}
                 className="btn-secondary sm:w-auto px-6"
               >
-                Reset
+                RESET
               </button>
             </div>
           </form>
 
           <div className="mt-6 text-center">
-            <p className="text-sm text-gray-500">
+            <p className="caption">
               Your profile will be visible to other HTW participants for collaboration
             </p>
           </div>
