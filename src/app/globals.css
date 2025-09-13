@@ -293,4 +293,37 @@
   .glass {
     @apply bg-white/80 backdrop-blur-sm border border-white/20;
   }
+
+  /* Hero Slideshow */
+  .hero-slideshow:hover .hero-slide {
+    animation-play-state: paused;
+  }
+
+  .hero-slide {
+    @apply absolute inset-0 object-cover opacity-0;
+  }
+
+  .hero-anim {
+    animation: slideFade 66s infinite;
+  }
+
+  .hero-overlay {
+    @apply absolute inset-0 bg-gradient-to-b from-black/30 via-black/20 to-black/40 pointer-events-none z-10;
+  }
+
+  @keyframes slideFade {
+    0%, 1.5% { opacity: 1; }
+    3%, 97% { opacity: 0; }
+    98.5%, 100% { opacity: 1; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-anim {
+      animation: none !important;
+    }
+    
+    .hero-slide:first-child {
+      opacity: 1 !important;
+    }
+  }
 }

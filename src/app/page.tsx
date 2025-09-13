@@ -7,14 +7,18 @@ Demo Script:
 */
 
 import Link from "next/link";
+import HeroSlideshow from "../components/HeroSlideshow";
 
 export default function Page() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative overflow-hidden htw-section-dark">
-        <div className="absolute inset-0 bg-gradient-to-r from-htw-primary/10 to-white/5"></div>
-        <div className="relative container-wide py-20 text-center">
+      <section className="relative overflow-hidden min-h-[60vh] md:min-h-[min(72vh,780px)] rounded-b-[2rem]">
+        {/* Background Slideshow */}
+        <HeroSlideshow className="z-0" />
+        
+        {/* Content Layer */}
+        <div className="relative z-10 container-wide py-20 text-center">
           <div className="mb-8">
             <span className="text-6xl wave-animation inline-block">🌺</span>
           </div>
