@@ -1,0 +1,407 @@
+first_interest,second_interest,score
+Sustainability and Ecology,AEC (Architecture Eng & Construction),25
+Sustainability and Ecology,AR/VR & Metaverse,65
+Sustainability and Ecology,Hawaiian Art and Culture,55
+Sustainability and Ecology,Art and Culture,60
+Sustainability and Ecology,Bitcoin & Crypto,75
+Sustainability and Ecology,Consulting & Professional Services,45
+Sustainability and Ecology,Education & EdTech,40
+Sustainability and Ecology,Gaming & Entertainment,70
+Sustainability and Ecology,Government & Public Sector,30
+Sustainability and Ecology,Investment & Venture Capital,50
+Sustainability and Ecology,Marketing & AdTech,65
+Sustainability and Ecology,Media & Communications,55
+Sustainability and Ecology,Real Estate & PropTech,35
+Sustainability and Ecology,Software & Technology,55
+Sustainability and Ecology,Student,50
+Sustainability and Ecology,Leadership,60
+Sustainability and Ecology,Project Management,55
+Sustainability and Ecology,Public Speaking,65
+Sustainability and Ecology,Networking Skills,70
+Sustainability and Ecology,Personal Branding,75
+Sustainability and Ecology,Financial Literacy,65
+Sustainability and Ecology,Time Management,70
+Sustainability and Ecology,Productivity Hacks,75
+Sustainability and Ecology,Mental Health and Wellness,45
+Sustainability and Ecology,Mindfulness and Meditation,40
+Sustainability and Ecology,Stoicism,55
+Sustainability and Ecology,Biohacking,60
+Sustainability and Ecology,Creative Coding,70
+AEC (Architecture Eng & Construction),AR/VR & Metaverse,35
+AEC (Architecture Eng & Construction),Hawaiian Art and Culture,65
+AEC (Architecture Eng & Construction),Art and Culture,45
+AEC (Architecture Eng & Construction),Bitcoin & Crypto,70
+AEC (Architecture Eng & Construction),Consulting & Professional Services,40
+AEC (Architecture Eng & Construction),Education & EdTech,55
+AEC (Architecture Eng & Construction),Gaming & Entertainment,65
+AEC (Architecture Eng & Construction),Government & Public Sector,35
+AEC (Architecture Eng & Construction),Investment & Venture Capital,45
+AEC (Architecture Eng & Construction),Marketing & AdTech,60
+AEC (Architecture Eng & Construction),Media & Communications,65
+AEC (Architecture Eng & Construction),Real Estate & PropTech,15
+AEC (Architecture Eng & Construction),Software & Technology,40
+AEC (Architecture Eng & Construction),Student,60
+AEC (Architecture Eng & Construction),Leadership,50
+AEC (Architecture Eng & Construction),Project Management,25
+AEC (Architecture Eng & Construction),Public Speaking,60
+AEC (Architecture Eng & Construction),Networking Skills,55
+AEC (Architecture Eng & Construction),Personal Branding,65
+AEC (Architecture Eng & Construction),Financial Literacy,45
+AEC (Architecture Eng & Construction),Time Management,50
+AEC (Architecture Eng & Construction),Productivity Hacks,55
+AEC (Architecture Eng & Construction),Mental Health and Wellness,70
+AEC (Architecture Eng & Construction),Mindfulness and Meditation,75
+AEC (Architecture Eng & Construction),Stoicism,70
+AEC (Architecture Eng & Construction),Biohacking,75
+AEC (Architecture Eng & Construction),Creative Coding,55
+AR/VR & Metaverse,Hawaiian Art and Culture,55
+AR/VR & Metaverse,Art and Culture,30
+AR/VR & Metaverse,Bitcoin & Crypto,40
+AR/VR & Metaverse,Consulting & Professional Services,60
+AR/VR & Metaverse,Education & EdTech,35
+AR/VR & Metaverse,Gaming & Entertainment,20
+AR/VR & Metaverse,Government & Public Sector,65
+AR/VR & Metaverse,Investment & Venture Capital,50
+AR/VR & Metaverse,Marketing & AdTech,45
+AR/VR & Metaverse,Media & Communications,40
+AR/VR & Metaverse,Real Estate & PropTech,45
+AR/VR & Metaverse,Software & Technology,25
+AR/VR & Metaverse,Student,50
+AR/VR & Metaverse,Leadership,65
+AR/VR & Metaverse,Project Management,55
+AR/VR & Metaverse,Public Speaking,70
+AR/VR & Metaverse,Networking Skills,65
+AR/VR & Metaverse,Personal Branding,60
+AR/VR & Metaverse,Financial Literacy,70
+AR/VR & Metaverse,Time Management,70
+AR/VR & Metaverse,Productivity Hacks,65
+AR/VR & Metaverse,Mental Health and Wellness,60
+AR/VR & Metaverse,Mindfulness and Meditation,65
+AR/VR & Metaverse,Stoicism,75
+AR/VR & Metaverse,Biohacking,70
+AR/VR & Metaverse,Creative Coding,30
+Hawaiian Art and Culture,Art and Culture,25
+Hawaiian Art and Culture,Bitcoin & Crypto,85
+Hawaiian Art and Culture,Consulting & Professional Services,70
+Hawaiian Art and Culture,Education & EdTech,45
+Hawaiian Art and Culture,Gaming & Entertainment,60
+Hawaiian Art and Culture,Government & Public Sector,50
+Hawaiian Art and Culture,Investment & Venture Capital,75
+Hawaiian Art and Culture,Marketing & AdTech,65
+Hawaiian Art and Culture,Media & Communications,45
+Hawaiian Art and Culture,Real Estate & PropTech,70
+Hawaiian Art and Culture,Software & Technology,75
+Hawaiian Art and Culture,Student,55
+Hawaiian Art and Culture,Leadership,60
+Hawaiian Art and Culture,Project Management,70
+Hawaiian Art and Culture,Public Speaking,50
+Hawaiian Art and Culture,Networking Skills,55
+Hawaiian Art and Culture,Personal Branding,55
+Hawaiian Art and Culture,Financial Literacy,75
+Hawaiian Art and Culture,Time Management,70
+Hawaiian Art and Culture,Productivity Hacks,75
+Hawaiian Art and Culture,Mental Health and Wellness,40
+Hawaiian Art and Culture,Mindfulness and Meditation,35
+Hawaiian Art and Culture,Stoicism,50
+Hawaiian Art and Culture,Biohacking,80
+Hawaiian Art and Culture,Creative Coding,65
+Art and Culture,Bitcoin & Crypto,75
+Art and Culture,Consulting & Professional Services,60
+Art and Culture,Education & EdTech,40
+Art and Culture,Gaming & Entertainment,35
+Art and Culture,Government & Public Sector,55
+Art and Culture,Investment & Venture Capital,65
+Art and Culture,Marketing & AdTech,45
+Art and Culture,Media & Communications,25
+Art and Culture,Real Estate & PropTech,55
+Art and Culture,Software & Technology,50
+Art and Culture,Student,45
+Art and Culture,Leadership,60
+Art and Culture,Project Management,65
+Art and Culture,Public Speaking,45
+Art and Culture,Networking Skills,55
+Art and Culture,Personal Branding,40
+Art and Culture,Financial Literacy,70
+Art and Culture,Time Management,65
+Art and Culture,Productivity Hacks,70
+Art and Culture,Mental Health and Wellness,40
+Art and Culture,Mindfulness and Meditation,35
+Art and Culture,Stoicism,50
+Art and Culture,Biohacking,75
+Art and Culture,Creative Coding,25
+Bitcoin & Crypto,Consulting & Professional Services,55
+Bitcoin & Crypto,Education & EdTech,65
+Bitcoin & Crypto,Gaming & Entertainment,55
+Bitcoin & Crypto,Government & Public Sector,70
+Bitcoin & Crypto,Investment & Venture Capital,25
+Bitcoin & Crypto,Marketing & AdTech,60
+Bitcoin & Crypto,Media & Communications,65
+Bitcoin & Crypto,Real Estate & PropTech,55
+Bitcoin & Crypto,Software & Technology,30
+Bitcoin & Crypto,Student,60
+Bitcoin & Crypto,Leadership,65
+Bitcoin & Crypto,Project Management,60
+Bitcoin & Crypto,Public Speaking,70
+Bitcoin & Crypto,Networking Skills,55
+Bitcoin & Crypto,Personal Branding,60
+Bitcoin & Crypto,Financial Literacy,20
+Bitcoin & Crypto,Time Management,70
+Bitcoin & Crypto,Productivity Hacks,65
+Bitcoin & Crypto,Mental Health and Wellness,80
+Bitcoin & Crypto,Mindfulness and Meditation,85
+Bitcoin & Crypto,Stoicism,75
+Bitcoin & Crypto,Biohacking,70
+Bitcoin & Crypto,Creative Coding,45
+Consulting & Professional Services,Education & EdTech,50
+Consulting & Professional Services,Gaming & Entertainment,70
+Consulting & Professional Services,Government & Public Sector,40
+Consulting & Professional Services,Investment & Venture Capital,35
+Consulting & Professional Services,Marketing & AdTech,40
+Consulting & Professional Services,Media & Communications,50
+Consulting & Professional Services,Real Estate & PropTech,45
+Consulting & Professional Services,Software & Technology,45
+Consulting & Professional Services,Student,55
+Consulting & Professional Services,Leadership,15
+Consulting & Professional Services,Project Management,10
+Consulting & Professional Services,Public Speaking,20
+Consulting & Professional Services,Networking Skills,25
+Consulting & Professional Services,Personal Branding,30
+Consulting & Professional Services,Financial Literacy,35
+Consulting & Professional Services,Time Management,25
+Consulting & Professional Services,Productivity Hacks,30
+Consulting & Professional Services,Mental Health and Wellness,55
+Consulting & Professional Services,Mindfulness and Meditation,60
+Consulting & Professional Services,Stoicism,50
+Consulting & Professional Services,Biohacking,65
+Consulting & Professional Services,Creative Coding,70
+Education & EdTech,Gaming & Entertainment,45
+Education & EdTech,Government & Public Sector,50
+Education & EdTech,Investment & Venture Capital,60
+Education & EdTech,Marketing & AdTech,50
+Education & EdTech,Media & Communications,45
+Education & EdTech,Real Estate & PropTech,65
+Education & EdTech,Software & Technology,35
+Education & EdTech,Student,20
+Education & EdTech,Leadership,45
+Education & EdTech,Project Management,50
+Education & EdTech,Public Speaking,40
+Education & EdTech,Networking Skills,50
+Education & EdTech,Personal Branding,55
+Education & EdTech,Financial Literacy,45
+Education & EdTech,Time Management,40
+Education & EdTech,Productivity Hacks,35
+Education & EdTech,Mental Health and Wellness,35
+Education & EdTech,Mindfulness and Meditation,40
+Education & EdTech,Stoicism,50
+Education & EdTech,Biohacking,60
+Education & EdTech,Creative Coding,40
+Gaming & Entertainment,Government & Public Sector,75
+Gaming & Entertainment,Investment & Venture Capital,60
+Gaming & Entertainment,Marketing & AdTech,50
+Gaming & Entertainment,Media & Communications,35
+Gaming & Entertainment,Real Estate & PropTech,70
+Gaming & Entertainment,Software & Technology,35
+Gaming & Entertainment,Student,50
+Gaming & Entertainment,Leadership,70
+Gaming & Entertainment,Project Management,60
+Gaming & Entertainment,Public Speaking,65
+Gaming & Entertainment,Networking Skills,65
+Gaming & Entertainment,Personal Branding,55
+Gaming & Entertainment,Financial Literacy,70
+Gaming & Entertainment,Time Management,65
+Gaming & Entertainment,Productivity Hacks,60
+Gaming & Entertainment,Mental Health and Wellness,50
+Gaming & Entertainment,Mindfulness and Meditation,55
+Gaming & Entertainment,Stoicism,65
+Gaming & Entertainment,Biohacking,70
+Gaming & Entertainment,Creative Coding,30
+Government & Public Sector,Investment & Venture Capital,55
+Government & Public Sector,Marketing & AdTech,60
+Government & Public Sector,Media & Communications,45
+Government & Public Sector,Real Estate & PropTech,45
+Government & Public Sector,Software & Technology,55
+Government & Public Sector,Student,60
+Government & Public Sector,Leadership,35
+Government & Public Sector,Project Management,40
+Government & Public Sector,Public Speaking,30
+Government & Public Sector,Networking Skills,40
+Government & Public Sector,Personal Branding,55
+Government & Public Sector,Financial Literacy,45
+Government & Public Sector,Time Management,50
+Government & Public Sector,Productivity Hacks,55
+Government & Public Sector,Mental Health and Wellness,35
+Government & Public Sector,Mindfulness and Meditation,45
+Government & Public Sector,Stoicism,50
+Government & Public Sector,Biohacking,70
+Government & Public Sector,Creative Coding,65
+Investment & Venture Capital,Marketing & AdTech,50
+Investment & Venture Capital,Media & Communications,55
+Investment & Venture Capital,Real Estate & PropTech,40
+Investment & Venture Capital,Software & Technology,35
+Investment & Venture Capital,Student,65
+Investment & Venture Capital,Leadership,40
+Investment & Venture Capital,Project Management,45
+Investment & Venture Capital,Public Speaking,50
+Investment & Venture Capital,Networking Skills,35
+Investment & Venture Capital,Personal Branding,45
+Investment & Venture Capital,Financial Literacy,15
+Investment & Venture Capital,Time Management,55
+Investment & Venture Capital,Productivity Hacks,60
+Investment & Venture Capital,Mental Health and Wellness,70
+Investment & Venture Capital,Mindfulness and Meditation,75
+Investment & Venture Capital,Stoicism,65
+Investment & Venture Capital,Biohacking,60
+Investment & Venture Capital,Creative Coding,65
+Marketing & AdTech,Media & Communications,25
+Marketing & AdTech,Real Estate & PropTech,55
+Marketing & AdTech,Software & Technology,40
+Marketing & AdTech,Student,55
+Marketing & AdTech,Leadership,50
+Marketing & AdTech,Project Management,55
+Marketing & AdTech,Public Speaking,40
+Marketing & AdTech,Networking Skills,35
+Marketing & AdTech,Personal Branding,20
+Marketing & AdTech,Financial Literacy,60
+Marketing & AdTech,Time Management,55
+Marketing & AdTech,Productivity Hacks,50
+Marketing & AdTech,Mental Health and Wellness,65
+Marketing & AdTech,Mindfulness and Meditation,70
+Marketing & AdTech,Stoicism,70
+Marketing & AdTech,Biohacking,65
+Marketing & AdTech,Creative Coding,55
+Media & Communications,Real Estate & PropTech,65
+Media & Communications,Software & Technology,50
+Media & Communications,Student,50
+Media & Communications,Leadership,45
+Media & Communications,Project Management,55
+Media & Communications,Public Speaking,25
+Media & Communications,Networking Skills,35
+Media & Communications,Personal Branding,25
+Media & Communications,Financial Literacy,65
+Media & Communications,Time Management,55
+Media & Communications,Productivity Hacks,60
+Media & Communications,Mental Health and Wellness,50
+Media & Communications,Mindfulness and Meditation,55
+Media & Communications,Stoicism,60
+Media & Communications,Biohacking,70
+Media & Communications,Creative Coding,55
+Real Estate & PropTech,Software & Technology,45
+Real Estate & PropTech,Student,65
+Real Estate & PropTech,Leadership,50
+Real Estate & PropTech,Project Management,40
+Real Estate & PropTech,Public Speaking,60
+Real Estate & PropTech,Networking Skills,50
+Real Estate & PropTech,Personal Branding,60
+Real Estate & PropTech,Financial Literacy,35
+Real Estate & PropTech,Time Management,55
+Real Estate & PropTech,Productivity Hacks,60
+Real Estate & PropTech,Mental Health and Wellness,70
+Real Estate & PropTech,Mindfulness and Meditation,75
+Real Estate & PropTech,Stoicism,70
+Real Estate & PropTech,Biohacking,75
+Real Estate & PropTech,Creative Coding,60
+Software & Technology,Student,45
+Software & Technology,Leadership,55
+Software & Technology,Project Management,40
+Software & Technology,Public Speaking,65
+Software & Technology,Networking Skills,55
+Software & Technology,Personal Branding,60
+Software & Technology,Financial Literacy,60
+Software & Technology,Time Management,45
+Software & Technology,Productivity Hacks,35
+Software & Technology,Mental Health and Wellness,60
+Software & Technology,Mindfulness and Meditation,65
+Software & Technology,Stoicism,60
+Software & Technology,Biohacking,55
+Software & Technology,Creative Coding,15
+Student,Leadership,40
+Student,Project Management,45
+Student,Public Speaking,35
+Student,Networking Skills,25
+Student,Personal Branding,30
+Student,Financial Literacy,25
+Student,Time Management,15
+Student,Productivity Hacks,20
+Student,Mental Health and Wellness,20
+Student,Mindfulness and Meditation,25
+Student,Stoicism,35
+Student,Biohacking,45
+Student,Creative Coding,50
+Leadership,Project Management,20
+Leadership,Public Speaking,15
+Leadership,Networking Skills,25
+Leadership,Personal Branding,30
+Leadership,Financial Literacy,45
+Leadership,Time Management,35
+Leadership,Productivity Hacks,40
+Leadership,Mental Health and Wellness,40
+Leadership,Mindfulness and Meditation,45
+Leadership,Stoicism,35
+Leadership,Biohacking,55
+Leadership,Creative Coding,65
+Project Management,Public Speaking,40
+Project Management,Networking Skills,35
+Project Management,Personal Branding,45
+Project Management,Financial Literacy,50
+Project Management,Time Management,20
+Project Management,Productivity Hacks,25
+Project Management,Mental Health and Wellness,55
+Project Management,Mindfulness and Meditation,60
+Project Management,Stoicism,50
+Project Management,Biohacking,65
+Project Management,Creative Coding,55
+Public Speaking,Networking Skills,20
+Public Speaking,Personal Branding,15
+Public Speaking,Financial Literacy,55
+Public Speaking,Time Management,45
+Public Speaking,Productivity Hacks,50
+Public Speaking,Mental Health and Wellness,40
+Public Speaking,Mindfulness and Meditation,45
+Public Speaking,Stoicism,40
+Public Speaking,Biohacking,65
+Public Speaking,Creative Coding,70
+Networking Skills,Personal Branding,25
+Networking Skills,Financial Literacy,50
+Networking Skills,Time Management,45
+Networking Skills,Productivity Hacks,50
+Networking Skills,Mental Health and Wellness,55
+Networking Skills,Mindfulness and Meditation,60
+Networking Skills,Stoicism,55
+Networking Skills,Biohacking,65
+Networking Skills,Creative Coding,70
+Personal Branding,Financial Literacy,55
+Personal Branding,Time Management,50
+Personal Branding,Productivity Hacks,45
+Personal Branding,Mental Health and Wellness,50
+Personal Branding,Mindfulness and Meditation,55
+Personal Branding,Stoicism,50
+Personal Branding,Biohacking,60
+Personal Branding,Creative Coding,65
+Financial Literacy,Time Management,45
+Financial Literacy,Productivity Hacks,50
+Financial Literacy,Mental Health and Wellness,60
+Financial Literacy,Mindfulness and Meditation,65
+Financial Literacy,Stoicism,55
+Financial Literacy,Biohacking,70
+Financial Literacy,Creative Coding,70
+Time Management,Productivity Hacks,15
+Time Management,Mental Health and Wellness,40
+Time Management,Mindfulness and Meditation,45
+Time Management,Stoicism,40
+Time Management,Biohacking,50
+Time Management,Creative Coding,60
+Productivity Hacks,Mental Health and Wellness,45
+Productivity Hacks,Mindfulness and Meditation,50
+Productivity Hacks,Stoicism,45
+Productivity Hacks,Biohacking,35
+Productivity Hacks,Creative Coding,55
+Mental Health and Wellness,Mindfulness and Meditation,10
+Mental Health and Wellness,Stoicism,30
+Mental Health and Wellness,Biohacking,40
+Mental Health and Wellness,Creative Coding,70
+Mindfulness and Meditation,Stoicism,25
+Mindfulness and Meditation,Biohacking,45
+Mindfulness and Meditation,Creative Coding,75
+Stoicism,Biohacking,55
+Stoicism,Creative Coding,70
+Biohacking,Creative Coding,65 

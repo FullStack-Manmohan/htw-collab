@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest Graph Visualization</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            overflow: hidden;
+        }
+        
+        #container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        #header {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        
+        #header h1 {
+            margin: 0 0 10px 0;
+            color: #333;
+            font-size: 24px;
+        }
+        
+        #controls {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        #controls button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            cursor: pointer;
+            font-size: 14px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        
+        #controls button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }
+        
+        #controls input[type="file"] {
+            display: none;
+        }
+        
+        #controls label {
+            padding: 8px 16px;
+            border: 2px solid #667eea;
+            border-radius: 5px;
+            background: white;
+            color: #667eea;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+        
+        #controls label:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        #controls input[type="range"] {
+            width: 150px;
+        }
+        
+        #controls span {
+            color: #555;
+            font-size: 14px;
+        }
+        
+        #sigma-container {
+            flex: 1;
+            position: relative;
+            background: white;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        #info {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            z-index: 100;
+        }
+        
+        #info h3 {
+            margin: 0 0 8px 0;
+            color: #333;
+            font-size: 16px;
+        }
+        
+        #info p {
+            margin: 4px 0;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+            color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Interest Graph Visualization</h1>
+            <div id="controls">
+                <label for="csvFile">
+                    Load CSV File
+                    <input type="file" id="csvFile" accept=".csv">
+                </label>
+                <button id="resetCamera">Reset View</button>
+                <button id="toggleLayout">Toggle Layout</button>
+                <span>Edge Threshold:</span>
+                <input type="range" id="edgeThreshold" min="0" max="50" value="0" step="5">
+                <span id="thresholdValue">0</span>
+            </div>
+        </div>
+        <div id="sigma-container">
+            <div class="loading">Loading graph...</div>
+        </div>
+        <div id="info" style="display: none;">
+            <h3>Graph Statistics</h3>
+            <p id="nodeCount"></p>
+            <p id="edgeCount"></p>
+            <p id="selectedNode"></p>
+        </div>
+    </div>
+
+    <!-- Sigma.js and dependencies from CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/graphology@0.25.4/dist/graphology.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sigma@2.4.0/build/sigma.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/graphology-layout@0.6.1/build/graphology-layout.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/graphology-layout-forceatlas2@0.10.1/build/graphology-layout-forceatlas2.min.js"></script>
+
+    <script>
+        // Check if libraries loaded correctly
+        window.addEventListener('load', () => {
+            console.log('Libraries loaded:');
+            console.log('- graphology:', typeof graphology !== 'undefined');
+            console.log('- Sigma:', typeof Sigma !== 'undefined');
+            console.log('- graphologyLayout:', typeof graphologyLayout !== 'undefined');
+            console.log('- forceAtlas2:', typeof forceAtlas2 !== 'undefined');
+        });
+        
+        // Global variables
+        let graph;
+        let renderer;
+        let isLayoutRunning = false;
+        let layout;
+        let originalEdges = [];
+
+        // Color palette for nodes
+        const colors = [
+            '#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEAA7',
+            '#DDA0DD', '#98D8C8', '#FFD93D', '#6BCB77', '#4D96FF',
+            '#FF8CC8', '#A8E6CF', '#FFD3B6', '#FFAAA5', '#C7CEEA',
+            '#B4A7D6', '#8FBC8F', '#FFB347', '#87CEEB', '#F4A460',
+            '#DDA0DD', '#F0E68C', '#D8BFD8', '#B0E0E6', '#FFDEAD',
+            '#F5DEB3', '#FFE4E1', '#E6E6FA', '#F0FFF0'
+        ];
+
+        // Function to parse CSV data
+        function parseCSV(csvText) {
+            const lines = csvText.trim().split('\n');
+            const nodes = [];
+            const edges = [];
+            
+            for (const line of lines) {
+                if (line.includes(':')) {
+                    // This is a node line
+                    const match = line.match(/^(\d+):\s*(.+)$/);
+                    if (match) {
+                        nodes.push({
+                            id: match[1],
+                            label: match[2].trim()
+                        });
+                    }
+                } else if (line.includes(',')) {
+                    // This is an edge line
+                    const parts = line.split(',');
+                    if (parts.length === 3) {
+                        const score = parseFloat(parts[2]);
+                        edges.push({
+                            source: parts[0].trim(),
+                            target: parts[1].trim(),
+                            weight: score
+                        });
+                    }
+                }
+            }
+            
+            return { nodes, edges };
+        }
+
+        // Function to create and render the graph
+        function createGraph(data) {
+            // Create a new graph instance
+            graph = new graphology.Graph({ type: 'undirected' });
+            
+            // Add nodes
+            data.nodes.forEach((node, index) => {
+                graph.addNode(node.id, {
+                    label: node.label,
+                    size: 10,
+                    color: colors[index % colors.length],
+                    x: Math.random() * 100,
+                    y: Math.random() * 100
+                });
+            });
+            
+            // Store original edges for filtering
+            originalEdges = data.edges;
+            
+            // Add edges
+            data.edges.forEach((edge, index) => {
+                if (!graph.hasEdge(edge.source, edge.target)) {
+                    graph.addEdge(edge.source, edge.target, {
+                        weight: edge.weight,
+                        size: Math.log(edge.weight) * 0.5 + 1,
+                        color: '#999',
+                        label: `Score: ${edge.weight}`
+                    });
+                }
+            });
+            
+            // Apply initial layout
+            applyForceLayout();
+            
+            // Initialize hover state before creating renderer
+            let hoveredNode = null;
+            
+            // Create renderer
+            const container = document.getElementById('sigma-container');
+            container.innerHTML = ''; // Clear loading message
+            
+            renderer = new Sigma(graph, container, {
+                renderEdgeLabels: false,
+                defaultNodeColor: '#666',
+                defaultEdgeColor: '#999',
+                nodeReducer: (node, data) => {
+                    const res = { ...data };
+                    if (hoveredNode === node) {
+                        res.highlighted = true;
+                        res.size = res.size * 1.5;
+                    }
+                    return res;
+                },
+                edgeReducer: (edge, data) => {
+                    const res = { ...data };
+                    if (hoveredNode && graph.extremities(edge).includes(hoveredNode)) {
+                        res.color = '#667eea';
+                        res.size = res.size * 2;
+                    }
+                    return res;
+                }
+            });
+            
+            // Update info panel
+            updateInfo();
+            
+            renderer.on('enterNode', ({ node }) => {
+                hoveredNode = node;
+                const nodeData = graph.getNodeAttributes(node);
+                document.getElementById('selectedNode').innerHTML = `<strong>Selected:</strong> ${nodeData.label}`;
+                renderer.refresh();
+            });
+            
+            renderer.on('leaveNode', () => {
+                hoveredNode = null;
+                document.getElementById('selectedNode').innerHTML = '';
+                renderer.refresh();
+            });
+        }
+
+        // Function to apply force-directed layout
+        function applyForceLayout() {
+            // ForceAtlas2 is available as a global when loaded from CDN
+            if (typeof forceAtlas2 !== 'undefined' && forceAtlas2.assign) {
+                const settings = {
+                    iterations: 50,
+                    settings: {
+                        gravity: 1,
+                        scalingRatio: 10,
+                        barnesHutOptimize: true,
+                        strongGravityMode: false
+                    }
+                };
+                forceAtlas2.assign(graph, settings);
+            } else {
+                // Fallback layout with better distribution
+                const nodeCount = graph.order;
+                const k = Math.sqrt(1000 / nodeCount);
+                let index = 0;
+                
+                graph.forEachNode((node) => {
+                    const angle = (index / nodeCount) * 2 * Math.PI;
+                    const radius = 100 + Math.random() * 100;
+                    graph.setNodeAttribute(node, 'x', radius * Math.cos(angle));
+                    graph.setNodeAttribute(node, 'y', radius * Math.sin(angle));
+                    index++;
+                });
+            }
+        }
+
+        // Function to apply circular layout
+        function applyCircularLayout() {
+            if (typeof graphologyLayout !== 'undefined' && graphologyLayout.circular) {
+                graphologyLayout.circular.assign(graph);
+            } else {
+                // Fallback circular layout
+                const nodeCount = graph.order;
+                const angleStep = (2 * Math.PI) / nodeCount;
+                const radius = 200;
+                let index = 0;
+                
+                graph.forEachNode((node) => {
+                    const angle = index * angleStep;
+                    graph.setNodeAttribute(node, 'x', radius * Math.cos(angle));
+                    graph.setNodeAttribute(node, 'y', radius * Math.sin(angle));
+                    index++;
+                });
+            }
+        }
+
+        // Function to update info panel
+        function updateInfo() {
+            document.getElementById('info').style.display = 'block';
+            document.getElementById('nodeCount').innerHTML = `<strong>Nodes:</strong> ${graph.order}`;
+            document.getElementById('edgeCount').innerHTML = `<strong>Edges:</strong> ${graph.size}`;
+        }
+
+        // Function to filter edges by threshold
+        function filterEdges(threshold) {
+            // Clear all edges
+            graph.clearEdges();
+            
+            // Re-add edges that meet the threshold
+            originalEdges.forEach((edge) => {
+                if (edge.weight >= threshold && !graph.hasEdge(edge.source, edge.target)) {
+                    graph.addEdge(edge.source, edge.target, {
+                        weight: edge.weight,
+                        size: Math.log(edge.weight) * 0.5 + 1,
+                        color: '#999',
+                        label: `Score: ${edge.weight}`
+                    });
+                }
+            });
+            
+            updateInfo();
+            renderer.refresh();
+        }
+
+        // Load the default CSV file on page load
+        window.addEventListener('DOMContentLoaded', async () => {
+            try {
+                const response = await fetch('interest_graph.csv');
+                const csvText = await response.text();
+                const data = parseCSV(csvText);
+                createGraph(data);
+            } catch (error) {
+                console.error('Error loading default CSV:', error);
+                document.getElementById('sigma-container').innerHTML = 
+                    '<div class="loading">Error loading graph. Please select a CSV file.</div>';
+            }
+        });
+
+        // File input handler
+        document.getElementById('csvFile').addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    const csvText = e.target.result;
+                    const data = parseCSV(csvText);
+                    createGraph(data);
+                };
+                reader.readAsText(file);
+            }
+        });
+
+        // Reset camera button
+        document.getElementById('resetCamera').addEventListener('click', () => {
+            if (renderer) {
+                renderer.getCamera().setState({ x: 0.5, y: 0.5, ratio: 1 });
+            }
+        });
+
+        // Toggle layout button
+        let currentLayout = 'force';
+        document.getElementById('toggleLayout').addEventListener('click', () => {
+            if (graph) {
+                if (currentLayout === 'force') {
+                    applyCircularLayout();
+                    currentLayout = 'circular';
+                } else {
+                    applyForceLayout();
+                    currentLayout = 'force';
+                }
+                renderer.refresh();
+            }
+        });
+
+        // Edge threshold slider
+        document.getElementById('edgeThreshold').addEventListener('input', (event) => {
+            const threshold = parseInt(event.target.value);
+            document.getElementById('thresholdValue').textContent = threshold;
+            if (graph) {
+                filterEdges(threshold);
+            }
+        });
+    </script>
+</body>
+</html> 
