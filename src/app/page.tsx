@@ -10,110 +10,188 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-cyan-50 to-teal-50">
+    <div className="min-h-screen">
       {/* Hero Section */}
-      <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-cyan-500/10"></div>
-        <div className="relative max-w-4xl mx-auto px-6 py-16 text-center">
-          <div className="mb-6">
-            <span className="text-6xl">🌺</span>
+      <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 via-cyan-50 to-teal-50">
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-cyan-500/5"></div>
+        <div className="relative max-w-4xl mx-auto px-6 py-20 text-center">
+          <div className="mb-8">
+            <span className="text-6xl wave-animation inline-block">🌺</span>
           </div>
-          <h1 className="text-5xl font-bold text-gray-800 mb-6 leading-tight">
-            Find your perfect collaborator at
+          
+          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+            Find your perfect
             <br />
             <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
-              Honolulu Tech Week
+              collaborator
             </span>
           </h1>
-          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-            Create a quick profile, explore the interest graph, send a collaborate request,
-            and spin up a mini event draft—in minutes.
+          
+          <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto leading-relaxed">
+            Create a profile, explore the interest graph, send collaborate requests, 
+            and spin up event drafts—all in minutes during Honolulu Tech Week.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Link 
-              href="/submit" 
-              className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold py-4 px-8 rounded-2xl hover:from-blue-600 hover:to-cyan-600 transition-colors text-lg shadow-lg"
-            >
-              🚀 Create your collab profile
+          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+            <Link href="/submit" className="btn-primary text-lg px-8 py-4">
+              🚀 Create Your Profile
             </Link>
-            <Link 
-              href="/graph" 
-              className="bg-white text-gray-700 font-semibold py-4 px-8 rounded-2xl hover:bg-gray-50 transition-colors text-lg shadow-lg border border-gray-200"
-            >
-              🌊 Open interest graph
+            <Link href="/graph" className="btn-secondary text-lg px-8 py-4">
+              🌊 Explore Graph
             </Link>
           </div>
+        </div>
+      </section>
 
-          {/* Feature Cards */}
-          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-blue-100">
-              <div className="text-3xl mb-4">👤</div>
-              <div className="font-bold text-lg text-gray-800 mb-2">1) Submit Profile</div>
-              <div className="text-gray-600">
-                Name, role, city, skills (with levels), interests. Takes 2 minutes to complete.
+      {/* How It Works */}
+      <section className="py-16 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+              How HTW Collab Works
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Three simple steps to discover amazing collaboration opportunities
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="card-hover text-center">
+              <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl flex items-center justify-center text-3xl mb-6 mx-auto">
+                👤
               </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
+                1. Submit Profile
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Share your name, role, skills with levels (B/I/A), interests, and availability. 
+                Takes just 2 minutes to complete.
+              </p>
             </div>
             
-            <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-cyan-100">
-              <div className="text-3xl mb-4">🎯</div>
-              <div className="font-bold text-lg text-gray-800 mb-2">2) Explore Graph</div>
-              <div className="text-gray-600">
-                Interactive visual graph. Click an interest to see people in that category.
+            <div className="card-hover text-center">
+              <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-teal-500 rounded-2xl flex items-center justify-center text-3xl mb-6 mx-auto">
+                🎯
               </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
+                2. Explore Graph
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Interactive network visualization connects people through shared interests. 
+                Click to filter and discover potential collaborators.
+              </p>
             </div>
             
-            <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow border border-teal-100">
-              <div className="text-3xl mb-4">🤝</div>
-              <div className="font-bold text-lg text-gray-800 mb-2">3) Collaborate → Event</div>
-              <div className="text-gray-600">
-                Send request, accept, auto-create a mini event draft with action items.
+            <div className="card-hover text-center">
+              <div className="w-16 h-16 bg-gradient-to-r from-teal-500 to-green-500 rounded-2xl flex items-center justify-center text-3xl mb-6 mx-auto">
+                🤝
               </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-3">
+                3. Collaborate & Create
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Send collaboration requests and auto-generate event drafts with 
+                pre-filled templates and action items.
+              </p>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* Stats Section */}
-      <div className="bg-white/50 backdrop-blur-sm py-12">
-        <div className="max-w-2xl mx-auto text-center px-6">
-          <h2 className="text-2xl font-bold text-gray-800 mb-4">
-            Join Hawaii's Growing Tech Community
+      {/* Why HTW Compass Works */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Why HTW Collab Works
           </h2>
-          <p className="text-gray-600 mb-8">
+          <p className="text-gray-600 text-lg mb-12 max-w-2xl mx-auto">
+            Built specifically for the unique energy and time constraints of Honolulu Tech Week
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="text-4xl mb-4">⚡</div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Speed</h3>
+              <p className="text-gray-600 text-sm">
+                Go from stranger to collaborator in under 5 minutes with smart templates
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="text-4xl mb-4">💡</div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Creativity</h3>
+              <p className="text-gray-600 text-sm">
+                Visual interest graph reveals unexpected collaboration opportunities
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <div className="text-4xl mb-4">🎯</div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Impact</h3>
+              <p className="text-gray-600 text-sm">
+                Focus on building instead of networking with structured event drafts
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Community Stats */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Join Hawaii&apos;s Growing Tech Community
+          </h2>
+          <p className="text-gray-600 text-lg mb-12">
             Connect with engineers, designers, PMs, and founders across the Pacific
           </p>
           
-          <div className="grid grid-cols-2 gap-8">
-            <div>
-              <div className="text-3xl font-bold text-blue-600">25+</div>
-              <div className="text-gray-600">Active Members</div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent mb-2">
+                25+
+              </div>
+              <div className="text-gray-600 text-sm">Active Members</div>
             </div>
-            <div>
-              <div className="text-3xl font-bold text-cyan-600">15+</div>
-              <div className="text-gray-600">Interest Areas</div>
+            <div className="text-center">
+              <div className="text-4xl font-bold bg-gradient-to-r from-cyan-600 to-teal-600 bg-clip-text text-transparent mb-2">
+                15+
+              </div>
+              <div className="text-gray-600 text-sm">Interest Areas</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold bg-gradient-to-r from-teal-600 to-green-600 bg-clip-text text-transparent mb-2">
+                10+
+              </div>
+              <div className="text-gray-600 text-sm">Cities</div>
+            </div>
+            <div className="text-center">
+              <div className="text-4xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent mb-2">
+                24/7
+              </div>
+              <div className="text-gray-600 text-sm">Collaboration</div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* CTA Section */}
-      <div className="py-16 text-center">
-        <div className="max-w-2xl mx-auto px-6">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+      <section className="py-20 bg-gradient-to-r from-blue-500 to-cyan-500">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-4xl font-bold text-white mb-4">
             Ready to start collaborating?
           </h2>
-          <p className="text-gray-600 mb-8">
+          <p className="text-white/90 text-xl mb-8 max-w-2xl mx-auto">
             Create your profile and discover amazing collaboration opportunities in paradise 🏝️
           </p>
           <Link 
             href="/submit" 
-            className="inline-block bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold py-4 px-8 rounded-2xl hover:from-blue-600 hover:to-cyan-600 transition-colors text-lg shadow-lg"
+            className="inline-flex items-center gap-2 bg-white text-blue-600 font-semibold py-4 px-8 rounded-xl hover:bg-gray-50 transition-colors text-lg shadow-lg"
           >
             Get Started Now →
           </Link>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

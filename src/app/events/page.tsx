@@ -23,33 +23,33 @@ export default function EventsPage() {
       <div className="min-h-screen bg-gradient-to-br from-blue-50 via-cyan-50 to-teal-50 py-8">
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center mb-8">
-            <div className="text-4xl mb-4">🤝</div>
-            <h1 className="text-3xl font-bold text-gray-800 mb-2">
+            <div className="text-5xl mb-4">🗓️</div>
+            <h1 className="text-4xl font-bold text-gray-900 mb-3">
               Collaboration Events
             </h1>
-            <p className="text-gray-600">
+            <p className="text-gray-600 text-lg">
               Event drafts created through collaboration requests will appear here
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl shadow-lg p-12 text-center">
-            <div className="text-6xl mb-4">🌺</div>
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">
+          <div className="card text-center py-16">
+            <div className="text-6xl mb-6">🌺</div>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">
               No events yet!
             </h2>
-            <p className="text-gray-600 mb-6 max-w-md mx-auto">
+            <p className="text-gray-600 mb-8 max-w-lg mx-auto text-lg">
               Start collaborating with other community members to create your first event draft.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="/graph"
-                className="bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold py-3 px-6 rounded-lg hover:from-blue-600 hover:to-cyan-600 transition-colors"
+                className="btn-primary inline-flex items-center gap-2"
               >
                 🌊 Explore Graph
               </a>
               <a
                 href="/submit"
-                className="bg-white text-gray-700 font-semibold py-3 px-6 rounded-lg hover:bg-gray-50 transition-colors border border-gray-200"
+                className="btn-secondary inline-flex items-center gap-2"
               >
                 👤 Create Profile
               </a>
@@ -65,74 +65,72 @@ export default function EventsPage() {
       <div className="max-w-4xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-8">
-          <div className="text-4xl mb-4">🤝</div>
-          <h1 className="text-3xl font-bold text-gray-800 mb-2">
+          <div className="text-5xl mb-4">🗓️</div>
+          <h1 className="text-4xl font-bold text-gray-900 mb-3">
             Collaboration Events
           </h1>
-          <p className="text-gray-600">
+          <p className="text-gray-600 text-lg">
             Track your collaboration event drafts and upcoming meetings
           </p>
-          <div className="mt-4">
-            <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium">
+          <div className="mt-6">
+            <span className="badge-success text-base px-4 py-2">
               {events.length} {events.length === 1 ? 'event' : 'events'} created
             </span>
           </div>
         </div>
 
         {/* Events List */}
-        <div className="space-y-6">
+        <div className="space-y-8">
           {events.map((event) => (
             <div
               key={event.id}
-              className="bg-white rounded-2xl shadow-lg p-6 hover:shadow-xl transition-shadow"
+              className="card group hover:shadow-xl transition-all duration-300"
             >
               {/* Event Header */}
-              <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-4">
-                <div className="mb-4 md:mb-0">
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">
+              <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-4 mb-6">
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors">
                     {event.title}
                   </h3>
-                  <div className="flex flex-wrap gap-2 text-sm text-gray-600">
+                  <div className="flex flex-wrap gap-4 text-sm text-gray-600">
                     {event.when && (
-                      <span className="flex items-center gap-1">
-                        <span>📅</span>
-                        {event.when}
+                      <span className="flex items-center gap-2 pill">
+                        📅 {event.when}
                       </span>
                     )}
                     {event.where && (
-                      <span className="flex items-center gap-1">
-                        <span>📍</span>
-                        {event.where}
+                      <span className="flex items-center gap-2 pill">
+                        📍 {event.where}
                       </span>
                     )}
                   </div>
                 </div>
                 <div className="text-right">
-                  <div className="text-xs text-gray-500">
+                  <div className="badge-secondary">
                     Created {new Date(event.createdAt).toLocaleDateString()}
                   </div>
                 </div>
               </div>
 
               {/* Members */}
-              <div className="mb-4">
-                <h4 className="text-sm font-semibold text-gray-700 mb-2">
-                  Collaboration Partners
+              <div className="mb-6">
+                <h4 className="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                  🤝 Collaboration Partners ({event.members.length})
                 </h4>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-3">
                   {event.members.map((member) => (
                     <div
                       key={member.id}
-                      className="flex items-center gap-2 bg-blue-50 rounded-lg px-3 py-2"
+                      className="flex items-center gap-3 bg-blue-50 rounded-xl px-4 py-3 border border-blue-100 hover:bg-blue-100 transition-colors"
                     >
-                      <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center text-white text-sm font-bold">
+                      <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center text-white font-bold">
                         {member.name.charAt(0)}
                       </div>
                       <div>
-                        <div className="font-medium text-gray-800 text-sm">
+                        <div className="font-semibold text-gray-900">
                           {member.name}
                         </div>
-                        <div className="text-xs text-blue-600">
+                        <div className="text-sm text-blue-600 font-medium">
                           {member.role}
                         </div>
                       </div>
@@ -143,30 +141,32 @@ export default function EventsPage() {
 
               {/* Description */}
               {event.description && (
-                <div className="mb-4">
-                  <h4 className="text-sm font-semibold text-gray-700 mb-2">
-                    Project Description
+                <div className="mb-6">
+                  <h4 className="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                    📝 Project Description
                   </h4>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    {event.description}
-                  </p>
+                  <div className="bg-gray-50 rounded-xl p-4">
+                    <p className="text-gray-700 leading-relaxed">
+                      {event.description}
+                    </p>
+                  </div>
                 </div>
               )}
 
               {/* Checklist */}
               {event.checklist.length > 0 && (
-                <div className="mb-4">
-                  <h4 className="text-sm font-semibold text-gray-700 mb-2">
-                    Action Items
+                <div className="mb-6">
+                  <h4 className="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                    ✅ Action Items ({event.checklist.length})
                   </h4>
-                  <div className="space-y-2">
+                  <div className="space-y-3">
                     {event.checklist.map((item, index) => (
                       <div
                         key={index}
-                        className="flex items-start gap-2 p-2 bg-gray-50 rounded-lg"
+                        className="flex items-start gap-3 p-3 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors group/item"
                       >
-                        <div className="w-5 h-5 border-2 border-gray-300 rounded mt-0.5 flex-shrink-0"></div>
-                        <span className="text-sm text-gray-700">{item}</span>
+                        <div className="w-5 h-5 border-2 border-gray-400 rounded mt-1 flex-shrink-0 group-hover/item:border-green-500 transition-colors"></div>
+                        <span className="text-gray-700 leading-relaxed">{item}</span>
                       </div>
                     ))}
                   </div>
@@ -174,14 +174,14 @@ export default function EventsPage() {
               )}
 
               {/* Actions */}
-              <div className="flex gap-3 pt-4 border-t border-gray-100">
-                <button className="flex-1 bg-gradient-to-r from-blue-500 to-cyan-500 text-white py-2 px-4 rounded-lg hover:from-blue-600 hover:to-cyan-600 transition-colors text-sm font-medium">
+              <div className="flex flex-col sm:flex-row gap-3 pt-6 border-t border-gray-200">
+                <button className="btn-primary flex-1 inline-flex items-center justify-center gap-2">
                   📝 Edit Details
                 </button>
-                <button className="flex-1 bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 transition-colors text-sm font-medium">
+                <button className="btn-success flex-1 inline-flex items-center justify-center gap-2">
                   ✅ Mark Complete
                 </button>
-                <button className="px-4 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors text-sm">
+                <button className="btn-ghost px-6 inline-flex items-center justify-center gap-2">
                   📤 Share
                 </button>
               </div>
@@ -190,13 +190,17 @@ export default function EventsPage() {
         </div>
 
         {/* Footer Actions */}
-        <div className="mt-12 text-center">
-          <p className="text-gray-600 mb-4">
+        <div className="mt-16 card bg-gradient-to-r from-blue-50 to-cyan-50 border-blue-200 text-center">
+          <div className="text-4xl mb-4">🚀</div>
+          <h3 className="text-2xl font-bold text-gray-900 mb-3">
             Ready to create more collaborations?
+          </h3>
+          <p className="text-gray-600 mb-6 text-lg max-w-2xl mx-auto">
+            The community is growing every day. Jump back into the interest graph to discover new collaboration opportunities!
           </p>
           <a
             href="/graph"
-            className="inline-block bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold py-3 px-6 rounded-lg hover:from-blue-600 hover:to-cyan-600 transition-colors"
+            className="btn-primary inline-flex items-center gap-2"
           >
             🌊 Back to Interest Graph
           </a>

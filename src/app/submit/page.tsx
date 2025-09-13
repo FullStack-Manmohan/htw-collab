@@ -46,7 +46,7 @@ export default function SubmitPage() {
     e.preventDefault();
     
     if (!formData.name.trim() || !formData.role.trim() || skills.length === 0 || interests.length === 0) {
-      alert('Please fill in all required fields');
+      alert('Please fill in all required fields (name, role, at least one skill, and one interest)');
       return;
     }
 
@@ -64,6 +64,19 @@ export default function SubmitPage() {
 
     addProfile(profile);
     router.push('/graph');
+  };
+
+  const handleReset = () => {
+    setFormData({
+      name: '',
+      role: '',
+      city: 'Honolulu',
+      bio: '',
+      availability: 'Flexible'
+    });
+    setSkills([]);
+    setInterests([]);
+    setInterestInput('');
   };
 
   const addInterest = (interest: string) => {
@@ -87,122 +100,135 @@ export default function SubmitPage() {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-cyan-50 to-teal-50 py-8">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-cyan-50 to-teal-50 py-12">
       <div className="max-w-2xl mx-auto px-6">
-        <div className="bg-white rounded-2xl shadow-lg p-8">
-          {/* Header */}
-          <div className="text-center mb-8">
-            <div className="text-4xl mb-4">🌺</div>
-            <h1 className="text-3xl font-bold text-gray-800 mb-2">
-              Create Your Collab Profile
-            </h1>
-            <p className="text-gray-600">
-              Share your skills and interests to find amazing collaboration opportunities
-            </p>
-          </div>
+        {/* Header */}
+        <div className="text-center mb-8">
+          <div className="text-5xl mb-4">🌺</div>
+          <h1 className="text-4xl font-bold text-gray-900 mb-3">
+            Create Your Profile
+          </h1>
+          <p className="text-gray-600 text-lg">
+            Share your skills and interests to find amazing collaboration opportunities
+          </p>
+        </div>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Name */}
+        <div className="card">
+          <form onSubmit={handleSubmit} className="space-y-8">
+            {/* Basic Info Section */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Full Name *
-              </label>
-              <input
-                type="text"
-                value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                placeholder="Your full name"
-                required
-              />
+              <h2 className="text-xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
+                <span>👤</span> Basic Information
+              </h2>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Full Name *
+                  </label>
+                  <input
+                    type="text"
+                    value={formData.name}
+                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                    className="form-input"
+                    placeholder="Your full name"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Role *
+                  </label>
+                  <select
+                    value={formData.role}
+                    onChange={(e) => setFormData({ ...formData, role: e.target.value })}
+                    className="form-select"
+                    required
+                  >
+                    <option value="">Select your role</option>
+                    {ROLES.map(role => (
+                      <option key={role} value={role}>{role}</option>
+                    ))}
+                  </select>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    City
+                  </label>
+                  <input
+                    type="text"
+                    value={formData.city}
+                    onChange={(e) => setFormData({ ...formData, city: e.target.value })}
+                    className="form-input"
+                    placeholder="Your city"
+                  />
+                  <p className="text-xs text-gray-500 mt-1">Default: Honolulu</p>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">
+                    Availability
+                  </label>
+                  <select
+                    value={formData.availability}
+                    onChange={(e) => setFormData({ ...formData, availability: e.target.value as "Weeknights" | "Weekends" | "Flexible" })}
+                    className="form-select"
+                  >
+                    <option value="Flexible">Flexible</option>
+                    <option value="Weeknights">Weeknights</option>
+                    <option value="Weekends">Weekends</option>
+                  </select>
+                </div>
+              </div>
+
+              <div className="mt-4">
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  Bio
+                </label>
+                <textarea
+                  value={formData.bio}
+                  onChange={(e) => setFormData({ ...formData, bio: e.target.value })}
+                  rows={3}
+                  className="form-textarea"
+                  placeholder="Tell us about yourself and what you're passionate about..."
+                />
+                <p className="text-xs text-gray-500 mt-1">
+                  Share your background, current projects, or what excites you about tech
+                </p>
+              </div>
             </div>
 
-            {/* Role */}
+            {/* Skills Section */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Role *
-              </label>
-              <select
-                value={formData.role}
-                onChange={(e) => setFormData({ ...formData, role: e.target.value })}
-                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                required
-              >
-                <option value="">Select your role</option>
-                {ROLES.map(role => (
-                  <option key={role} value={role}>{role}</option>
-                ))}
-              </select>
-            </div>
-
-            {/* City */}
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                City
-              </label>
-              <input
-                type="text"
-                value={formData.city}
-                onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                placeholder="Your city"
-              />
-            </div>
-
-            {/* Bio */}
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Bio
-              </label>
-              <textarea
-                value={formData.bio}
-                onChange={(e) => setFormData({ ...formData, bio: e.target.value })}
-                rows={3}
-                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                placeholder="Tell us about yourself and what you're passionate about..."
-              />
-            </div>
-
-            {/* Availability */}
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Availability
-              </label>
-              <select
-                value={formData.availability}
-                onChange={(e) => setFormData({ ...formData, availability: e.target.value as any })}
-                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-              >
-                <option value="Flexible">Flexible</option>
-                <option value="Weeknights">Weeknights</option>
-                <option value="Weekends">Weekends</option>
-              </select>
-            </div>
-
-            {/* Skills */}
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Skills & Expertise *
-              </label>
+              <h2 className="text-xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
+                <span>⚡</span> Skills & Expertise *
+              </h2>
               <SkillChips
                 skills={skills}
                 onChange={setSkills}
                 className="w-full"
               />
+              <p className="text-xs text-gray-500 mt-2">
+                Add your technical skills and mark your level: B=Beginner, I=Intermediate, A=Advanced
+              </p>
             </div>
 
-            {/* Interests */}
+            {/* Interests Section */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
-                Interests *
-              </label>
+              <h2 className="text-xl font-semibold text-gray-900 mb-4 flex items-center gap-2">
+                <span>🎯</span> Interests *
+              </h2>
               
               {/* Interest chips */}
               <div className="flex flex-wrap gap-2 mb-4">
                 {interests.map((interest) => (
                   <span
                     key={interest}
-                    className="inline-flex items-center gap-1 bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm"
+                    className="inline-flex items-center gap-1 badge-primary"
                   >
                     {interest}
                     <button
@@ -234,8 +260,8 @@ export default function SubmitPage() {
                       setShowInterestSuggestions(false);
                     }
                   }}
-                  placeholder="Add interests (comma-separated or one by one)..."
-                  className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  placeholder="Type and press Enter to add interests..."
+                  className="form-input"
                 />
 
                 {/* Interest suggestions */}
@@ -246,7 +272,7 @@ export default function SubmitPage() {
                         key={suggestion}
                         type="button"
                         onClick={() => addInterest(suggestion)}
-                        className="w-full text-left px-3 py-2 hover:bg-gray-100 focus:bg-gray-100"
+                        className="w-full text-left px-3 py-2 hover:bg-gray-100 focus:bg-gray-100 text-sm"
                       >
                         {suggestion}
                       </button>
@@ -255,18 +281,25 @@ export default function SubmitPage() {
                 )}
               </div>
 
-              <div className="mt-2 text-xs text-gray-500">
-                Type and press Enter to add interests. Popular: AI, Climate, Community, Web3, Design
-              </div>
+              <p className="text-xs text-gray-500 mt-2">
+                Popular: AI, Climate, Community, Web3, Design, Open Source
+              </p>
             </div>
 
-            {/* Submit */}
-            <div className="pt-4">
+            {/* Action Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 pt-6">
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-blue-500 to-cyan-500 text-white font-semibold py-4 px-6 rounded-lg hover:from-blue-600 hover:to-cyan-600 transition-colors text-lg"
+                className="btn-primary flex-1 text-lg py-3"
               >
-                🚀 Create Profile & Explore Graph
+                🚀 Save & Explore Graph
+              </button>
+              <button
+                type="button"
+                onClick={handleReset}
+                className="btn-secondary sm:w-auto px-6"
+              >
+                Reset
               </button>
             </div>
           </form>

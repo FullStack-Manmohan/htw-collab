@@ -66,9 +66,9 @@ export default function SkillChips({ skills, onChange, className = '' }: SkillCh
               onChange={(e) => updateSkillLevel(skill.name, Number(e.target.value) as 1 | 2 | 3)}
               className="bg-transparent border-none text-xs font-bold ml-1"
             >
-              <option value={1}>B</option>
-              <option value={2}>I</option>
-              <option value={3}>A</option>
+              <option value={1}>{LEVEL_LABELS[1]}</option>
+              <option value={2}>{LEVEL_LABELS[2]}</option>
+              <option value={3}>{LEVEL_LABELS[3]}</option>
             </select>
             <button
               onClick={() => removeSkill(skill.name)}

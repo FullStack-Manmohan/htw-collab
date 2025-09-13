@@ -32,18 +32,20 @@ function FallbackGraph({ onInterestClick, onPersonClick, selectedInterest }: Int
   const profiles = getProfiles();
 
   return (
-    <div className="w-full h-96 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-6 overflow-auto">
-      <div className="mb-4">
-        <h3 className="text-lg font-semibold text-gray-800 mb-2">🌊 Explore Interests</h3>
+    <div className="w-full h-96 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-6 overflow-auto border border-blue-100">
+      <div className="mb-6">
+        <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center gap-2">
+          🌊 Explore Interests
+        </h3>
         <div className="flex flex-wrap gap-2">
           {interests.map((interest) => (
             <button
               key={interest}
               onClick={() => onInterestClick(interest)}
-              className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
+              className={`chip transition-all duration-200 ${
                 selectedInterest === interest
-                  ? 'bg-blue-500 text-white'
-                  : 'bg-white text-blue-600 hover:bg-blue-100'
+                  ? 'chip-selected'
+                  : 'hover:bg-blue-50 hover:border-blue-300'
               }`}
             >
               {interest}
@@ -54,20 +56,29 @@ function FallbackGraph({ onInterestClick, onPersonClick, selectedInterest }: Int
       
       {selectedInterest && (
         <div>
-          <h4 className="text-md font-medium text-gray-700 mb-2">
-            People interested in {selectedInterest}:
+          <h4 className="text-lg font-semibold text-gray-900 mb-3 flex items-center gap-2">
+            👥 People interested in {selectedInterest}
           </h4>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
             {profiles
               .filter(p => p.interests.includes(selectedInterest))
               .map((profile) => (
                 <button
                   key={profile.id}
                   onClick={() => onPersonClick(profile)}
-                  className="text-left p-3 bg-white rounded-lg hover:shadow-md transition-shadow"
+                  className="text-left p-4 bg-white rounded-xl border border-gray-200 hover:border-blue-300 hover:shadow-md transition-all duration-200 group"
                 >
-                  <div className="font-medium">{profile.name}</div>
-                  <div className="text-sm text-gray-600">{profile.role}</div>
+                  <div className="flex items-center gap-3">
+                    <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center text-white font-bold">
+                      {profile.name.charAt(0)}
+                    </div>
+                    <div>
+                      <div className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                        {profile.name}
+                      </div>
+                      <div className="text-sm text-gray-600">{profile.role}</div>
+                    </div>
+                  </div>
                 </button>
               ))}
           </div>
@@ -83,7 +94,7 @@ export default function InterestGraph({ onInterestClick, onPersonClick, selected
     nodes: [], 
     links: [] 
   });
-  const forceGraphRef = useRef<any>(null);
+  const forceGraphRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     try {
@@ -136,10 +147,11 @@ export default function InterestGraph({ onInterestClick, onPersonClick, selected
 
   try {
     // Dynamic import to handle potential SSR issues
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
     const ForceGraph2D = require('react-force-graph').ForceGraph2D;
 
     return (
-      <div className="w-full h-96 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl overflow-hidden">
+      <div className="relative w-full h-96 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl overflow-hidden border border-blue-100">
         <ForceGraph2D
           ref={forceGraphRef}
           width={800}
@@ -188,12 +200,12 @@ export default function InterestGraph({ onInterestClick, onPersonClick, selected
           }}
         />
         
-        <div className="absolute bottom-2 right-2">
+        <div className="absolute bottom-3 right-3">
           <button
             onClick={() => setUseGraph(false)}
-            className="text-xs bg-white/80 px-2 py-1 rounded text-gray-600 hover:bg-white"
+            className="btn-ghost text-xs px-3 py-1.5 bg-white/90 backdrop-blur-sm border border-gray-300"
           >
-            Switch to List View
+            📋 Switch to List View
           </button>
         </div>
       </div>
