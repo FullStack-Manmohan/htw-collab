@@ -1,10 +1,11 @@
 import { Profile } from '../types/Profile';
 import { CollabRequest } from '../types/Request';
 import { EventDraft } from '../types/Event';
-import { generateProfiles } from './generate-profiles';
+import { seedProfiles } from './seed';
+import { generatedProfiles } from './generated-profiles';
 
-// In-memory storage - generate 200 profiles based on interest taxonomy
-let profiles: Profile[] = generateProfiles(200);
+// In-memory storage - combine seed profiles with generated profiles
+let profiles: Profile[] = [...seedProfiles, ...generatedProfiles];
 let requests: CollabRequest[] = [];
 let events: EventDraft[] = [];
 

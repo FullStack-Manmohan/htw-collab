@@ -6,7 +6,6 @@ import { getProfiles } from '../lib/store';
 import { 
   parseInterestHierarchy, 
   createVisualizationGraph,
-  createVisualizationGraphWithPeople,
   getInterestsByCategory,
   getRelatedInterests,
   type SemanticGraphData,
@@ -56,14 +55,8 @@ const CustomForceGraph = ({ graphData, onNodeClick, width = 800, height = 384 }:
         .selectAll('line')
         .data(links)
         .enter().append('line')
-        .attr('stroke', (d: any) => {
-          if (d.type === 'person-interest') return '#f59e0b';
-          return '#94a3b8';
-        })
-        .attr('stroke-width', (d: any) => {
-          if (d.type === 'person-interest') return 2;
-          return Math.sqrt(d.weight || 1) * 1.5;
-        })
+        .attr('stroke', '#94a3b8')
+        .attr('stroke-width', (d: any) => Math.sqrt(d.weight || 1) * 1.5)
         .attr('stroke-opacity', 0.6);
 
       // Create nodes
@@ -71,16 +64,8 @@ const CustomForceGraph = ({ graphData, onNodeClick, width = 800, height = 384 }:
         .selectAll('circle')
         .data(nodes)
         .enter().append('circle')
-        .attr('r', (d: any) => {
-          if (d.type === 'category') return 12;
-          if (d.type === 'person') return 8;
-          return 6;
-        })
-        .attr('fill', (d: any) => {
-          if (d.type === 'category') return '#3b82f6';
-          if (d.type === 'interest') return '#06b6d4';
-          return '#f59e0b'; // person
-        })
+        .attr('r', 8)
+        .attr('fill', '#06b6d4') // All nodes are interests (cyan)
         .attr('stroke', '#fff')
         .attr('stroke-width', 2)
         .style('cursor', 'pointer')
@@ -622,7 +607,6 @@ export default function InterestGraph({ onInterestClick, onPersonClick, selected
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [useForceGraph, setUseForceGraph] = useState(true);
-  const profiles = getProfiles();
 
   // Load and parse semantic data
   useEffect(() => {
@@ -636,6 +620,15 @@ export default function InterestGraph({ onInterestClick, onPersonClick, selected
       });
       
       setSemanticData(data);
+      
+      // Convert to force-graph format
+      const vizData = createVisualizationGraph(data);
+      console.log('✅ Created visualization data:', {
+        nodes: vizData.nodes.length,
+        links: vizData.links.length
+      });
+      
+      setGraphData(vizData);
       setLoading(false);
     } catch (err) {
       console.error('❌ Error loading semantic data:', err);
@@ -643,32 +636,6 @@ export default function InterestGraph({ onInterestClick, onPersonClick, selected
       setLoading(false);
     }
   }, []);
-
-  // Update graph data when selectedInterest or profiles change
-  useEffect(() => {
-    if (!semanticData) return;
-
-    try {
-      // Use the new function that includes people
-      const vizData = createVisualizationGraphWithPeople(
-        semanticData, 
-        profiles, 
-        selectedInterest, 
-        15 // Max 15 people to keep graph readable
-      );
-      
-      console.log('✅ Created visualization data with people:', {
-        nodes: vizData.nodes.length,
-        links: vizData.links.length,
-        people: vizData.nodes.filter(n => n.type === 'person').length
-      });
-      
-      setGraphData(vizData);
-    } catch (err) {
-      console.error('❌ Error creating graph data:', err);
-      setError(err instanceof Error ? err.message : 'Failed to create graph');
-    }
-  }, [semanticData, selectedInterest, profiles]);
 
   // Loading state
   if (loading) {
@@ -733,11 +700,8 @@ export default function InterestGraph({ onInterestClick, onPersonClick, selected
           <CustomForceGraph
             graphData={graphData}
             onNodeClick={(node: any) => {
-              if (node.type === 'interest') {
-                onInterestClick(node.name);
-              } else if (node.type === 'person' && node.profile) {
-                onPersonClick(node.profile);
-              }
+              // All nodes are interests now
+              onInterestClick(node.name);
             }}
             width={800}
             height={384}
@@ -746,18 +710,10 @@ export default function InterestGraph({ onInterestClick, onPersonClick, selected
         
         <div className="mt-4 flex items-center gap-4 text-sm text-gray-600">
           <div className="flex items-center gap-2">
-            <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
-            <span>Categories</span>
-          </div>
-          <div className="flex items-center gap-2">
             <div className="w-3 h-3 bg-cyan-500 rounded-full"></div>
             <span>Interests</span>
           </div>
-          <div className="flex items-center gap-2">
-            <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-            <span>People</span>
-          </div>
-          <span className="text-gray-500">• Click nodes to explore • Hover to highlight connections</span>
+          <span className="text-gray-500">• Click nodes to explore • Hover to highlight connections • Drag to rearrange</span>
         </div>
       </div>
     );

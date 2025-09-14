@@ -3,10 +3,9 @@
 export interface SemanticNode {
   id: string;
   name: string;
-  type: 'category' | 'interest' | 'person';
-  level: number; // 0 = top-level category, 1 = sub-interest, 2 = person
+  type: 'category' | 'interest';
+  level: number; // 0 = top-level category, 1 = sub-interest
   category?: string; // parent category for sub-interests
-  profile?: any; // Profile data for person nodes
   x?: number;
   y?: number;
   fx?: number;
@@ -17,7 +16,7 @@ export interface SemanticLink {
   source: string;
   target: string;
   weight: number; // 0-1, conceptual similarity
-  type: 'hierarchical' | 'semantic' | 'person-interest';
+  type: 'hierarchical' | 'semantic';
 }
 
 export interface SemanticGraphData {
@@ -215,185 +214,35 @@ export function getRelatedInterests(
     .sort((a, b) => b.weight - a.weight);
 }
 
-// Create a simplified graph for visualization
+// Create a simplified graph for visualization - INTERESTS ONLY
 export function createVisualizationGraph(
   data: SemanticGraphData,
   focusCategory?: string
 ): { nodes: SemanticNode[]; links: SemanticLink[] } {
   if (focusCategory) {
-    // Filter to show only one category and its interests
-    const categoryNode = data.nodes.find(n => n.name === focusCategory && n.type === 'category');
+    // Filter to show only interests from the specified category
     const categoryInterests = getInterestsByCategory(data, focusCategory);
     
-    const nodes = categoryNode ? [categoryNode, ...categoryInterests] : categoryInterests;
-    
-    // Include hierarchical links and high-weight semantic links
+    // Include semantic links between these interests
     const links = data.links.filter(link => 
-      (link.type === 'hierarchical' && nodes.some(n => n.id === link.source || n.id === link.target)) ||
-      (link.type === 'semantic' && link.weight > 0.5 && 
-       nodes.some(n => n.id === link.source) && nodes.some(n => n.id === link.target))
+      link.type === 'semantic' && link.weight > 0.4 && 
+      categoryInterests.some(n => n.id === link.source) && 
+      categoryInterests.some(n => n.id === link.target)
     );
     
-    return { nodes, links };
+    return { nodes: categoryInterests, links };
   }
   
-  // Show all categories and high-level semantic connections
-  const categoryNodes = data.nodes.filter(n => n.type === 'category');
-  const topInterests = data.categories.flatMap(category => 
-    getInterestsByCategory(data, category).slice(0, 3) // Top 3 per category
-  );
+  // Show all interests with semantic connections
+  const interestNodes = data.nodes.filter(n => n.type === 'interest');
   
-  const nodes = [...categoryNodes, ...topInterests];
-  
+  // Only include semantic links with reasonable weights
   const links = data.links.filter(link => 
-    link.weight > 0.6 && 
-    nodes.some(n => n.id === link.source) && 
-    nodes.some(n => n.id === link.target)
+    link.type === 'semantic' && 
+    link.weight > 0.4 && 
+    interestNodes.some(n => n.id === link.source) && 
+    interestNodes.some(n => n.id === link.target)
   );
   
-  return { nodes, links };
-}
-
-// Create visualization graph with people nodes based on profiles
-export function createVisualizationGraphWithPeople(
-  data: SemanticGraphData,
-  profiles: any[],
-  selectedInterest?: string,
-  maxPeople: number = 20
-): { nodes: SemanticNode[]; links: SemanticLink[] } {
-  let nodes: SemanticNode[] = [];
-  let links: SemanticLink[] = [];
-
-  if (selectedInterest) {
-    // Show selected interest, its category, related interests, and people with that interest
-    const interestNode = data.nodes.find(n => n.name === selectedInterest && n.type === 'interest');
-    if (!interestNode) return { nodes: [], links: [] };
-
-    // Add the selected interest
-    nodes.push(interestNode);
-
-    // Add its category if it exists
-    const categoryNode = data.nodes.find(n => 
-      n.type === 'category' && n.name === interestNode.category
-    );
-    if (categoryNode) {
-      nodes.push(categoryNode);
-      // Add hierarchical link
-      const hierarchicalLink = data.links.find(l => 
-        l.type === 'hierarchical' && 
-        ((l.source === categoryNode.id && l.target === interestNode.id) ||
-         (l.target === categoryNode.id && l.source === interestNode.id))
-      );
-      if (hierarchicalLink) links.push(hierarchicalLink);
-    }
-
-    // Add related interests
-    const relatedInterests = getRelatedInterests(data, selectedInterest, 0.4)
-      .slice(0, 6)
-      .map(item => item.interest);
-    nodes.push(...relatedInterests);
-
-    // Add semantic links for related interests
-    relatedInterests.forEach(relatedInterest => {
-      const semanticLink = data.links.find(l =>
-        l.type === 'semantic' &&
-        ((l.source === interestNode.id && l.target === relatedInterest.id) ||
-         (l.target === interestNode.id && l.source === relatedInterest.id))
-      );
-      if (semanticLink) links.push(semanticLink);
-    });
-
-    // Add people with this interest
-    const peopleWithInterest = profiles
-      .filter(p => p.interests.some((i: string) => i.toLowerCase() === selectedInterest.toLowerCase()))
-      .slice(0, maxPeople);
-
-    peopleWithInterest.forEach(profile => {
-      const personNode: SemanticNode = {
-        id: `person-${profile.id}`,
-        name: profile.name,
-        type: 'person',
-        level: 2,
-        profile
-      };
-      nodes.push(personNode);
-
-      // Link person to the selected interest
-      links.push({
-        source: personNode.id,
-        target: interestNode.id,
-        weight: 1.0,
-        type: 'person-interest'
-      });
-
-      // Link person to other interests they have that are in the graph
-      profile.interests.forEach((interest: string) => {
-        const matchingNode = nodes.find(n => 
-          n.type === 'interest' && 
-          n.name.toLowerCase() === interest.toLowerCase() &&
-          n.id !== interestNode.id
-        );
-        if (matchingNode) {
-          links.push({
-            source: personNode.id,
-            target: matchingNode.id,
-            weight: 0.8,
-            type: 'person-interest'
-          });
-        }
-      });
-    });
-  } else {
-    // Show overview: categories + top interests + some people
-    const categoryNodes = data.nodes.filter(n => n.type === 'category');
-    const topInterests = data.categories.flatMap(category => 
-      getInterestsByCategory(data, category).slice(0, 2) // Top 2 per category
-    );
-    
-    nodes = [...categoryNodes, ...topInterests];
-    
-    // Add semantic links between interests
-    links = data.links.filter(link => 
-      link.weight > 0.6 && 
-      nodes.some(n => n.id === link.source) && 
-      nodes.some(n => n.id === link.target)
-    );
-
-    // Add a few representative people
-    const allInterestsInGraph = topInterests.map(n => n.name);
-    const representativePeople = profiles
-      .filter(p => p.interests.some((i: string) => 
-        allInterestsInGraph.some(gi => gi.toLowerCase() === i.toLowerCase())
-      ))
-      .slice(0, Math.min(10, maxPeople / 2));
-
-    representativePeople.forEach(profile => {
-      const personNode: SemanticNode = {
-        id: `person-${profile.id}`,
-        name: profile.name,
-        type: 'person',
-        level: 2,
-        profile
-      };
-      nodes.push(personNode);
-
-      // Link to their interests that are in the graph
-      profile.interests.forEach((interest: string) => {
-        const matchingNode = nodes.find(n => 
-          n.type === 'interest' && 
-          n.name.toLowerCase() === interest.toLowerCase()
-        );
-        if (matchingNode) {
-          links.push({
-            source: personNode.id,
-            target: matchingNode.id,
-            weight: 0.8,
-            type: 'person-interest'
-          });
-        }
-      });
-    });
-  }
-
-  return { nodes, links };
+  return { nodes: interestNodes, links };
 }
