@@ -31,6 +31,13 @@ interface GraphLink {
   linkType?: 'semantic';
 }
 
+// D3-compatible link format
+interface D3Link {
+  source: string | GraphNode;
+  target: string | GraphNode;
+  weight?: number;
+}
+
 // Custom D3 Force Graph Component
 const CustomForceGraph = ({ 
   graphData, 
@@ -57,6 +64,13 @@ const CustomForceGraph = ({
 
       const { nodes, links } = graphData;
 
+      // Convert links to D3 format (source/target as string IDs)
+      const d3Links = links.map(link => ({
+        source: link.source.id,
+        target: link.target.id,
+        weight: link.weight
+      }));
+
       // Create zoom behavior with type assertion
       const zoomBehavior = d3.zoom<SVGSVGElement, unknown>()
         .scaleExtent([0.1, 4])
@@ -70,21 +84,21 @@ const CustomForceGraph = ({
       // Main group for all graph elements
       const g = svg.append('g');
 
-      // Create simulation with type assertions
+      // Create simulation with proper D3 link format
       const simulation = d3.forceSimulation(nodes as d3.SimulationNodeDatum[])
-        .force('link', d3.forceLink(links).id((d: unknown) => (d as GraphNode).id).distance(60))
-        .force('charge', d3.forceManyBody().strength(-200))
+        .force('link', d3.forceLink(d3Links).id((d: unknown) => (d as GraphNode).id).distance(80))
+        .force('charge', d3.forceManyBody().strength(-300))
         .force('center', d3.forceCenter(width / 2, height / 2))
-        .force('collision', d3.forceCollide().radius(15));
+        .force('collision', d3.forceCollide().radius(20));
 
       // Create links
       const link = g.append('g')
         .selectAll('line')
-        .data(links)
+        .data(d3Links)
         .enter().append('line')
         .attr('stroke', '#94a3b8')
-        .attr('stroke-width', (d: GraphLink) => Math.sqrt(d.weight || 1) * 1.5)
-        .attr('stroke-opacity', 0.6);
+        .attr('stroke-width', (d: D3Link) => Math.sqrt(d.weight || 1) * 2)
+        .attr('stroke-opacity', 0.8);
 
       // Create nodes
       const node = g.append('g')
@@ -123,24 +137,24 @@ const CustomForceGraph = ({
 
       // Add hover effects
       node.on('mouseenter', (event: MouseEvent, d: GraphNode) => {
-        link.style('stroke', (l: GraphLink) => 
+        link.style('stroke', (l: D3Link) => 
           l.source === d || l.target === d ? '#ef4444' : '#94a3b8'
         );
-        link.style('stroke-width', (l: GraphLink) => 
-          l.source === d || l.target === d ? 3 : Math.sqrt(l.weight || 1) * 1.5
+        link.style('stroke-width', (l: D3Link) => 
+          l.source === d || l.target === d ? 3 : Math.sqrt(l.weight || 1) * 2
         );
       }).on('mouseleave', () => {
         link.style('stroke', '#94a3b8');
-        link.style('stroke-width', (d: GraphLink) => Math.sqrt(d.weight || 1) * 1.5);
+        link.style('stroke-width', (d: D3Link) => Math.sqrt(d.weight || 1) * 2);
       });
 
       // Update positions on tick
       simulation.on('tick', () => {
         link
-          .attr('x1', (d: GraphLink) => (d.source as GraphNode).x || 0)
-          .attr('y1', (d: GraphLink) => (d.source as GraphNode).y || 0)
-          .attr('x2', (d: GraphLink) => (d.target as GraphNode).x || 0)
-          .attr('y2', (d: GraphLink) => (d.target as GraphNode).y || 0);
+          .attr('x1', (d: D3Link) => (d.source as GraphNode).x || 0)
+          .attr('y1', (d: D3Link) => (d.source as GraphNode).y || 0)
+          .attr('x2', (d: D3Link) => (d.target as GraphNode).x || 0)
+          .attr('y2', (d: D3Link) => (d.target as GraphNode).y || 0);
 
         node
           .attr('cx', (d: GraphNode) => d.x || 0)
