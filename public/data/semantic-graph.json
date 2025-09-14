@@ -1,0 +1,6042 @@
+{
+  "nodes": [
+    {
+      "id": "category-Sustainability and Ecology",
+      "name": "Sustainability and Ecology",
+      "type": "category",
+      "level": 0
+    },
+    {
+      "id": "interest-Ecology",
+      "name": "Ecology",
+      "type": "interest",
+      "level": 1,
+      "category": "Sustainability and Ecology"
+    },
+    {
+      "id": "interest-Conservation",
+      "name": "Conservation",
+      "type": "interest",
+      "level": 1,
+      "category": "Sustainability and Ecology"
+    },
+    {
+      "id": "interest-Climate Change Science",
+      "name": "Climate Change Science",
+      "type": "interest",
+      "level": 1,
+      "category": "Sustainability and Ecology"
+    },
+    {
+      "id": "interest-Marine Biology",
+      "name": "Marine Biology",
+      "type": "interest",
+      "level": 1,
+      "category": "Sustainability and Ecology"
+    },
+    {
+      "id": "interest-Sustainable Agriculture",
+      "name": "Sustainable Agriculture",
+      "type": "interest",
+      "level": 1,
+      "category": "Sustainability and Ecology"
+    },
+    {
+      "id": "interest-Renewable Energy",
+      "name": "Renewable Energy",
+      "type": "interest",
+      "level": 1,
+      "category": "Sustainability and Ecology"
+    },
+    {
+      "id": "interest-Green Building",
+      "name": "Green Building",
+      "type": "interest",
+      "level": 1,
+      "category": "Sustainability and Ecology"
+    },
+    {
+      "id": "interest-Circular Economy",
+      "name": "Circular Economy",
+      "type": "interest",
+      "level": 1,
+      "category": "Sustainability and Ecology"
+    },
+    {
+      "id": "interest-Waste Reduction",
+      "name": "Waste Reduction",
+      "type": "interest",
+      "level": 1,
+      "category": "Sustainability and Ecology"
+    },
+    {
+      "id": "interest-Land Management",
+      "name": "Land Management",
+      "type": "interest",
+      "level": 1,
+      "category": "Sustainability and Ecology"
+    },
+    {
+      "id": "interest-Reforestation",
+      "name": "Reforestation",
+      "type": "interest",
+      "level": 1,
+      "category": "Sustainability and Ecology"
+    },
+    {
+      "id": "interest-Corporate Social Responsibility",
+      "name": "Corporate Social Responsibility",
+      "type": "interest",
+      "level": 1,
+      "category": "Sustainability and Ecology"
+    },
+    {
+      "id": "category-AEC (Architecture, Eng & Construction)",
+      "name": "AEC (Architecture, Eng & Construction)",
+      "type": "category",
+      "level": 0
+    },
+    {
+      "id": "interest-Architectural Design",
+      "name": "Architectural Design",
+      "type": "interest",
+      "level": 1,
+      "category": "AEC (Architecture, Eng & Construction)"
+    },
+    {
+      "id": "interest-Structural Engineering",
+      "name": "Structural Engineering",
+      "type": "interest",
+      "level": 1,
+      "category": "AEC (Architecture, Eng & Construction)"
+    },
+    {
+      "id": "interest-BIM",
+      "name": "BIM",
+      "type": "interest",
+      "level": 1,
+      "category": "AEC (Architecture, Eng & Construction)"
+    },
+    {
+      "id": "interest-Sustainable Architecture",
+      "name": "Sustainable Architecture",
+      "type": "interest",
+      "level": 1,
+      "category": "AEC (Architecture, Eng & Construction)"
+    },
+    {
+      "id": "interest-Construction Technology",
+      "name": "Construction Technology",
+      "type": "interest",
+      "level": 1,
+      "category": "AEC (Architecture, Eng & Construction)"
+    },
+    {
+      "id": "interest-Smart Cities",
+      "name": "Smart Cities",
+      "type": "interest",
+      "level": 1,
+      "category": "AEC (Architecture, Eng & Construction)"
+    },
+    {
+      "id": "interest-Urban Planning",
+      "name": "Urban Planning",
+      "type": "interest",
+      "level": 1,
+      "category": "AEC (Architecture, Eng & Construction)"
+    },
+    {
+      "id": "interest-Landscape Architecture",
+      "name": "Landscape Architecture",
+      "type": "interest",
+      "level": 1,
+      "category": "AEC (Architecture, Eng & Construction)"
+    },
+    {
+      "id": "interest-Real Estate Investment",
+      "name": "Real Estate Investment",
+      "type": "interest",
+      "level": 1,
+      "category": "AEC (Architecture, Eng & Construction)"
+    },
+    {
+      "id": "interest-PropTech",
+      "name": "PropTech",
+      "type": "interest",
+      "level": 1,
+      "category": "AEC (Architecture, Eng & Construction)"
+    },
+    {
+      "id": "category-AR/VR & Metaverse",
+      "name": "AR/VR & Metaverse",
+      "type": "category",
+      "level": 0
+    },
+    {
+      "id": "interest-Virtual Reality (VR) Development",
+      "name": "Virtual Reality (VR) Development",
+      "type": "interest",
+      "level": 1,
+      "category": "AR/VR & Metaverse"
+    },
+    {
+      "id": "interest-Augmented Reality (AR) Applications",
+      "name": "Augmented Reality (AR) Applications",
+      "type": "interest",
+      "level": 1,
+      "category": "AR/VR & Metaverse"
+    },
+    {
+      "id": "interest-Metaverse Platforms",
+      "name": "Metaverse Platforms",
+      "type": "interest",
+      "level": 1,
+      "category": "AR/VR & Metaverse"
+    },
+    {
+      "id": "interest-Spatial Computing",
+      "name": "Spatial Computing",
+      "type": "interest",
+      "level": 1,
+      "category": "AR/VR & Metaverse"
+    },
+    {
+      "id": "interest-Digital Twins",
+      "name": "Digital Twins",
+      "type": "interest",
+      "level": 1,
+      "category": "AR/VR & Metaverse"
+    },
+    {
+      "id": "interest-Game Design",
+      "name": "Game Design",
+      "type": "interest",
+      "level": 1,
+      "category": "AR/VR & Metaverse"
+    },
+    {
+      "id": "interest-Interactive Storytelling",
+      "name": "Interactive Storytelling",
+      "type": "interest",
+      "level": 1,
+      "category": "AR/VR & Metaverse"
+    },
+    {
+      "id": "interest-3D Printing",
+      "name": "3D Printing",
+      "type": "interest",
+      "level": 1,
+      "category": "AR/VR & Metaverse"
+    },
+    {
+      "id": "interest-Animation & Motion Graphics",
+      "name": "Animation & Motion Graphics",
+      "type": "interest",
+      "level": 1,
+      "category": "AR/VR & Metaverse"
+    },
+    {
+      "id": "category-Hawaiian Art and Culture",
+      "name": "Hawaiian Art and Culture",
+      "type": "category",
+      "level": 0
+    },
+    {
+      "id": "interest-Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "name": "Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "type": "interest",
+      "level": 1,
+      "category": "Hawaiian Art and Culture"
+    },
+    {
+      "id": "interest-Hula",
+      "name": "Hula",
+      "type": "interest",
+      "level": 1,
+      "category": "Hawaiian Art and Culture"
+    },
+    {
+      "id": "interest-Traditional Hawaiian Crafts",
+      "name": "Traditional Hawaiian Crafts",
+      "type": "interest",
+      "level": 1,
+      "category": "Hawaiian Art and Culture"
+    },
+    {
+      "id": "interest-Voyaging & Traditional Navigation",
+      "name": "Voyaging & Traditional Navigation",
+      "type": "interest",
+      "level": 1,
+      "category": "Hawaiian Art and Culture"
+    },
+    {
+      "id": "interest-Hawaiian History & Mythology",
+      "name": "Hawaiian History & Mythology",
+      "type": "interest",
+      "level": 1,
+      "category": "Hawaiian Art and Culture"
+    },
+    {
+      "id": "interest-Museum Curation",
+      "name": "Museum Curation",
+      "type": "interest",
+      "level": 1,
+      "category": "Hawaiian Art and Culture"
+    },
+    {
+      "id": "interest-Cultural Heritage Preservation",
+      "name": "Cultural Heritage Preservation",
+      "type": "interest",
+      "level": 1,
+      "category": "Hawaiian Art and Culture"
+    },
+    {
+      "id": "interest-Art History",
+      "name": "Art History",
+      "type": "interest",
+      "level": 1,
+      "category": "Hawaiian Art and Culture"
+    },
+    {
+      "id": "category-Art and Culture",
+      "name": "Art and Culture",
+      "type": "category",
+      "level": 0
+    },
+    {
+      "id": "interest-Digital Art",
+      "name": "Digital Art",
+      "type": "interest",
+      "level": 1,
+      "category": "Art and Culture"
+    },
+    {
+      "id": "interest-Generative Art",
+      "name": "Generative Art",
+      "type": "interest",
+      "level": 1,
+      "category": "Art and Culture"
+    },
+    {
+      "id": "interest-Animation",
+      "name": "Animation",
+      "type": "interest",
+      "level": 1,
+      "category": "Art and Culture"
+    },
+    {
+      "id": "interest-Film Production",
+      "name": "Film Production",
+      "type": "interest",
+      "level": 1,
+      "category": "Art and Culture"
+    },
+    {
+      "id": "interest-Podcasting",
+      "name": "Podcasting",
+      "type": "interest",
+      "level": 1,
+      "category": "Art and Culture"
+    },
+    {
+      "id": "interest-Music Production",
+      "name": "Music Production",
+      "type": "interest",
+      "level": 1,
+      "category": "Art and Culture"
+    },
+    {
+      "id": "interest-Creative Writing",
+      "name": "Creative Writing",
+      "type": "interest",
+      "level": 1,
+      "category": "Art and Culture"
+    },
+    {
+      "id": "interest-Theater & Performing Arts",
+      "name": "Theater & Performing Arts",
+      "type": "interest",
+      "level": 1,
+      "category": "Art and Culture"
+    },
+    {
+      "id": "interest-Museum Curation",
+      "name": "Museum Curation",
+      "type": "interest",
+      "level": 1,
+      "category": "Art and Culture"
+    },
+    {
+      "id": "interest-Art History",
+      "name": "Art History",
+      "type": "interest",
+      "level": 1,
+      "category": "Art and Culture"
+    },
+    {
+      "id": "interest-Photography",
+      "name": "Photography",
+      "type": "interest",
+      "level": 1,
+      "category": "Art and Culture"
+    },
+    {
+      "id": "interest-Graphic Design",
+      "name": "Graphic Design",
+      "type": "interest",
+      "level": 1,
+      "category": "Art and Culture"
+    },
+    {
+      "id": "interest-Fashion Design",
+      "name": "Fashion Design",
+      "type": "interest",
+      "level": 1,
+      "category": "Art and Culture"
+    },
+    {
+      "id": "interest-Interior Design",
+      "name": "Interior Design",
+      "type": "interest",
+      "level": 1,
+      "category": "Art and Culture"
+    },
+    {
+      "id": "category-Bitcoin & Crypto",
+      "name": "Bitcoin & Crypto",
+      "type": "category",
+      "level": 0
+    },
+    {
+      "id": "interest-Blockchain Technology",
+      "name": "Blockchain Technology",
+      "type": "interest",
+      "level": 1,
+      "category": "Bitcoin & Crypto"
+    },
+    {
+      "id": "interest-Cryptocurrency",
+      "name": "Cryptocurrency",
+      "type": "interest",
+      "level": 1,
+      "category": "Bitcoin & Crypto"
+    },
+    {
+      "id": "interest-Decentralized Finance (DeFi)",
+      "name": "Decentralized Finance (DeFi)",
+      "type": "interest",
+      "level": 1,
+      "category": "Bitcoin & Crypto"
+    },
+    {
+      "id": "interest-Web3",
+      "name": "Web3",
+      "type": "interest",
+      "level": 1,
+      "category": "Bitcoin & Crypto"
+    },
+    {
+      "id": "interest-NFTs",
+      "name": "NFTs",
+      "type": "interest",
+      "level": 1,
+      "category": "Bitcoin & Crypto"
+    },
+    {
+      "id": "interest-Algorithmic Trading",
+      "name": "Algorithmic Trading",
+      "type": "interest",
+      "level": 1,
+      "category": "Bitcoin & Crypto"
+    },
+    {
+      "id": "interest-Cybersecurity",
+      "name": "Cybersecurity",
+      "type": "interest",
+      "level": 1,
+      "category": "Bitcoin & Crypto"
+    },
+    {
+      "id": "interest-FinTech",
+      "name": "FinTech",
+      "type": "interest",
+      "level": 1,
+      "category": "Bitcoin & Crypto"
+    },
+    {
+      "id": "category-Consulting & Professional Services",
+      "name": "Consulting & Professional Services",
+      "type": "category",
+      "level": 0
+    },
+    {
+      "id": "interest-Business Strategy",
+      "name": "Business Strategy",
+      "type": "interest",
+      "level": 1,
+      "category": "Consulting & Professional Services"
+    },
+    {
+      "id": "interest-Project Management (Agile, Scrum)",
+      "name": "Project Management (Agile, Scrum)",
+      "type": "interest",
+      "level": 1,
+      "category": "Consulting & Professional Services"
+    },
+    {
+      "id": "interest-Change Management",
+      "name": "Change Management",
+      "type": "interest",
+      "level": 1,
+      "category": "Consulting & Professional Services"
+    },
+    {
+      "id": "interest-Leadership",
+      "name": "Leadership",
+      "type": "interest",
+      "level": 1,
+      "category": "Consulting & Professional Services"
+    },
+    {
+      "id": "interest-Public Speaking",
+      "name": "Public Speaking",
+      "type": "interest",
+      "level": 1,
+      "category": "Consulting & Professional Services"
+    },
+    {
+      "id": "interest-Negotiation",
+      "name": "Negotiation",
+      "type": "interest",
+      "level": 1,
+      "category": "Consulting & Professional Services"
+    },
+    {
+      "id": "interest-Corporate Finance",
+      "name": "Corporate Finance",
+      "type": "interest",
+      "level": 1,
+      "category": "Consulting & Professional Services"
+    },
+    {
+      "id": "interest-Mergers & Acquisitions",
+      "name": "Mergers & Acquisitions",
+      "type": "interest",
+      "level": 1,
+      "category": "Consulting & Professional Services"
+    },
+    {
+      "id": "interest-Market Research",
+      "name": "Market Research",
+      "type": "interest",
+      "level": 1,
+      "category": "Consulting & Professional Services"
+    },
+    {
+      "id": "category-Education & EdTech",
+      "name": "Education & EdTech",
+      "type": "category",
+      "level": 0
+    },
+    {
+      "id": "interest-Educational Technology (EdTech)",
+      "name": "Educational Technology (EdTech)",
+      "type": "interest",
+      "level": 1,
+      "category": "Education & EdTech"
+    },
+    {
+      "id": "interest-Online Learning",
+      "name": "Online Learning",
+      "type": "interest",
+      "level": 1,
+      "category": "Education & EdTech"
+    },
+    {
+      "id": "interest-STEM/STEAM Education",
+      "name": "STEM/STEAM Education",
+      "type": "interest",
+      "level": 1,
+      "category": "Education & EdTech"
+    },
+    {
+      "id": "interest-Gamification in Learning",
+      "name": "Gamification in Learning",
+      "type": "interest",
+      "level": 1,
+      "category": "Education & EdTech"
+    },
+    {
+      "id": "interest-Lifelong Learning",
+      "name": "Lifelong Learning",
+      "type": "interest",
+      "level": 1,
+      "category": "Education & EdTech"
+    },
+    {
+      "id": "interest-Curriculum Development",
+      "name": "Curriculum Development",
+      "type": "interest",
+      "level": 1,
+      "category": "Education & EdTech"
+    },
+    {
+      "id": "interest-Instructional Design",
+      "name": "Instructional Design",
+      "type": "interest",
+      "level": 1,
+      "category": "Education & EdTech"
+    },
+    {
+      "id": "interest-Educational Psychology",
+      "name": "Educational Psychology",
+      "type": "interest",
+      "level": 1,
+      "category": "Education & EdTech"
+    },
+    {
+      "id": "category-Gaming & Entertainment",
+      "name": "Gaming & Entertainment",
+      "type": "category",
+      "level": 0
+    },
+    {
+      "id": "interest-Game Design & Development",
+      "name": "Game Design & Development",
+      "type": "interest",
+      "level": 1,
+      "category": "Gaming & Entertainment"
+    },
+    {
+      "id": "interest-Esports",
+      "name": "Esports",
+      "type": "interest",
+      "level": 1,
+      "category": "Gaming & Entertainment"
+    },
+    {
+      "id": "interest-Interactive Storytelling",
+      "name": "Interactive Storytelling",
+      "type": "interest",
+      "level": 1,
+      "category": "Gaming & Entertainment"
+    },
+    {
+      "id": "interest-Animation & Motion Graphics",
+      "name": "Animation & Motion Graphics",
+      "type": "interest",
+      "level": 1,
+      "category": "Gaming & Entertainment"
+    },
+    {
+      "id": "interest-Music Production",
+      "name": "Music Production",
+      "type": "interest",
+      "level": 1,
+      "category": "Gaming & Entertainment"
+    },
+    {
+      "id": "interest-Sound Design",
+      "name": "Sound Design",
+      "type": "interest",
+      "level": 1,
+      "category": "Gaming & Entertainment"
+    },
+    {
+      "id": "interest-Virtual Reality (VR)",
+      "name": "Virtual Reality (VR)",
+      "type": "interest",
+      "level": 1,
+      "category": "Gaming & Entertainment"
+    },
+    {
+      "id": "interest-Augmented Reality (AR)",
+      "name": "Augmented Reality (AR)",
+      "type": "interest",
+      "level": 1,
+      "category": "Gaming & Entertainment"
+    },
+    {
+      "id": "category-Government & Public Sector",
+      "name": "Government & Public Sector",
+      "type": "category",
+      "level": 0
+    },
+    {
+      "id": "interest-Public Policy",
+      "name": "Public Policy",
+      "type": "interest",
+      "level": 1,
+      "category": "Government & Public Sector"
+    },
+    {
+      "id": "interest-Civic Technology (CivicTech)",
+      "name": "Civic Technology (CivicTech)",
+      "type": "interest",
+      "level": 1,
+      "category": "Government & Public Sector"
+    },
+    {
+      "id": "interest-Diplomacy",
+      "name": "Diplomacy",
+      "type": "interest",
+      "level": 1,
+      "category": "Government & Public Sector"
+    },
+    {
+      "id": "interest-Non-Profit Management",
+      "name": "Non-Profit Management",
+      "type": "interest",
+      "level": 1,
+      "category": "Government & Public Sector"
+    },
+    {
+      "id": "interest-Social Entrepreneurship",
+      "name": "Social Entrepreneurship",
+      "type": "interest",
+      "level": 1,
+      "category": "Government & Public Sector"
+    },
+    {
+      "id": "interest-Urban Planning",
+      "name": "Urban Planning",
+      "type": "interest",
+      "level": 1,
+      "category": "Government & Public Sector"
+    },
+    {
+      "id": "interest-Smart Cities",
+      "name": "Smart Cities",
+      "type": "interest",
+      "level": 1,
+      "category": "Government & Public Sector"
+    },
+    {
+      "id": "interest-Public Health",
+      "name": "Public Health",
+      "type": "interest",
+      "level": 1,
+      "category": "Government & Public Sector"
+    },
+    {
+      "id": "category-Investment & Venture Capital",
+      "name": "Investment & Venture Capital",
+      "type": "category",
+      "level": 0
+    },
+    {
+      "id": "interest-Venture Capital",
+      "name": "Venture Capital",
+      "type": "interest",
+      "level": 1,
+      "category": "Investment & Venture Capital"
+    },
+    {
+      "id": "interest-Angel Investing",
+      "name": "Angel Investing",
+      "type": "interest",
+      "level": 1,
+      "category": "Investment & Venture Capital"
+    },
+    {
+      "id": "interest-Impact Investing",
+      "name": "Impact Investing",
+      "type": "interest",
+      "level": 1,
+      "category": "Investment & Venture Capital"
+    },
+    {
+      "id": "interest-ESG",
+      "name": "ESG",
+      "type": "interest",
+      "level": 1,
+      "category": "Investment & Venture Capital"
+    },
+    {
+      "id": "interest-FinTech",
+      "name": "FinTech",
+      "type": "interest",
+      "level": 1,
+      "category": "Investment & Venture Capital"
+    },
+    {
+      "id": "interest-Stock Market Analysis",
+      "name": "Stock Market Analysis",
+      "type": "interest",
+      "level": 1,
+      "category": "Investment & Venture Capital"
+    },
+    {
+      "id": "interest-Mergers & Acquisitions",
+      "name": "Mergers & Acquisitions",
+      "type": "interest",
+      "level": 1,
+      "category": "Investment & Venture Capital"
+    },
+    {
+      "id": "interest-Corporate Finance",
+      "name": "Corporate Finance",
+      "type": "interest",
+      "level": 1,
+      "category": "Investment & Venture Capital"
+    },
+    {
+      "id": "interest-Financial Modeling",
+      "name": "Financial Modeling",
+      "type": "interest",
+      "level": 1,
+      "category": "Investment & Venture Capital"
+    },
+    {
+      "id": "interest-Startup Pitching",
+      "name": "Startup Pitching",
+      "type": "interest",
+      "level": 1,
+      "category": "Investment & Venture Capital"
+    },
+    {
+      "id": "category-Marketing & AdTech",
+      "name": "Marketing & AdTech",
+      "type": "category",
+      "level": 0
+    },
+    {
+      "id": "interest-Digital Marketing",
+      "name": "Digital Marketing",
+      "type": "interest",
+      "level": 1,
+      "category": "Marketing & AdTech"
+    },
+    {
+      "id": "interest-Content Strategy",
+      "name": "Content Strategy",
+      "type": "interest",
+      "level": 1,
+      "category": "Marketing & AdTech"
+    },
+    {
+      "id": "interest-SEO",
+      "name": "SEO",
+      "type": "interest",
+      "level": 1,
+      "category": "Marketing & AdTech"
+    },
+    {
+      "id": "interest-Social Media Marketing",
+      "name": "Social Media Marketing",
+      "type": "interest",
+      "level": 1,
+      "category": "Marketing & AdTech"
+    },
+    {
+      "id": "interest-Marketing Technology (MarTech/AdTech)",
+      "name": "Marketing Technology (MarTech/AdTech)",
+      "type": "interest",
+      "level": 1,
+      "category": "Marketing & AdTech"
+    },
+    {
+      "id": "interest-Data-Driven Marketing",
+      "name": "Data-Driven Marketing",
+      "type": "interest",
+      "level": 1,
+      "category": "Marketing & AdTech"
+    },
+    {
+      "id": "interest-Branding",
+      "name": "Branding",
+      "type": "interest",
+      "level": 1,
+      "category": "Marketing & AdTech"
+    },
+    {
+      "id": "interest-Public Relations",
+      "name": "Public Relations",
+      "type": "interest",
+      "level": 1,
+      "category": "Marketing & AdTech"
+    },
+    {
+      "id": "interest-E-commerce",
+      "name": "E-commerce",
+      "type": "interest",
+      "level": 1,
+      "category": "Marketing & AdTech"
+    },
+    {
+      "id": "category-Media & Communications",
+      "name": "Media & Communications",
+      "type": "category",
+      "level": 0
+    },
+    {
+      "id": "interest-Journalism",
+      "name": "Journalism",
+      "type": "interest",
+      "level": 1,
+      "category": "Media & Communications"
+    },
+    {
+      "id": "interest-Public Relations",
+      "name": "Public Relations",
+      "type": "interest",
+      "level": 1,
+      "category": "Media & Communications"
+    },
+    {
+      "id": "interest-Brand Storytelling",
+      "name": "Brand Storytelling",
+      "type": "interest",
+      "level": 1,
+      "category": "Media & Communications"
+    },
+    {
+      "id": "interest-Podcasting",
+      "name": "Podcasting",
+      "type": "interest",
+      "level": 1,
+      "category": "Media & Communications"
+    },
+    {
+      "id": "interest-Film Production",
+      "name": "Film Production",
+      "type": "interest",
+      "level": 1,
+      "category": "Media & Communications"
+    },
+    {
+      "id": "interest-Social Media Management",
+      "name": "Social Media Management",
+      "type": "interest",
+      "level": 1,
+      "category": "Media & Communications"
+    },
+    {
+      "id": "interest-Content Strategy",
+      "name": "Content Strategy",
+      "type": "interest",
+      "level": 1,
+      "category": "Media & Communications"
+    },
+    {
+      "id": "interest-Digital Media",
+      "name": "Digital Media",
+      "type": "interest",
+      "level": 1,
+      "category": "Media & Communications"
+    },
+    {
+      "id": "category-Real Estate & PropTech",
+      "name": "Real Estate & PropTech",
+      "type": "category",
+      "level": 0
+    },
+    {
+      "id": "interest-Real Estate Investment",
+      "name": "Real Estate Investment",
+      "type": "interest",
+      "level": 1,
+      "category": "Real Estate & PropTech"
+    },
+    {
+      "id": "interest-PropTech",
+      "name": "PropTech",
+      "type": "interest",
+      "level": 1,
+      "category": "Real Estate & PropTech"
+    },
+    {
+      "id": "interest-Green Building",
+      "name": "Green Building",
+      "type": "interest",
+      "level": 1,
+      "category": "Real Estate & PropTech"
+    },
+    {
+      "id": "interest-Smart Cities",
+      "name": "Smart Cities",
+      "type": "interest",
+      "level": 1,
+      "category": "Real Estate & PropTech"
+    },
+    {
+      "id": "interest-Urban Planning",
+      "name": "Urban Planning",
+      "type": "interest",
+      "level": 1,
+      "category": "Real Estate & PropTech"
+    },
+    {
+      "id": "interest-Architectural Design",
+      "name": "Architectural Design",
+      "type": "interest",
+      "level": 1,
+      "category": "Real Estate & PropTech"
+    },
+    {
+      "id": "interest-Construction Technology",
+      "name": "Construction Technology",
+      "type": "interest",
+      "level": 1,
+      "category": "Real Estate & PropTech"
+    },
+    {
+      "id": "category-Software & Technology",
+      "name": "Software & Technology",
+      "type": "category",
+      "level": 0
+    },
+    {
+      "id": "interest-Web Development",
+      "name": "Web Development",
+      "type": "interest",
+      "level": 1,
+      "category": "Software & Technology"
+    },
+    {
+      "id": "interest-Mobile App Development",
+      "name": "Mobile App Development",
+      "type": "interest",
+      "level": 1,
+      "category": "Software & Technology"
+    },
+    {
+      "id": "interest-Cloud Computing",
+      "name": "Cloud Computing",
+      "type": "interest",
+      "level": 1,
+      "category": "Software & Technology"
+    },
+    {
+      "id": "interest-DevOps",
+      "name": "DevOps",
+      "type": "interest",
+      "level": 1,
+      "category": "Software & Technology"
+    },
+    {
+      "id": "interest-Open Source Software",
+      "name": "Open Source Software",
+      "type": "interest",
+      "level": 1,
+      "category": "Software & Technology"
+    },
+    {
+      "id": "interest-Data Science",
+      "name": "Data Science",
+      "type": "interest",
+      "level": 1,
+      "category": "Software & Technology"
+    },
+    {
+      "id": "interest-Cybersecurity",
+      "name": "Cybersecurity",
+      "type": "interest",
+      "level": 1,
+      "category": "Software & Technology"
+    },
+    {
+      "id": "interest-AI/Machine Learning",
+      "name": "AI/Machine Learning",
+      "type": "interest",
+      "level": 1,
+      "category": "Software & Technology"
+    },
+    {
+      "id": "interest-IoT",
+      "name": "IoT",
+      "type": "interest",
+      "level": 1,
+      "category": "Software & Technology"
+    },
+    {
+      "id": "interest-Robotics",
+      "name": "Robotics",
+      "type": "interest",
+      "level": 1,
+      "category": "Software & Technology"
+    },
+    {
+      "id": "interest-Blockchain",
+      "name": "Blockchain",
+      "type": "interest",
+      "level": 1,
+      "category": "Software & Technology"
+    },
+    {
+      "id": "category-Student",
+      "name": "Student",
+      "type": "category",
+      "level": 0
+    },
+    {
+      "id": "interest-Online Learning",
+      "name": "Online Learning",
+      "type": "interest",
+      "level": 1,
+      "category": "Student"
+    },
+    {
+      "id": "interest-Lifelong Learning",
+      "name": "Lifelong Learning",
+      "type": "interest",
+      "level": 1,
+      "category": "Student"
+    },
+    {
+      "id": "interest-Career Coaching",
+      "name": "Career Coaching",
+      "type": "interest",
+      "level": 1,
+      "category": "Student"
+    },
+    {
+      "id": "interest-Networking Skills",
+      "name": "Networking Skills",
+      "type": "interest",
+      "level": 1,
+      "category": "Student"
+    },
+    {
+      "id": "interest-Personal Branding",
+      "name": "Personal Branding",
+      "type": "interest",
+      "level": 1,
+      "category": "Student"
+    },
+    {
+      "id": "interest-Financial Literacy",
+      "name": "Financial Literacy",
+      "type": "interest",
+      "level": 1,
+      "category": "Student"
+    },
+    {
+      "id": "interest-Time Management",
+      "name": "Time Management",
+      "type": "interest",
+      "level": 1,
+      "category": "Student"
+    },
+    {
+      "id": "interest-Productivity Hacks",
+      "name": "Productivity Hacks",
+      "type": "interest",
+      "level": 1,
+      "category": "Student"
+    },
+    {
+      "id": "interest-Mental Health and Wellness",
+      "name": "Mental Health and Wellness",
+      "type": "interest",
+      "level": 1,
+      "category": "Student"
+    },
+    {
+      "id": "interest-Mindfulness and Meditation",
+      "name": "Mindfulness and Meditation",
+      "type": "interest",
+      "level": 1,
+      "category": "Student"
+    },
+    {
+      "id": "category-Leadership",
+      "name": "Leadership",
+      "type": "category",
+      "level": 0
+    },
+    {
+      "id": "category-Project Management",
+      "name": "Project Management",
+      "type": "category",
+      "level": 0
+    },
+    {
+      "id": "category-Public Speaking",
+      "name": "Public Speaking",
+      "type": "category",
+      "level": 0
+    },
+    {
+      "id": "category-Networking Skills",
+      "name": "Networking Skills",
+      "type": "category",
+      "level": 0
+    },
+    {
+      "id": "category-Personal Branding",
+      "name": "Personal Branding",
+      "type": "category",
+      "level": 0
+    },
+    {
+      "id": "category-Financial Literacy",
+      "name": "Financial Literacy",
+      "type": "category",
+      "level": 0
+    },
+    {
+      "id": "category-Time Management",
+      "name": "Time Management",
+      "type": "category",
+      "level": 0
+    },
+    {
+      "id": "category-Productivity Hacks",
+      "name": "Productivity Hacks",
+      "type": "category",
+      "level": 0
+    },
+    {
+      "id": "category-Mental Health and Wellness",
+      "name": "Mental Health and Wellness",
+      "type": "category",
+      "level": 0
+    },
+    {
+      "id": "category-Mindfulness and Meditation",
+      "name": "Mindfulness and Meditation",
+      "type": "category",
+      "level": 0
+    },
+    {
+      "id": "category-Stoicism",
+      "name": "Stoicism",
+      "type": "category",
+      "level": 0
+    },
+    {
+      "id": "category-Biohacking",
+      "name": "Biohacking",
+      "type": "category",
+      "level": 0
+    },
+    {
+      "id": "category-Creative Coding",
+      "name": "Creative Coding",
+      "type": "category",
+      "level": 0
+    }
+  ],
+  "links": [
+    {
+      "source": "category-Sustainability and Ecology",
+      "target": "interest-Ecology",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Sustainability and Ecology",
+      "target": "interest-Conservation",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Sustainability and Ecology",
+      "target": "interest-Climate Change Science",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Sustainability and Ecology",
+      "target": "interest-Marine Biology",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Sustainability and Ecology",
+      "target": "interest-Sustainable Agriculture",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Sustainability and Ecology",
+      "target": "interest-Renewable Energy",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Sustainability and Ecology",
+      "target": "interest-Green Building",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Sustainability and Ecology",
+      "target": "interest-Circular Economy",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Sustainability and Ecology",
+      "target": "interest-Waste Reduction",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Sustainability and Ecology",
+      "target": "interest-Land Management",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Sustainability and Ecology",
+      "target": "interest-Reforestation",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Sustainability and Ecology",
+      "target": "interest-Corporate Social Responsibility",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-AEC (Architecture, Eng & Construction)",
+      "target": "interest-Architectural Design",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-AEC (Architecture, Eng & Construction)",
+      "target": "interest-Structural Engineering",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-AEC (Architecture, Eng & Construction)",
+      "target": "interest-BIM",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-AEC (Architecture, Eng & Construction)",
+      "target": "interest-Sustainable Architecture",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-AEC (Architecture, Eng & Construction)",
+      "target": "interest-Construction Technology",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-AEC (Architecture, Eng & Construction)",
+      "target": "interest-Smart Cities",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-AEC (Architecture, Eng & Construction)",
+      "target": "interest-Urban Planning",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-AEC (Architecture, Eng & Construction)",
+      "target": "interest-Landscape Architecture",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-AEC (Architecture, Eng & Construction)",
+      "target": "interest-Real Estate Investment",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-AEC (Architecture, Eng & Construction)",
+      "target": "interest-PropTech",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-AR/VR & Metaverse",
+      "target": "interest-Virtual Reality (VR) Development",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-AR/VR & Metaverse",
+      "target": "interest-Augmented Reality (AR) Applications",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-AR/VR & Metaverse",
+      "target": "interest-Metaverse Platforms",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-AR/VR & Metaverse",
+      "target": "interest-Spatial Computing",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-AR/VR & Metaverse",
+      "target": "interest-Digital Twins",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-AR/VR & Metaverse",
+      "target": "interest-Game Design",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-AR/VR & Metaverse",
+      "target": "interest-Interactive Storytelling",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-AR/VR & Metaverse",
+      "target": "interest-3D Printing",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-AR/VR & Metaverse",
+      "target": "interest-Animation & Motion Graphics",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Hawaiian Art and Culture",
+      "target": "interest-Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Hawaiian Art and Culture",
+      "target": "interest-Hula",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Hawaiian Art and Culture",
+      "target": "interest-Traditional Hawaiian Crafts",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Hawaiian Art and Culture",
+      "target": "interest-Voyaging & Traditional Navigation",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Hawaiian Art and Culture",
+      "target": "interest-Hawaiian History & Mythology",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Hawaiian Art and Culture",
+      "target": "interest-Museum Curation",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Hawaiian Art and Culture",
+      "target": "interest-Cultural Heritage Preservation",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Hawaiian Art and Culture",
+      "target": "interest-Art History",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Art and Culture",
+      "target": "interest-Digital Art",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Art and Culture",
+      "target": "interest-Generative Art",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Art and Culture",
+      "target": "interest-Animation",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Art and Culture",
+      "target": "interest-Film Production",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Art and Culture",
+      "target": "interest-Podcasting",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Art and Culture",
+      "target": "interest-Music Production",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Art and Culture",
+      "target": "interest-Creative Writing",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Art and Culture",
+      "target": "interest-Theater & Performing Arts",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Art and Culture",
+      "target": "interest-Museum Curation",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Art and Culture",
+      "target": "interest-Art History",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Art and Culture",
+      "target": "interest-Photography",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Art and Culture",
+      "target": "interest-Graphic Design",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Art and Culture",
+      "target": "interest-Fashion Design",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Art and Culture",
+      "target": "interest-Interior Design",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Bitcoin & Crypto",
+      "target": "interest-Blockchain Technology",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Bitcoin & Crypto",
+      "target": "interest-Cryptocurrency",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Bitcoin & Crypto",
+      "target": "interest-Decentralized Finance (DeFi)",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Bitcoin & Crypto",
+      "target": "interest-Web3",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Bitcoin & Crypto",
+      "target": "interest-NFTs",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Bitcoin & Crypto",
+      "target": "interest-Algorithmic Trading",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Bitcoin & Crypto",
+      "target": "interest-Cybersecurity",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Bitcoin & Crypto",
+      "target": "interest-FinTech",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Consulting & Professional Services",
+      "target": "interest-Business Strategy",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Consulting & Professional Services",
+      "target": "interest-Project Management (Agile, Scrum)",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Consulting & Professional Services",
+      "target": "interest-Change Management",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Consulting & Professional Services",
+      "target": "interest-Leadership",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Consulting & Professional Services",
+      "target": "interest-Public Speaking",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Consulting & Professional Services",
+      "target": "interest-Negotiation",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Consulting & Professional Services",
+      "target": "interest-Corporate Finance",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Consulting & Professional Services",
+      "target": "interest-Mergers & Acquisitions",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Consulting & Professional Services",
+      "target": "interest-Market Research",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Education & EdTech",
+      "target": "interest-Educational Technology (EdTech)",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Education & EdTech",
+      "target": "interest-Online Learning",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Education & EdTech",
+      "target": "interest-STEM/STEAM Education",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Education & EdTech",
+      "target": "interest-Gamification in Learning",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Education & EdTech",
+      "target": "interest-Lifelong Learning",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Education & EdTech",
+      "target": "interest-Curriculum Development",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Education & EdTech",
+      "target": "interest-Instructional Design",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Education & EdTech",
+      "target": "interest-Educational Psychology",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Gaming & Entertainment",
+      "target": "interest-Game Design & Development",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Gaming & Entertainment",
+      "target": "interest-Esports",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Gaming & Entertainment",
+      "target": "interest-Interactive Storytelling",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Gaming & Entertainment",
+      "target": "interest-Animation & Motion Graphics",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Gaming & Entertainment",
+      "target": "interest-Music Production",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Gaming & Entertainment",
+      "target": "interest-Sound Design",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Gaming & Entertainment",
+      "target": "interest-Virtual Reality (VR)",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Gaming & Entertainment",
+      "target": "interest-Augmented Reality (AR)",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Government & Public Sector",
+      "target": "interest-Public Policy",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Government & Public Sector",
+      "target": "interest-Civic Technology (CivicTech)",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Government & Public Sector",
+      "target": "interest-Diplomacy",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Government & Public Sector",
+      "target": "interest-Non-Profit Management",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Government & Public Sector",
+      "target": "interest-Social Entrepreneurship",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Government & Public Sector",
+      "target": "interest-Urban Planning",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Government & Public Sector",
+      "target": "interest-Smart Cities",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Government & Public Sector",
+      "target": "interest-Public Health",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Investment & Venture Capital",
+      "target": "interest-Venture Capital",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Investment & Venture Capital",
+      "target": "interest-Angel Investing",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Investment & Venture Capital",
+      "target": "interest-Impact Investing",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Investment & Venture Capital",
+      "target": "interest-ESG",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Investment & Venture Capital",
+      "target": "interest-FinTech",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Investment & Venture Capital",
+      "target": "interest-Stock Market Analysis",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Investment & Venture Capital",
+      "target": "interest-Mergers & Acquisitions",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Investment & Venture Capital",
+      "target": "interest-Corporate Finance",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Investment & Venture Capital",
+      "target": "interest-Financial Modeling",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Investment & Venture Capital",
+      "target": "interest-Startup Pitching",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Marketing & AdTech",
+      "target": "interest-Digital Marketing",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Marketing & AdTech",
+      "target": "interest-Content Strategy",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Marketing & AdTech",
+      "target": "interest-SEO",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Marketing & AdTech",
+      "target": "interest-Social Media Marketing",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Marketing & AdTech",
+      "target": "interest-Marketing Technology (MarTech/AdTech)",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Marketing & AdTech",
+      "target": "interest-Data-Driven Marketing",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Marketing & AdTech",
+      "target": "interest-Branding",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Marketing & AdTech",
+      "target": "interest-Public Relations",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Marketing & AdTech",
+      "target": "interest-E-commerce",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Media & Communications",
+      "target": "interest-Journalism",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Media & Communications",
+      "target": "interest-Public Relations",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Media & Communications",
+      "target": "interest-Brand Storytelling",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Media & Communications",
+      "target": "interest-Podcasting",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Media & Communications",
+      "target": "interest-Film Production",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Media & Communications",
+      "target": "interest-Social Media Management",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Media & Communications",
+      "target": "interest-Content Strategy",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Media & Communications",
+      "target": "interest-Digital Media",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Real Estate & PropTech",
+      "target": "interest-Real Estate Investment",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Real Estate & PropTech",
+      "target": "interest-PropTech",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Real Estate & PropTech",
+      "target": "interest-Green Building",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Real Estate & PropTech",
+      "target": "interest-Smart Cities",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Real Estate & PropTech",
+      "target": "interest-Urban Planning",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Real Estate & PropTech",
+      "target": "interest-Architectural Design",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Real Estate & PropTech",
+      "target": "interest-Construction Technology",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Software & Technology",
+      "target": "interest-Web Development",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Software & Technology",
+      "target": "interest-Mobile App Development",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Software & Technology",
+      "target": "interest-Cloud Computing",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Software & Technology",
+      "target": "interest-DevOps",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Software & Technology",
+      "target": "interest-Open Source Software",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Software & Technology",
+      "target": "interest-Data Science",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Software & Technology",
+      "target": "interest-Cybersecurity",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Software & Technology",
+      "target": "interest-AI/Machine Learning",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Software & Technology",
+      "target": "interest-IoT",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Software & Technology",
+      "target": "interest-Robotics",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Software & Technology",
+      "target": "interest-Blockchain",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Student",
+      "target": "interest-Online Learning",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Student",
+      "target": "interest-Lifelong Learning",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Student",
+      "target": "interest-Career Coaching",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Student",
+      "target": "interest-Networking Skills",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Student",
+      "target": "interest-Personal Branding",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Student",
+      "target": "interest-Financial Literacy",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Student",
+      "target": "interest-Time Management",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Student",
+      "target": "interest-Productivity Hacks",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Student",
+      "target": "interest-Mental Health and Wellness",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "category-Student",
+      "target": "interest-Mindfulness and Meditation",
+      "weight": 1,
+      "type": "hierarchical"
+    },
+    {
+      "source": "interest-Ecology",
+      "target": "interest-Conservation",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Ecology",
+      "target": "interest-Climate Change Science",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Ecology",
+      "target": "interest-Marine Biology",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Ecology",
+      "target": "interest-Sustainable Agriculture",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Ecology",
+      "target": "interest-Renewable Energy",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Ecology",
+      "target": "interest-Green Building",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Ecology",
+      "target": "interest-Circular Economy",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Ecology",
+      "target": "interest-Sustainable Architecture",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Ecology",
+      "target": "interest-Green Building",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Conservation",
+      "target": "interest-Climate Change Science",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Conservation",
+      "target": "interest-Marine Biology",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Conservation",
+      "target": "interest-Sustainable Agriculture",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Conservation",
+      "target": "interest-Renewable Energy",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Conservation",
+      "target": "interest-Green Building",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Conservation",
+      "target": "interest-Circular Economy",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Conservation",
+      "target": "interest-Sustainable Architecture",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Conservation",
+      "target": "interest-Green Building",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Climate Change Science",
+      "target": "interest-Marine Biology",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Climate Change Science",
+      "target": "interest-Sustainable Agriculture",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Climate Change Science",
+      "target": "interest-Renewable Energy",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Climate Change Science",
+      "target": "interest-Green Building",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Climate Change Science",
+      "target": "interest-Circular Economy",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Climate Change Science",
+      "target": "interest-Sustainable Architecture",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Climate Change Science",
+      "target": "interest-Change Management",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Climate Change Science",
+      "target": "interest-Green Building",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Climate Change Science",
+      "target": "interest-Data Science",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Marine Biology",
+      "target": "interest-Sustainable Agriculture",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Marine Biology",
+      "target": "interest-Renewable Energy",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Marine Biology",
+      "target": "interest-Green Building",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Marine Biology",
+      "target": "interest-Circular Economy",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Marine Biology",
+      "target": "interest-Sustainable Architecture",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Marine Biology",
+      "target": "interest-Green Building",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Agriculture",
+      "target": "interest-Renewable Energy",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Agriculture",
+      "target": "interest-Green Building",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Agriculture",
+      "target": "interest-Circular Economy",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Agriculture",
+      "target": "interest-Sustainable Architecture",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Agriculture",
+      "target": "interest-Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Agriculture",
+      "target": "interest-Traditional Hawaiian Crafts",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Agriculture",
+      "target": "interest-Hawaiian History & Mythology",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Agriculture",
+      "target": "interest-Blockchain Technology",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Agriculture",
+      "target": "interest-Cybersecurity",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Agriculture",
+      "target": "interest-Green Building",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Agriculture",
+      "target": "interest-Web Development",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Agriculture",
+      "target": "interest-Mobile App Development",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Agriculture",
+      "target": "interest-Cloud Computing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Agriculture",
+      "target": "interest-DevOps",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Agriculture",
+      "target": "interest-Data Science",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Agriculture",
+      "target": "interest-Cybersecurity",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Agriculture",
+      "target": "interest-AI/Machine Learning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Agriculture",
+      "target": "interest-IoT",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Agriculture",
+      "target": "interest-Robotics",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Agriculture",
+      "target": "interest-Blockchain",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Renewable Energy",
+      "target": "interest-Green Building",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Renewable Energy",
+      "target": "interest-Circular Economy",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Renewable Energy",
+      "target": "interest-Sustainable Architecture",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Renewable Energy",
+      "target": "interest-Green Building",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Green Building",
+      "target": "interest-Circular Economy",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Green Building",
+      "target": "interest-Sustainable Architecture",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Green Building",
+      "target": "interest-Green Building",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Circular Economy",
+      "target": "interest-Sustainable Architecture",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Circular Economy",
+      "target": "interest-Green Building",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Land Management",
+      "target": "interest-Project Management (Agile, Scrum)",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Land Management",
+      "target": "interest-Change Management",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Land Management",
+      "target": "interest-Non-Profit Management",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Land Management",
+      "target": "interest-Social Media Management",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Land Management",
+      "target": "interest-Time Management",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Corporate Social Responsibility",
+      "target": "interest-Corporate Finance",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Corporate Social Responsibility",
+      "target": "interest-Social Entrepreneurship",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Corporate Social Responsibility",
+      "target": "interest-Corporate Finance",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Corporate Social Responsibility",
+      "target": "interest-Social Media Marketing",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Corporate Social Responsibility",
+      "target": "interest-Social Media Management",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Architectural Design",
+      "target": "interest-BIM",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Architectural Design",
+      "target": "interest-Game Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Architectural Design",
+      "target": "interest-Animation & Motion Graphics",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Architectural Design",
+      "target": "interest-Digital Art",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Architectural Design",
+      "target": "interest-Animation",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Architectural Design",
+      "target": "interest-Graphic Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Architectural Design",
+      "target": "interest-Fashion Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Architectural Design",
+      "target": "interest-Interior Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Architectural Design",
+      "target": "interest-Instructional Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Architectural Design",
+      "target": "interest-Game Design & Development",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Architectural Design",
+      "target": "interest-Animation & Motion Graphics",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Architectural Design",
+      "target": "interest-Sound Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Architectural Design",
+      "target": "interest-Architectural Design",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-BIM",
+      "target": "interest-Animation & Motion Graphics",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-BIM",
+      "target": "interest-Digital Art",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-BIM",
+      "target": "interest-Animation",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-BIM",
+      "target": "interest-Graphic Design",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-BIM",
+      "target": "interest-Fashion Design",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-BIM",
+      "target": "interest-Interior Design",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-BIM",
+      "target": "interest-Animation & Motion Graphics",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-BIM",
+      "target": "interest-Architectural Design",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Architecture",
+      "target": "interest-Landscape Architecture",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Architecture",
+      "target": "interest-Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Architecture",
+      "target": "interest-Traditional Hawaiian Crafts",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Architecture",
+      "target": "interest-Hawaiian History & Mythology",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Architecture",
+      "target": "interest-Blockchain Technology",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Architecture",
+      "target": "interest-Cybersecurity",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Architecture",
+      "target": "interest-Green Building",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Architecture",
+      "target": "interest-Web Development",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Architecture",
+      "target": "interest-Mobile App Development",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Architecture",
+      "target": "interest-Cloud Computing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Architecture",
+      "target": "interest-DevOps",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Architecture",
+      "target": "interest-Data Science",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Architecture",
+      "target": "interest-Cybersecurity",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Architecture",
+      "target": "interest-AI/Machine Learning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Architecture",
+      "target": "interest-IoT",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Architecture",
+      "target": "interest-Robotics",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sustainable Architecture",
+      "target": "interest-Blockchain",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Construction Technology",
+      "target": "interest-Smart Cities",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Construction Technology",
+      "target": "interest-Urban Planning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Construction Technology",
+      "target": "interest-Real Estate Investment",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Construction Technology",
+      "target": "interest-PropTech",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Construction Technology",
+      "target": "interest-Blockchain Technology",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Construction Technology",
+      "target": "interest-Educational Technology (EdTech)",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Construction Technology",
+      "target": "interest-Civic Technology (CivicTech)",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Construction Technology",
+      "target": "interest-Urban Planning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Construction Technology",
+      "target": "interest-Smart Cities",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Construction Technology",
+      "target": "interest-Marketing Technology (MarTech/AdTech)",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Construction Technology",
+      "target": "interest-Real Estate Investment",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Construction Technology",
+      "target": "interest-PropTech",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Construction Technology",
+      "target": "interest-Smart Cities",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Construction Technology",
+      "target": "interest-Urban Planning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Construction Technology",
+      "target": "interest-Construction Technology",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Smart Cities",
+      "target": "interest-Urban Planning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Smart Cities",
+      "target": "interest-Real Estate Investment",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Smart Cities",
+      "target": "interest-PropTech",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Smart Cities",
+      "target": "interest-Urban Planning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Smart Cities",
+      "target": "interest-Smart Cities",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Smart Cities",
+      "target": "interest-Real Estate Investment",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Smart Cities",
+      "target": "interest-PropTech",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Smart Cities",
+      "target": "interest-Smart Cities",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Smart Cities",
+      "target": "interest-Urban Planning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Smart Cities",
+      "target": "interest-Construction Technology",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Urban Planning",
+      "target": "interest-Real Estate Investment",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Urban Planning",
+      "target": "interest-PropTech",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Urban Planning",
+      "target": "interest-Urban Planning",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Urban Planning",
+      "target": "interest-Smart Cities",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Urban Planning",
+      "target": "interest-Real Estate Investment",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Urban Planning",
+      "target": "interest-PropTech",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Urban Planning",
+      "target": "interest-Smart Cities",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Urban Planning",
+      "target": "interest-Urban Planning",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Urban Planning",
+      "target": "interest-Construction Technology",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Real Estate Investment",
+      "target": "interest-PropTech",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Real Estate Investment",
+      "target": "interest-Urban Planning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Real Estate Investment",
+      "target": "interest-Smart Cities",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Real Estate Investment",
+      "target": "interest-Real Estate Investment",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Real Estate Investment",
+      "target": "interest-PropTech",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Real Estate Investment",
+      "target": "interest-Smart Cities",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Real Estate Investment",
+      "target": "interest-Urban Planning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Real Estate Investment",
+      "target": "interest-Construction Technology",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-PropTech",
+      "target": "interest-Urban Planning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-PropTech",
+      "target": "interest-Smart Cities",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-PropTech",
+      "target": "interest-Real Estate Investment",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-PropTech",
+      "target": "interest-PropTech",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-PropTech",
+      "target": "interest-Smart Cities",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-PropTech",
+      "target": "interest-Urban Planning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-PropTech",
+      "target": "interest-Construction Technology",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Virtual Reality (VR) Development",
+      "target": "interest-Augmented Reality (AR) Applications",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Virtual Reality (VR) Development",
+      "target": "interest-Metaverse Platforms",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Virtual Reality (VR) Development",
+      "target": "interest-Spatial Computing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Virtual Reality (VR) Development",
+      "target": "interest-Digital Twins",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Virtual Reality (VR) Development",
+      "target": "interest-Game Design",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Virtual Reality (VR) Development",
+      "target": "interest-3D Printing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Virtual Reality (VR) Development",
+      "target": "interest-Curriculum Development",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Virtual Reality (VR) Development",
+      "target": "interest-Game Design & Development",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Virtual Reality (VR) Development",
+      "target": "interest-Virtual Reality (VR)",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Virtual Reality (VR) Development",
+      "target": "interest-Augmented Reality (AR)",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Virtual Reality (VR) Development",
+      "target": "interest-Web Development",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Virtual Reality (VR) Development",
+      "target": "interest-Mobile App Development",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Augmented Reality (AR) Applications",
+      "target": "interest-Metaverse Platforms",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Augmented Reality (AR) Applications",
+      "target": "interest-Spatial Computing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Augmented Reality (AR) Applications",
+      "target": "interest-Digital Twins",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Augmented Reality (AR) Applications",
+      "target": "interest-Game Design",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Augmented Reality (AR) Applications",
+      "target": "interest-3D Printing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Augmented Reality (AR) Applications",
+      "target": "interest-Game Design & Development",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Augmented Reality (AR) Applications",
+      "target": "interest-Virtual Reality (VR)",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Augmented Reality (AR) Applications",
+      "target": "interest-Augmented Reality (AR)",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Metaverse Platforms",
+      "target": "interest-Spatial Computing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Metaverse Platforms",
+      "target": "interest-Digital Twins",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Metaverse Platforms",
+      "target": "interest-Game Design",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Metaverse Platforms",
+      "target": "interest-3D Printing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Metaverse Platforms",
+      "target": "interest-Game Design & Development",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Metaverse Platforms",
+      "target": "interest-Virtual Reality (VR)",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Metaverse Platforms",
+      "target": "interest-Augmented Reality (AR)",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Spatial Computing",
+      "target": "interest-Digital Twins",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Spatial Computing",
+      "target": "interest-Game Design",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Spatial Computing",
+      "target": "interest-3D Printing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Spatial Computing",
+      "target": "interest-Game Design & Development",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Spatial Computing",
+      "target": "interest-Virtual Reality (VR)",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Spatial Computing",
+      "target": "interest-Augmented Reality (AR)",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Spatial Computing",
+      "target": "interest-Cloud Computing",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Digital Twins",
+      "target": "interest-Game Design",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Digital Twins",
+      "target": "interest-3D Printing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Digital Twins",
+      "target": "interest-Digital Art",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Digital Twins",
+      "target": "interest-Game Design & Development",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Digital Twins",
+      "target": "interest-Virtual Reality (VR)",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Digital Twins",
+      "target": "interest-Augmented Reality (AR)",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Digital Twins",
+      "target": "interest-Digital Marketing",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Digital Twins",
+      "target": "interest-Digital Media",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Game Design",
+      "target": "interest-3D Printing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Game Design",
+      "target": "interest-Graphic Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Game Design",
+      "target": "interest-Fashion Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Game Design",
+      "target": "interest-Interior Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Game Design",
+      "target": "interest-Instructional Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Game Design",
+      "target": "interest-Game Design & Development",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Game Design",
+      "target": "interest-Sound Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Game Design",
+      "target": "interest-Virtual Reality (VR)",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Game Design",
+      "target": "interest-Augmented Reality (AR)",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Game Design",
+      "target": "interest-Architectural Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Interactive Storytelling",
+      "target": "interest-Interactive Storytelling",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Interactive Storytelling",
+      "target": "interest-Brand Storytelling",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-3D Printing",
+      "target": "interest-Game Design & Development",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-3D Printing",
+      "target": "interest-Virtual Reality (VR)",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-3D Printing",
+      "target": "interest-Augmented Reality (AR)",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Animation & Motion Graphics",
+      "target": "interest-Digital Art",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Animation & Motion Graphics",
+      "target": "interest-Animation",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Animation & Motion Graphics",
+      "target": "interest-Graphic Design",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Animation & Motion Graphics",
+      "target": "interest-Fashion Design",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Animation & Motion Graphics",
+      "target": "interest-Interior Design",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Animation & Motion Graphics",
+      "target": "interest-Animation & Motion Graphics",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Animation & Motion Graphics",
+      "target": "interest-Architectural Design",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "target": "interest-Hula",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "target": "interest-Traditional Hawaiian Crafts",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "target": "interest-Voyaging & Traditional Navigation",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "target": "interest-Hawaiian History & Mythology",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "target": "interest-Museum Curation",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "target": "interest-Cultural Heritage Preservation",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "target": "interest-Art History",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "target": "interest-Museum Curation",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "target": "interest-Art History",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "target": "interest-Blockchain Technology",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "target": "interest-Cybersecurity",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "target": "interest-Web Development",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "target": "interest-Mobile App Development",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "target": "interest-Cloud Computing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "target": "interest-DevOps",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "target": "interest-Data Science",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "target": "interest-Cybersecurity",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "target": "interest-AI/Machine Learning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "target": "interest-IoT",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "target": "interest-Robotics",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "target": "interest-Blockchain",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hula",
+      "target": "interest-Traditional Hawaiian Crafts",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hula",
+      "target": "interest-Voyaging & Traditional Navigation",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hula",
+      "target": "interest-Hawaiian History & Mythology",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hula",
+      "target": "interest-Museum Curation",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hula",
+      "target": "interest-Cultural Heritage Preservation",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hula",
+      "target": "interest-Art History",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hula",
+      "target": "interest-Museum Curation",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hula",
+      "target": "interest-Art History",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Traditional Hawaiian Crafts",
+      "target": "interest-Voyaging & Traditional Navigation",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Traditional Hawaiian Crafts",
+      "target": "interest-Hawaiian History & Mythology",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Traditional Hawaiian Crafts",
+      "target": "interest-Museum Curation",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Traditional Hawaiian Crafts",
+      "target": "interest-Cultural Heritage Preservation",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Traditional Hawaiian Crafts",
+      "target": "interest-Art History",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Traditional Hawaiian Crafts",
+      "target": "interest-Museum Curation",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Traditional Hawaiian Crafts",
+      "target": "interest-Art History",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Traditional Hawaiian Crafts",
+      "target": "interest-Blockchain Technology",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Traditional Hawaiian Crafts",
+      "target": "interest-Cybersecurity",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Traditional Hawaiian Crafts",
+      "target": "interest-Web Development",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Traditional Hawaiian Crafts",
+      "target": "interest-Mobile App Development",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Traditional Hawaiian Crafts",
+      "target": "interest-Cloud Computing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Traditional Hawaiian Crafts",
+      "target": "interest-DevOps",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Traditional Hawaiian Crafts",
+      "target": "interest-Data Science",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Traditional Hawaiian Crafts",
+      "target": "interest-Cybersecurity",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Traditional Hawaiian Crafts",
+      "target": "interest-AI/Machine Learning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Traditional Hawaiian Crafts",
+      "target": "interest-IoT",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Traditional Hawaiian Crafts",
+      "target": "interest-Robotics",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Traditional Hawaiian Crafts",
+      "target": "interest-Blockchain",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Voyaging & Traditional Navigation",
+      "target": "interest-Hawaiian History & Mythology",
+      "weight": 0.6000000000000001,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Voyaging & Traditional Navigation",
+      "target": "interest-Museum Curation",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Voyaging & Traditional Navigation",
+      "target": "interest-Cultural Heritage Preservation",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Voyaging & Traditional Navigation",
+      "target": "interest-Art History",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Voyaging & Traditional Navigation",
+      "target": "interest-Museum Curation",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Voyaging & Traditional Navigation",
+      "target": "interest-Art History",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian History & Mythology",
+      "target": "interest-Museum Curation",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian History & Mythology",
+      "target": "interest-Cultural Heritage Preservation",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian History & Mythology",
+      "target": "interest-Art History",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian History & Mythology",
+      "target": "interest-Museum Curation",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian History & Mythology",
+      "target": "interest-Art History",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian History & Mythology",
+      "target": "interest-Blockchain Technology",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian History & Mythology",
+      "target": "interest-Cybersecurity",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian History & Mythology",
+      "target": "interest-Web Development",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian History & Mythology",
+      "target": "interest-Mobile App Development",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian History & Mythology",
+      "target": "interest-Cloud Computing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian History & Mythology",
+      "target": "interest-DevOps",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian History & Mythology",
+      "target": "interest-Data Science",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian History & Mythology",
+      "target": "interest-Cybersecurity",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian History & Mythology",
+      "target": "interest-AI/Machine Learning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian History & Mythology",
+      "target": "interest-IoT",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian History & Mythology",
+      "target": "interest-Robotics",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Hawaiian History & Mythology",
+      "target": "interest-Blockchain",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Museum Curation",
+      "target": "interest-Cultural Heritage Preservation",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Museum Curation",
+      "target": "interest-Art History",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Museum Curation",
+      "target": "interest-Museum Curation",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Museum Curation",
+      "target": "interest-Art History",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Cultural Heritage Preservation",
+      "target": "interest-Art History",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Cultural Heritage Preservation",
+      "target": "interest-Museum Curation",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Cultural Heritage Preservation",
+      "target": "interest-Art History",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Art History",
+      "target": "interest-Digital Art",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Art History",
+      "target": "interest-Generative Art",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Art History",
+      "target": "interest-Museum Curation",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Art History",
+      "target": "interest-Art History",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Digital Art",
+      "target": "interest-Generative Art",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Digital Art",
+      "target": "interest-Animation",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Digital Art",
+      "target": "interest-Art History",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Digital Art",
+      "target": "interest-Graphic Design",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Digital Art",
+      "target": "interest-Fashion Design",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Digital Art",
+      "target": "interest-Interior Design",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Digital Art",
+      "target": "interest-Animation & Motion Graphics",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Digital Art",
+      "target": "interest-Digital Marketing",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Digital Art",
+      "target": "interest-Digital Media",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Digital Art",
+      "target": "interest-Architectural Design",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Generative Art",
+      "target": "interest-Art History",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Animation",
+      "target": "interest-Graphic Design",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Animation",
+      "target": "interest-Fashion Design",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Animation",
+      "target": "interest-Interior Design",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Animation",
+      "target": "interest-Animation & Motion Graphics",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Animation",
+      "target": "interest-Architectural Design",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Film Production",
+      "target": "interest-Podcasting",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Film Production",
+      "target": "interest-Music Production",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Film Production",
+      "target": "interest-Photography",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Film Production",
+      "target": "interest-Music Production",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Film Production",
+      "target": "interest-Content Strategy",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Film Production",
+      "target": "interest-Social Media Marketing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Film Production",
+      "target": "interest-Podcasting",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Film Production",
+      "target": "interest-Film Production",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Film Production",
+      "target": "interest-Social Media Management",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Film Production",
+      "target": "interest-Content Strategy",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Film Production",
+      "target": "interest-Digital Media",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Podcasting",
+      "target": "interest-Music Production",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Podcasting",
+      "target": "interest-Photography",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Podcasting",
+      "target": "interest-Music Production",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Podcasting",
+      "target": "interest-Content Strategy",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Podcasting",
+      "target": "interest-Social Media Marketing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Podcasting",
+      "target": "interest-Podcasting",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Podcasting",
+      "target": "interest-Film Production",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Podcasting",
+      "target": "interest-Social Media Management",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Podcasting",
+      "target": "interest-Content Strategy",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Podcasting",
+      "target": "interest-Digital Media",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Music Production",
+      "target": "interest-Photography",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Music Production",
+      "target": "interest-Music Production",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Music Production",
+      "target": "interest-Content Strategy",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Music Production",
+      "target": "interest-Social Media Marketing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Music Production",
+      "target": "interest-Podcasting",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Music Production",
+      "target": "interest-Film Production",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Music Production",
+      "target": "interest-Social Media Management",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Music Production",
+      "target": "interest-Content Strategy",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Music Production",
+      "target": "interest-Digital Media",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Museum Curation",
+      "target": "interest-Art History",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Photography",
+      "target": "interest-Music Production",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Photography",
+      "target": "interest-Content Strategy",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Photography",
+      "target": "interest-Social Media Marketing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Photography",
+      "target": "interest-Podcasting",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Photography",
+      "target": "interest-Film Production",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Photography",
+      "target": "interest-Social Media Management",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Photography",
+      "target": "interest-Content Strategy",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Photography",
+      "target": "interest-Digital Media",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Graphic Design",
+      "target": "interest-Fashion Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Graphic Design",
+      "target": "interest-Interior Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Graphic Design",
+      "target": "interest-Instructional Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Graphic Design",
+      "target": "interest-Game Design & Development",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Graphic Design",
+      "target": "interest-Animation & Motion Graphics",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Graphic Design",
+      "target": "interest-Sound Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Graphic Design",
+      "target": "interest-Architectural Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Fashion Design",
+      "target": "interest-Interior Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Fashion Design",
+      "target": "interest-Instructional Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Fashion Design",
+      "target": "interest-Game Design & Development",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Fashion Design",
+      "target": "interest-Animation & Motion Graphics",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Fashion Design",
+      "target": "interest-Sound Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Fashion Design",
+      "target": "interest-Architectural Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Interior Design",
+      "target": "interest-Instructional Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Interior Design",
+      "target": "interest-Game Design & Development",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Interior Design",
+      "target": "interest-Animation & Motion Graphics",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Interior Design",
+      "target": "interest-Sound Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Interior Design",
+      "target": "interest-Architectural Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Blockchain Technology",
+      "target": "interest-Cybersecurity",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Blockchain Technology",
+      "target": "interest-Educational Technology (EdTech)",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Blockchain Technology",
+      "target": "interest-Civic Technology (CivicTech)",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Blockchain Technology",
+      "target": "interest-Marketing Technology (MarTech/AdTech)",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Blockchain Technology",
+      "target": "interest-Construction Technology",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Blockchain Technology",
+      "target": "interest-Web Development",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Blockchain Technology",
+      "target": "interest-Mobile App Development",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Blockchain Technology",
+      "target": "interest-Cloud Computing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Blockchain Technology",
+      "target": "interest-DevOps",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Blockchain Technology",
+      "target": "interest-Data Science",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Blockchain Technology",
+      "target": "interest-Cybersecurity",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Blockchain Technology",
+      "target": "interest-AI/Machine Learning",
+      "weight": 0.6000000000000001,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Blockchain Technology",
+      "target": "interest-IoT",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Blockchain Technology",
+      "target": "interest-Robotics",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Blockchain Technology",
+      "target": "interest-Blockchain",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Decentralized Finance (DeFi)",
+      "target": "interest-Corporate Finance",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Decentralized Finance (DeFi)",
+      "target": "interest-Corporate Finance",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Cybersecurity",
+      "target": "interest-Web Development",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Cybersecurity",
+      "target": "interest-Mobile App Development",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Cybersecurity",
+      "target": "interest-Cloud Computing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Cybersecurity",
+      "target": "interest-DevOps",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Cybersecurity",
+      "target": "interest-Data Science",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Cybersecurity",
+      "target": "interest-Cybersecurity",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Cybersecurity",
+      "target": "interest-AI/Machine Learning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Cybersecurity",
+      "target": "interest-IoT",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Cybersecurity",
+      "target": "interest-Robotics",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Cybersecurity",
+      "target": "interest-Blockchain",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-FinTech",
+      "target": "interest-FinTech",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Business Strategy",
+      "target": "interest-Project Management (Agile, Scrum)",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Business Strategy",
+      "target": "interest-Corporate Finance",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Business Strategy",
+      "target": "interest-Mergers & Acquisitions",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Business Strategy",
+      "target": "interest-Social Entrepreneurship",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Business Strategy",
+      "target": "interest-Venture Capital",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Business Strategy",
+      "target": "interest-Angel Investing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Business Strategy",
+      "target": "interest-Mergers & Acquisitions",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Business Strategy",
+      "target": "interest-Corporate Finance",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Business Strategy",
+      "target": "interest-Startup Pitching",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Business Strategy",
+      "target": "interest-Content Strategy",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Business Strategy",
+      "target": "interest-Content Strategy",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Project Management (Agile, Scrum)",
+      "target": "interest-Change Management",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Project Management (Agile, Scrum)",
+      "target": "interest-Corporate Finance",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Project Management (Agile, Scrum)",
+      "target": "interest-Mergers & Acquisitions",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Project Management (Agile, Scrum)",
+      "target": "interest-Non-Profit Management",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Project Management (Agile, Scrum)",
+      "target": "interest-Social Entrepreneurship",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Project Management (Agile, Scrum)",
+      "target": "interest-Venture Capital",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Project Management (Agile, Scrum)",
+      "target": "interest-Angel Investing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Project Management (Agile, Scrum)",
+      "target": "interest-Mergers & Acquisitions",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Project Management (Agile, Scrum)",
+      "target": "interest-Corporate Finance",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Project Management (Agile, Scrum)",
+      "target": "interest-Startup Pitching",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Project Management (Agile, Scrum)",
+      "target": "interest-Social Media Management",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Project Management (Agile, Scrum)",
+      "target": "interest-Time Management",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Change Management",
+      "target": "interest-Non-Profit Management",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Change Management",
+      "target": "interest-Social Media Management",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Change Management",
+      "target": "interest-Time Management",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Public Speaking",
+      "target": "interest-Public Policy",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Public Speaking",
+      "target": "interest-Public Health",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Public Speaking",
+      "target": "interest-Public Relations",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Public Speaking",
+      "target": "interest-Public Relations",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Corporate Finance",
+      "target": "interest-Mergers & Acquisitions",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Corporate Finance",
+      "target": "interest-Social Entrepreneurship",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Corporate Finance",
+      "target": "interest-Venture Capital",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Corporate Finance",
+      "target": "interest-Angel Investing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Corporate Finance",
+      "target": "interest-Mergers & Acquisitions",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Corporate Finance",
+      "target": "interest-Corporate Finance",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Corporate Finance",
+      "target": "interest-Startup Pitching",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Mergers & Acquisitions",
+      "target": "interest-Social Entrepreneurship",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Mergers & Acquisitions",
+      "target": "interest-Venture Capital",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Mergers & Acquisitions",
+      "target": "interest-Angel Investing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Mergers & Acquisitions",
+      "target": "interest-Mergers & Acquisitions",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Mergers & Acquisitions",
+      "target": "interest-Corporate Finance",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Mergers & Acquisitions",
+      "target": "interest-Startup Pitching",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Market Research",
+      "target": "interest-Stock Market Analysis",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Educational Technology (EdTech)",
+      "target": "interest-Online Learning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Educational Technology (EdTech)",
+      "target": "interest-STEM/STEAM Education",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Educational Technology (EdTech)",
+      "target": "interest-Lifelong Learning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Educational Technology (EdTech)",
+      "target": "interest-Curriculum Development",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Educational Technology (EdTech)",
+      "target": "interest-Instructional Design",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Educational Technology (EdTech)",
+      "target": "interest-Educational Psychology",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Educational Technology (EdTech)",
+      "target": "interest-Civic Technology (CivicTech)",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Educational Technology (EdTech)",
+      "target": "interest-Marketing Technology (MarTech/AdTech)",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Educational Technology (EdTech)",
+      "target": "interest-Construction Technology",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Educational Technology (EdTech)",
+      "target": "interest-Online Learning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Educational Technology (EdTech)",
+      "target": "interest-Lifelong Learning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Online Learning",
+      "target": "interest-STEM/STEAM Education",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Online Learning",
+      "target": "interest-Gamification in Learning",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Online Learning",
+      "target": "interest-Lifelong Learning",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Online Learning",
+      "target": "interest-Curriculum Development",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Online Learning",
+      "target": "interest-Instructional Design",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Online Learning",
+      "target": "interest-Educational Psychology",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Online Learning",
+      "target": "interest-AI/Machine Learning",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Online Learning",
+      "target": "interest-Online Learning",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Online Learning",
+      "target": "interest-Lifelong Learning",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-STEM/STEAM Education",
+      "target": "interest-Lifelong Learning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-STEM/STEAM Education",
+      "target": "interest-Curriculum Development",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-STEM/STEAM Education",
+      "target": "interest-Instructional Design",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-STEM/STEAM Education",
+      "target": "interest-Educational Psychology",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-STEM/STEAM Education",
+      "target": "interest-Online Learning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-STEM/STEAM Education",
+      "target": "interest-Lifelong Learning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Gamification in Learning",
+      "target": "interest-Lifelong Learning",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Gamification in Learning",
+      "target": "interest-AI/Machine Learning",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Gamification in Learning",
+      "target": "interest-Online Learning",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Gamification in Learning",
+      "target": "interest-Lifelong Learning",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Lifelong Learning",
+      "target": "interest-Curriculum Development",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Lifelong Learning",
+      "target": "interest-Instructional Design",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Lifelong Learning",
+      "target": "interest-Educational Psychology",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Lifelong Learning",
+      "target": "interest-AI/Machine Learning",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Lifelong Learning",
+      "target": "interest-Online Learning",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Lifelong Learning",
+      "target": "interest-Lifelong Learning",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Curriculum Development",
+      "target": "interest-Instructional Design",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Curriculum Development",
+      "target": "interest-Educational Psychology",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Curriculum Development",
+      "target": "interest-Game Design & Development",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Curriculum Development",
+      "target": "interest-Web Development",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Curriculum Development",
+      "target": "interest-Mobile App Development",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Curriculum Development",
+      "target": "interest-Online Learning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Curriculum Development",
+      "target": "interest-Lifelong Learning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Instructional Design",
+      "target": "interest-Educational Psychology",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Instructional Design",
+      "target": "interest-Game Design & Development",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Instructional Design",
+      "target": "interest-Sound Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Instructional Design",
+      "target": "interest-Architectural Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Instructional Design",
+      "target": "interest-Online Learning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Instructional Design",
+      "target": "interest-Lifelong Learning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Educational Psychology",
+      "target": "interest-Online Learning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Educational Psychology",
+      "target": "interest-Lifelong Learning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Game Design & Development",
+      "target": "interest-Sound Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Game Design & Development",
+      "target": "interest-Virtual Reality (VR)",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Game Design & Development",
+      "target": "interest-Augmented Reality (AR)",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Game Design & Development",
+      "target": "interest-Architectural Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Game Design & Development",
+      "target": "interest-Web Development",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Game Design & Development",
+      "target": "interest-Mobile App Development",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Interactive Storytelling",
+      "target": "interest-Brand Storytelling",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Animation & Motion Graphics",
+      "target": "interest-Architectural Design",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Music Production",
+      "target": "interest-Content Strategy",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Music Production",
+      "target": "interest-Social Media Marketing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Music Production",
+      "target": "interest-Podcasting",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Music Production",
+      "target": "interest-Film Production",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Music Production",
+      "target": "interest-Social Media Management",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Music Production",
+      "target": "interest-Content Strategy",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Music Production",
+      "target": "interest-Digital Media",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Sound Design",
+      "target": "interest-Architectural Design",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Virtual Reality (VR)",
+      "target": "interest-Augmented Reality (AR)",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Public Policy",
+      "target": "interest-Public Health",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Public Policy",
+      "target": "interest-Public Relations",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Public Policy",
+      "target": "interest-Public Relations",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Civic Technology (CivicTech)",
+      "target": "interest-Marketing Technology (MarTech/AdTech)",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Civic Technology (CivicTech)",
+      "target": "interest-Construction Technology",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Non-Profit Management",
+      "target": "interest-Social Media Management",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Non-Profit Management",
+      "target": "interest-Time Management",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Social Entrepreneurship",
+      "target": "interest-Venture Capital",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Social Entrepreneurship",
+      "target": "interest-Angel Investing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Social Entrepreneurship",
+      "target": "interest-Mergers & Acquisitions",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Social Entrepreneurship",
+      "target": "interest-Corporate Finance",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Social Entrepreneurship",
+      "target": "interest-Startup Pitching",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Social Entrepreneurship",
+      "target": "interest-Social Media Marketing",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Social Entrepreneurship",
+      "target": "interest-Social Media Management",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Urban Planning",
+      "target": "interest-Smart Cities",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Urban Planning",
+      "target": "interest-Real Estate Investment",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Urban Planning",
+      "target": "interest-PropTech",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Urban Planning",
+      "target": "interest-Smart Cities",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Urban Planning",
+      "target": "interest-Urban Planning",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Urban Planning",
+      "target": "interest-Construction Technology",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Smart Cities",
+      "target": "interest-Real Estate Investment",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Smart Cities",
+      "target": "interest-PropTech",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Smart Cities",
+      "target": "interest-Smart Cities",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Smart Cities",
+      "target": "interest-Urban Planning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Smart Cities",
+      "target": "interest-Construction Technology",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Public Health",
+      "target": "interest-Public Relations",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Public Health",
+      "target": "interest-Public Relations",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Public Health",
+      "target": "interest-Mental Health and Wellness",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Venture Capital",
+      "target": "interest-Angel Investing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Venture Capital",
+      "target": "interest-Mergers & Acquisitions",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Venture Capital",
+      "target": "interest-Corporate Finance",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Venture Capital",
+      "target": "interest-Startup Pitching",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Angel Investing",
+      "target": "interest-Impact Investing",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Angel Investing",
+      "target": "interest-Mergers & Acquisitions",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Angel Investing",
+      "target": "interest-Corporate Finance",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Angel Investing",
+      "target": "interest-Startup Pitching",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Mergers & Acquisitions",
+      "target": "interest-Corporate Finance",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Mergers & Acquisitions",
+      "target": "interest-Startup Pitching",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Corporate Finance",
+      "target": "interest-Startup Pitching",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Financial Modeling",
+      "target": "interest-Financial Literacy",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Digital Marketing",
+      "target": "interest-Social Media Marketing",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Digital Marketing",
+      "target": "interest-Marketing Technology (MarTech/AdTech)",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Digital Marketing",
+      "target": "interest-Data-Driven Marketing",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Digital Marketing",
+      "target": "interest-Digital Media",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Content Strategy",
+      "target": "interest-Social Media Marketing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Content Strategy",
+      "target": "interest-Podcasting",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Content Strategy",
+      "target": "interest-Film Production",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Content Strategy",
+      "target": "interest-Social Media Management",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Content Strategy",
+      "target": "interest-Content Strategy",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Content Strategy",
+      "target": "interest-Digital Media",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Social Media Marketing",
+      "target": "interest-Marketing Technology (MarTech/AdTech)",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Social Media Marketing",
+      "target": "interest-Data-Driven Marketing",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Social Media Marketing",
+      "target": "interest-Podcasting",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Social Media Marketing",
+      "target": "interest-Film Production",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Social Media Marketing",
+      "target": "interest-Social Media Management",
+      "weight": 0.8,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Social Media Marketing",
+      "target": "interest-Content Strategy",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Social Media Marketing",
+      "target": "interest-Digital Media",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Marketing Technology (MarTech/AdTech)",
+      "target": "interest-Data-Driven Marketing",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Marketing Technology (MarTech/AdTech)",
+      "target": "interest-Construction Technology",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Data-Driven Marketing",
+      "target": "interest-Data Science",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Branding",
+      "target": "interest-Personal Branding",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Public Relations",
+      "target": "interest-Public Relations",
+      "weight": 0.9,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Podcasting",
+      "target": "interest-Film Production",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Podcasting",
+      "target": "interest-Social Media Management",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Podcasting",
+      "target": "interest-Content Strategy",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Podcasting",
+      "target": "interest-Digital Media",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Film Production",
+      "target": "interest-Social Media Management",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Film Production",
+      "target": "interest-Content Strategy",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Film Production",
+      "target": "interest-Digital Media",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Social Media Management",
+      "target": "interest-Content Strategy",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Social Media Management",
+      "target": "interest-Digital Media",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Social Media Management",
+      "target": "interest-Time Management",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Content Strategy",
+      "target": "interest-Digital Media",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Real Estate Investment",
+      "target": "interest-PropTech",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Real Estate Investment",
+      "target": "interest-Smart Cities",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Real Estate Investment",
+      "target": "interest-Urban Planning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Real Estate Investment",
+      "target": "interest-Construction Technology",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-PropTech",
+      "target": "interest-Smart Cities",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-PropTech",
+      "target": "interest-Urban Planning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-PropTech",
+      "target": "interest-Construction Technology",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Smart Cities",
+      "target": "interest-Urban Planning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Smart Cities",
+      "target": "interest-Construction Technology",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Urban Planning",
+      "target": "interest-Construction Technology",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Web Development",
+      "target": "interest-Mobile App Development",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Web Development",
+      "target": "interest-Cloud Computing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Web Development",
+      "target": "interest-DevOps",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Web Development",
+      "target": "interest-Data Science",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Web Development",
+      "target": "interest-Cybersecurity",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Web Development",
+      "target": "interest-AI/Machine Learning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Web Development",
+      "target": "interest-IoT",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Web Development",
+      "target": "interest-Robotics",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Web Development",
+      "target": "interest-Blockchain",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Mobile App Development",
+      "target": "interest-Cloud Computing",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Mobile App Development",
+      "target": "interest-DevOps",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Mobile App Development",
+      "target": "interest-Data Science",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Mobile App Development",
+      "target": "interest-Cybersecurity",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Mobile App Development",
+      "target": "interest-AI/Machine Learning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Mobile App Development",
+      "target": "interest-IoT",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Mobile App Development",
+      "target": "interest-Robotics",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Mobile App Development",
+      "target": "interest-Blockchain",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Cloud Computing",
+      "target": "interest-DevOps",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Cloud Computing",
+      "target": "interest-Data Science",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Cloud Computing",
+      "target": "interest-Cybersecurity",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Cloud Computing",
+      "target": "interest-AI/Machine Learning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Cloud Computing",
+      "target": "interest-IoT",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Cloud Computing",
+      "target": "interest-Robotics",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Cloud Computing",
+      "target": "interest-Blockchain",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-DevOps",
+      "target": "interest-Data Science",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-DevOps",
+      "target": "interest-Cybersecurity",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-DevOps",
+      "target": "interest-AI/Machine Learning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-DevOps",
+      "target": "interest-IoT",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-DevOps",
+      "target": "interest-Robotics",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-DevOps",
+      "target": "interest-Blockchain",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Data Science",
+      "target": "interest-Cybersecurity",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Data Science",
+      "target": "interest-AI/Machine Learning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Data Science",
+      "target": "interest-IoT",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Data Science",
+      "target": "interest-Robotics",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Data Science",
+      "target": "interest-Blockchain",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Cybersecurity",
+      "target": "interest-AI/Machine Learning",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Cybersecurity",
+      "target": "interest-IoT",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Cybersecurity",
+      "target": "interest-Robotics",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Cybersecurity",
+      "target": "interest-Blockchain",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-AI/Machine Learning",
+      "target": "interest-IoT",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-AI/Machine Learning",
+      "target": "interest-Robotics",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-AI/Machine Learning",
+      "target": "interest-Blockchain",
+      "weight": 0.6000000000000001,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-AI/Machine Learning",
+      "target": "interest-Online Learning",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-AI/Machine Learning",
+      "target": "interest-Lifelong Learning",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-IoT",
+      "target": "interest-Robotics",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-IoT",
+      "target": "interest-Blockchain",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Robotics",
+      "target": "interest-Blockchain",
+      "weight": 0.5,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Online Learning",
+      "target": "interest-Lifelong Learning",
+      "weight": 0.7,
+      "type": "semantic"
+    },
+    {
+      "source": "interest-Mental Health and Wellness",
+      "target": "interest-Mindfulness and Meditation",
+      "weight": 0.5,
+      "type": "semantic"
+    }
+  ],
+  "categories": [
+    "Sustainability and Ecology",
+    "AEC (Architecture, Eng & Construction)",
+    "AR/VR & Metaverse",
+    "Hawaiian Art and Culture",
+    "Art and Culture",
+    "Bitcoin & Crypto",
+    "Consulting & Professional Services",
+    "Education & EdTech",
+    "Gaming & Entertainment",
+    "Government & Public Sector",
+    "Investment & Venture Capital",
+    "Marketing & AdTech",
+    "Media & Communications",
+    "Real Estate & PropTech",
+    "Software & Technology",
+    "Student",
+    "Leadership",
+    "Project Management",
+    "Public Speaking",
+    "Networking Skills",
+    "Personal Branding",
+    "Financial Literacy",
+    "Time Management",
+    "Productivity Hacks",
+    "Mental Health and Wellness",
+    "Mindfulness and Meditation",
+    "Stoicism",
+    "Biohacking",
+    "Creative Coding"
+  ]
+}

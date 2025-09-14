@@ -1,0 +1,1176 @@
+{
+  "categories": [
+    "Sustainability and Ecology",
+    "AEC (Architecture, Eng & Construction)",
+    "AR/VR & Metaverse",
+    "Hawaiian Art and Culture",
+    "Art and Culture",
+    "Bitcoin & Crypto",
+    "Consulting & Professional Services",
+    "Education & EdTech",
+    "Gaming & Entertainment",
+    "Government & Public Sector",
+    "Investment & Venture Capital",
+    "Marketing & AdTech",
+    "Media & Communications",
+    "Real Estate & PropTech",
+    "Software & Technology",
+    "Student",
+    "Leadership",
+    "Project Management",
+    "Public Speaking",
+    "Networking Skills",
+    "Personal Branding",
+    "Financial Literacy",
+    "Time Management",
+    "Productivity Hacks",
+    "Mental Health and Wellness",
+    "Mindfulness and Meditation",
+    "Stoicism",
+    "Biohacking",
+    "Creative Coding"
+  ],
+  "interests_by_category": {
+    "Sustainability and Ecology": [
+      "Ecology",
+      "Conservation",
+      "Climate Change Science",
+      "Marine Biology",
+      "Sustainable Agriculture",
+      "Renewable Energy",
+      "Green Building",
+      "Circular Economy",
+      "Waste Reduction",
+      "Land Management",
+      "Reforestation",
+      "Corporate Social Responsibility"
+    ],
+    "AEC (Architecture, Eng & Construction)": [
+      "Architectural Design",
+      "Structural Engineering",
+      "BIM",
+      "Sustainable Architecture",
+      "Construction Technology",
+      "Smart Cities",
+      "Urban Planning",
+      "Landscape Architecture",
+      "Real Estate Investment",
+      "PropTech"
+    ],
+    "AR/VR & Metaverse": [
+      "Virtual Reality (VR) Development",
+      "Augmented Reality (AR) Applications",
+      "Metaverse Platforms",
+      "Spatial Computing",
+      "Digital Twins",
+      "Game Design",
+      "Interactive Storytelling",
+      "3D Printing",
+      "Animation & Motion Graphics"
+    ],
+    "Hawaiian Art and Culture": [
+      "Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "Hula",
+      "Traditional Hawaiian Crafts",
+      "Voyaging & Traditional Navigation",
+      "Hawaiian History & Mythology",
+      "Museum Curation",
+      "Cultural Heritage Preservation",
+      "Art History"
+    ],
+    "Art and Culture": [
+      "Digital Art",
+      "Generative Art",
+      "Animation",
+      "Film Production",
+      "Podcasting",
+      "Music Production",
+      "Creative Writing",
+      "Theater & Performing Arts",
+      "Museum Curation",
+      "Art History",
+      "Photography",
+      "Graphic Design",
+      "Fashion Design",
+      "Interior Design"
+    ],
+    "Bitcoin & Crypto": [
+      "Blockchain Technology",
+      "Cryptocurrency",
+      "Decentralized Finance (DeFi)",
+      "Web3",
+      "NFTs",
+      "Algorithmic Trading",
+      "Cybersecurity",
+      "FinTech"
+    ],
+    "Consulting & Professional Services": [
+      "Business Strategy",
+      "Project Management (Agile, Scrum)",
+      "Change Management",
+      "Leadership",
+      "Public Speaking",
+      "Negotiation",
+      "Corporate Finance",
+      "Mergers & Acquisitions",
+      "Market Research"
+    ],
+    "Education & EdTech": [
+      "Educational Technology (EdTech)",
+      "Online Learning",
+      "STEM/STEAM Education",
+      "Gamification in Learning",
+      "Lifelong Learning",
+      "Curriculum Development",
+      "Instructional Design",
+      "Educational Psychology"
+    ],
+    "Gaming & Entertainment": [
+      "Game Design & Development",
+      "Esports",
+      "Interactive Storytelling",
+      "Animation & Motion Graphics",
+      "Music Production",
+      "Sound Design",
+      "Virtual Reality (VR)",
+      "Augmented Reality (AR)"
+    ],
+    "Government & Public Sector": [
+      "Public Policy",
+      "Civic Technology (CivicTech)",
+      "Diplomacy",
+      "Non-Profit Management",
+      "Social Entrepreneurship",
+      "Urban Planning",
+      "Smart Cities",
+      "Public Health"
+    ],
+    "Investment & Venture Capital": [
+      "Venture Capital",
+      "Angel Investing",
+      "Impact Investing",
+      "ESG",
+      "FinTech",
+      "Stock Market Analysis",
+      "Mergers & Acquisitions",
+      "Corporate Finance",
+      "Financial Modeling",
+      "Startup Pitching"
+    ],
+    "Marketing & AdTech": [
+      "Digital Marketing",
+      "Content Strategy",
+      "SEO",
+      "Social Media Marketing",
+      "Marketing Technology (MarTech/AdTech)",
+      "Data-Driven Marketing",
+      "Branding",
+      "Public Relations",
+      "E-commerce"
+    ],
+    "Media & Communications": [
+      "Journalism",
+      "Public Relations",
+      "Brand Storytelling",
+      "Podcasting",
+      "Film Production",
+      "Social Media Management",
+      "Content Strategy",
+      "Digital Media"
+    ],
+    "Real Estate & PropTech": [
+      "Real Estate Investment",
+      "PropTech",
+      "Green Building",
+      "Smart Cities",
+      "Urban Planning",
+      "Architectural Design",
+      "Construction Technology"
+    ],
+    "Software & Technology": [
+      "Web Development",
+      "Mobile App Development",
+      "Cloud Computing",
+      "DevOps",
+      "Open Source Software",
+      "Data Science",
+      "Cybersecurity",
+      "AI/Machine Learning",
+      "IoT",
+      "Robotics",
+      "Blockchain"
+    ],
+    "Student": [
+      "Online Learning",
+      "Lifelong Learning",
+      "Career Coaching",
+      "Networking Skills",
+      "Personal Branding",
+      "Financial Literacy",
+      "Time Management",
+      "Productivity Hacks",
+      "Mental Health and Wellness",
+      "Mindfulness and Meditation"
+    ],
+    "Leadership": [],
+    "Project Management": [],
+    "Public Speaking": [],
+    "Networking Skills": [],
+    "Personal Branding": [],
+    "Financial Literacy": [],
+    "Time Management": [],
+    "Productivity Hacks": [],
+    "Mental Health and Wellness": [],
+    "Mindfulness and Meditation": [],
+    "Stoicism": [],
+    "Biohacking": [],
+    "Creative Coding": []
+  },
+  "semantic_connections": [
+    {
+      "from": "Climate Change Science",
+      "to": "Change Management",
+      "weight": 0.7
+    },
+    {
+      "from": "Climate Change Science",
+      "to": "Data Science",
+      "weight": 0.7
+    },
+    {
+      "from": "Sustainable Agriculture",
+      "to": "Sustainable Architecture",
+      "weight": 0.7
+    },
+    {
+      "from": "Green Building",
+      "to": "Green Building",
+      "weight": 0.9
+    },
+    {
+      "from": "Land Management",
+      "to": "Project Management (Agile, Scrum)",
+      "weight": 0.7
+    },
+    {
+      "from": "Land Management",
+      "to": "Change Management",
+      "weight": 0.7
+    },
+    {
+      "from": "Land Management",
+      "to": "Non-Profit Management",
+      "weight": 0.7
+    },
+    {
+      "from": "Land Management",
+      "to": "Social Media Management",
+      "weight": 0.7
+    },
+    {
+      "from": "Land Management",
+      "to": "Time Management",
+      "weight": 0.7
+    },
+    {
+      "from": "Corporate Social Responsibility",
+      "to": "Corporate Finance",
+      "weight": 0.7
+    },
+    {
+      "from": "Corporate Social Responsibility",
+      "to": "Social Entrepreneurship",
+      "weight": 0.7
+    },
+    {
+      "from": "Corporate Social Responsibility",
+      "to": "Corporate Finance",
+      "weight": 0.7
+    },
+    {
+      "from": "Corporate Social Responsibility",
+      "to": "Social Media Marketing",
+      "weight": 0.7
+    },
+    {
+      "from": "Corporate Social Responsibility",
+      "to": "Social Media Management",
+      "weight": 0.7
+    },
+    {
+      "from": "Architectural Design",
+      "to": "Game Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Architectural Design",
+      "to": "Graphic Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Architectural Design",
+      "to": "Fashion Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Architectural Design",
+      "to": "Interior Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Architectural Design",
+      "to": "Instructional Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Architectural Design",
+      "to": "Game Design & Development",
+      "weight": 0.7
+    },
+    {
+      "from": "Architectural Design",
+      "to": "Sound Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Architectural Design",
+      "to": "Architectural Design",
+      "weight": 0.9
+    },
+    {
+      "from": "Sustainable Architecture",
+      "to": "Landscape Architecture",
+      "weight": 0.7
+    },
+    {
+      "from": "Construction Technology",
+      "to": "Blockchain Technology",
+      "weight": 0.7
+    },
+    {
+      "from": "Construction Technology",
+      "to": "Educational Technology (EdTech)",
+      "weight": 0.7
+    },
+    {
+      "from": "Construction Technology",
+      "to": "Civic Technology (CivicTech)",
+      "weight": 0.7
+    },
+    {
+      "from": "Construction Technology",
+      "to": "Marketing Technology (MarTech/AdTech)",
+      "weight": 0.7
+    },
+    {
+      "from": "Construction Technology",
+      "to": "Construction Technology",
+      "weight": 0.9
+    },
+    {
+      "from": "Smart Cities",
+      "to": "Smart Cities",
+      "weight": 0.9
+    },
+    {
+      "from": "Smart Cities",
+      "to": "Smart Cities",
+      "weight": 0.9
+    },
+    {
+      "from": "Urban Planning",
+      "to": "Urban Planning",
+      "weight": 0.9
+    },
+    {
+      "from": "Urban Planning",
+      "to": "Urban Planning",
+      "weight": 0.9
+    },
+    {
+      "from": "Real Estate Investment",
+      "to": "Real Estate Investment",
+      "weight": 0.9
+    },
+    {
+      "from": "PropTech",
+      "to": "PropTech",
+      "weight": 0.9
+    },
+    {
+      "from": "Virtual Reality (VR) Development",
+      "to": "Augmented Reality (AR) Applications",
+      "weight": 0.7
+    },
+    {
+      "from": "Virtual Reality (VR) Development",
+      "to": "Curriculum Development",
+      "weight": 0.7
+    },
+    {
+      "from": "Virtual Reality (VR) Development",
+      "to": "Game Design & Development",
+      "weight": 0.7
+    },
+    {
+      "from": "Virtual Reality (VR) Development",
+      "to": "Virtual Reality (VR)",
+      "weight": 0.9
+    },
+    {
+      "from": "Virtual Reality (VR) Development",
+      "to": "Augmented Reality (AR)",
+      "weight": 0.7
+    },
+    {
+      "from": "Virtual Reality (VR) Development",
+      "to": "Web Development",
+      "weight": 0.7
+    },
+    {
+      "from": "Virtual Reality (VR) Development",
+      "to": "Mobile App Development",
+      "weight": 0.7
+    },
+    {
+      "from": "Augmented Reality (AR) Applications",
+      "to": "Virtual Reality (VR)",
+      "weight": 0.7
+    },
+    {
+      "from": "Augmented Reality (AR) Applications",
+      "to": "Augmented Reality (AR)",
+      "weight": 0.9
+    },
+    {
+      "from": "Spatial Computing",
+      "to": "Cloud Computing",
+      "weight": 0.7
+    },
+    {
+      "from": "Digital Twins",
+      "to": "Digital Art",
+      "weight": 0.7
+    },
+    {
+      "from": "Digital Twins",
+      "to": "Digital Marketing",
+      "weight": 0.7
+    },
+    {
+      "from": "Digital Twins",
+      "to": "Digital Media",
+      "weight": 0.7
+    },
+    {
+      "from": "Game Design",
+      "to": "Graphic Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Game Design",
+      "to": "Fashion Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Game Design",
+      "to": "Interior Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Game Design",
+      "to": "Instructional Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Game Design",
+      "to": "Game Design & Development",
+      "weight": 0.9
+    },
+    {
+      "from": "Game Design",
+      "to": "Sound Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Game Design",
+      "to": "Architectural Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Interactive Storytelling",
+      "to": "Interactive Storytelling",
+      "weight": 0.9
+    },
+    {
+      "from": "Interactive Storytelling",
+      "to": "Brand Storytelling",
+      "weight": 0.7
+    },
+    {
+      "from": "Animation & Motion Graphics",
+      "to": "Animation",
+      "weight": 0.9
+    },
+    {
+      "from": "Animation & Motion Graphics",
+      "to": "Animation & Motion Graphics",
+      "weight": 0.9
+    },
+    {
+      "from": "Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "to": "Traditional Hawaiian Crafts",
+      "weight": 0.7
+    },
+    {
+      "from": "Hawaiian Language (ʻŌlelo Hawaiʻi)",
+      "to": "Hawaiian History & Mythology",
+      "weight": 0.7
+    },
+    {
+      "from": "Traditional Hawaiian Crafts",
+      "to": "Voyaging & Traditional Navigation",
+      "weight": 0.7
+    },
+    {
+      "from": "Traditional Hawaiian Crafts",
+      "to": "Hawaiian History & Mythology",
+      "weight": 0.7
+    },
+    {
+      "from": "Voyaging & Traditional Navigation",
+      "to": "Hawaiian History & Mythology",
+      "weight": 0.6
+    },
+    {
+      "from": "Hawaiian History & Mythology",
+      "to": "Art History",
+      "weight": 0.7
+    },
+    {
+      "from": "Hawaiian History & Mythology",
+      "to": "Art History",
+      "weight": 0.7
+    },
+    {
+      "from": "Museum Curation",
+      "to": "Museum Curation",
+      "weight": 0.9
+    },
+    {
+      "from": "Art History",
+      "to": "Digital Art",
+      "weight": 0.7
+    },
+    {
+      "from": "Art History",
+      "to": "Generative Art",
+      "weight": 0.7
+    },
+    {
+      "from": "Art History",
+      "to": "Art History",
+      "weight": 0.9
+    },
+    {
+      "from": "Digital Art",
+      "to": "Generative Art",
+      "weight": 0.7
+    },
+    {
+      "from": "Digital Art",
+      "to": "Art History",
+      "weight": 0.7
+    },
+    {
+      "from": "Digital Art",
+      "to": "Digital Marketing",
+      "weight": 0.7
+    },
+    {
+      "from": "Digital Art",
+      "to": "Digital Media",
+      "weight": 0.7
+    },
+    {
+      "from": "Generative Art",
+      "to": "Art History",
+      "weight": 0.7
+    },
+    {
+      "from": "Animation",
+      "to": "Animation & Motion Graphics",
+      "weight": 0.9
+    },
+    {
+      "from": "Film Production",
+      "to": "Music Production",
+      "weight": 0.7
+    },
+    {
+      "from": "Film Production",
+      "to": "Music Production",
+      "weight": 0.7
+    },
+    {
+      "from": "Film Production",
+      "to": "Film Production",
+      "weight": 0.9
+    },
+    {
+      "from": "Podcasting",
+      "to": "Podcasting",
+      "weight": 0.9
+    },
+    {
+      "from": "Music Production",
+      "to": "Music Production",
+      "weight": 0.9
+    },
+    {
+      "from": "Music Production",
+      "to": "Film Production",
+      "weight": 0.7
+    },
+    {
+      "from": "Graphic Design",
+      "to": "Fashion Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Graphic Design",
+      "to": "Interior Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Graphic Design",
+      "to": "Instructional Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Graphic Design",
+      "to": "Game Design & Development",
+      "weight": 0.7
+    },
+    {
+      "from": "Graphic Design",
+      "to": "Sound Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Graphic Design",
+      "to": "Architectural Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Fashion Design",
+      "to": "Interior Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Fashion Design",
+      "to": "Instructional Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Fashion Design",
+      "to": "Game Design & Development",
+      "weight": 0.7
+    },
+    {
+      "from": "Fashion Design",
+      "to": "Sound Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Fashion Design",
+      "to": "Architectural Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Interior Design",
+      "to": "Instructional Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Interior Design",
+      "to": "Game Design & Development",
+      "weight": 0.7
+    },
+    {
+      "from": "Interior Design",
+      "to": "Sound Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Interior Design",
+      "to": "Architectural Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Blockchain Technology",
+      "to": "Educational Technology (EdTech)",
+      "weight": 0.7
+    },
+    {
+      "from": "Blockchain Technology",
+      "to": "Civic Technology (CivicTech)",
+      "weight": 0.7
+    },
+    {
+      "from": "Blockchain Technology",
+      "to": "Marketing Technology (MarTech/AdTech)",
+      "weight": 0.7
+    },
+    {
+      "from": "Blockchain Technology",
+      "to": "Construction Technology",
+      "weight": 0.7
+    },
+    {
+      "from": "Blockchain Technology",
+      "to": "AI/Machine Learning",
+      "weight": 0.6
+    },
+    {
+      "from": "Blockchain Technology",
+      "to": "Blockchain",
+      "weight": 0.9
+    },
+    {
+      "from": "Decentralized Finance (DeFi)",
+      "to": "Corporate Finance",
+      "weight": 0.7
+    },
+    {
+      "from": "Decentralized Finance (DeFi)",
+      "to": "Corporate Finance",
+      "weight": 0.7
+    },
+    {
+      "from": "Cybersecurity",
+      "to": "Cybersecurity",
+      "weight": 0.9
+    },
+    {
+      "from": "FinTech",
+      "to": "FinTech",
+      "weight": 0.9
+    },
+    {
+      "from": "Business Strategy",
+      "to": "Content Strategy",
+      "weight": 0.7
+    },
+    {
+      "from": "Business Strategy",
+      "to": "Content Strategy",
+      "weight": 0.7
+    },
+    {
+      "from": "Project Management (Agile, Scrum)",
+      "to": "Change Management",
+      "weight": 0.7
+    },
+    {
+      "from": "Project Management (Agile, Scrum)",
+      "to": "Non-Profit Management",
+      "weight": 0.7
+    },
+    {
+      "from": "Project Management (Agile, Scrum)",
+      "to": "Social Media Management",
+      "weight": 0.7
+    },
+    {
+      "from": "Project Management (Agile, Scrum)",
+      "to": "Time Management",
+      "weight": 0.7
+    },
+    {
+      "from": "Change Management",
+      "to": "Non-Profit Management",
+      "weight": 0.7
+    },
+    {
+      "from": "Change Management",
+      "to": "Social Media Management",
+      "weight": 0.7
+    },
+    {
+      "from": "Change Management",
+      "to": "Time Management",
+      "weight": 0.7
+    },
+    {
+      "from": "Public Speaking",
+      "to": "Public Policy",
+      "weight": 0.7
+    },
+    {
+      "from": "Public Speaking",
+      "to": "Public Health",
+      "weight": 0.7
+    },
+    {
+      "from": "Public Speaking",
+      "to": "Public Relations",
+      "weight": 0.7
+    },
+    {
+      "from": "Public Speaking",
+      "to": "Public Relations",
+      "weight": 0.7
+    },
+    {
+      "from": "Corporate Finance",
+      "to": "Corporate Finance",
+      "weight": 0.9
+    },
+    {
+      "from": "Mergers & Acquisitions",
+      "to": "Mergers & Acquisitions",
+      "weight": 0.9
+    },
+    {
+      "from": "Market Research",
+      "to": "Stock Market Analysis",
+      "weight": 0.7
+    },
+    {
+      "from": "Educational Technology (EdTech)",
+      "to": "Educational Psychology",
+      "weight": 0.7
+    },
+    {
+      "from": "Educational Technology (EdTech)",
+      "to": "Civic Technology (CivicTech)",
+      "weight": 0.7
+    },
+    {
+      "from": "Educational Technology (EdTech)",
+      "to": "Marketing Technology (MarTech/AdTech)",
+      "weight": 0.7
+    },
+    {
+      "from": "Educational Technology (EdTech)",
+      "to": "Construction Technology",
+      "weight": 0.7
+    },
+    {
+      "from": "Online Learning",
+      "to": "Gamification in Learning",
+      "weight": 0.7
+    },
+    {
+      "from": "Online Learning",
+      "to": "Lifelong Learning",
+      "weight": 0.7
+    },
+    {
+      "from": "Online Learning",
+      "to": "AI/Machine Learning",
+      "weight": 0.7
+    },
+    {
+      "from": "Online Learning",
+      "to": "Online Learning",
+      "weight": 0.9
+    },
+    {
+      "from": "Online Learning",
+      "to": "Lifelong Learning",
+      "weight": 0.7
+    },
+    {
+      "from": "Gamification in Learning",
+      "to": "Lifelong Learning",
+      "weight": 0.7
+    },
+    {
+      "from": "Gamification in Learning",
+      "to": "AI/Machine Learning",
+      "weight": 0.7
+    },
+    {
+      "from": "Gamification in Learning",
+      "to": "Online Learning",
+      "weight": 0.7
+    },
+    {
+      "from": "Gamification in Learning",
+      "to": "Lifelong Learning",
+      "weight": 0.7
+    },
+    {
+      "from": "Lifelong Learning",
+      "to": "AI/Machine Learning",
+      "weight": 0.7
+    },
+    {
+      "from": "Lifelong Learning",
+      "to": "Online Learning",
+      "weight": 0.7
+    },
+    {
+      "from": "Lifelong Learning",
+      "to": "Lifelong Learning",
+      "weight": 0.9
+    },
+    {
+      "from": "Curriculum Development",
+      "to": "Game Design & Development",
+      "weight": 0.7
+    },
+    {
+      "from": "Curriculum Development",
+      "to": "Web Development",
+      "weight": 0.7
+    },
+    {
+      "from": "Curriculum Development",
+      "to": "Mobile App Development",
+      "weight": 0.7
+    },
+    {
+      "from": "Instructional Design",
+      "to": "Game Design & Development",
+      "weight": 0.7
+    },
+    {
+      "from": "Instructional Design",
+      "to": "Sound Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Instructional Design",
+      "to": "Architectural Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Game Design & Development",
+      "to": "Sound Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Game Design & Development",
+      "to": "Architectural Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Game Design & Development",
+      "to": "Web Development",
+      "weight": 0.7
+    },
+    {
+      "from": "Game Design & Development",
+      "to": "Mobile App Development",
+      "weight": 0.7
+    },
+    {
+      "from": "Interactive Storytelling",
+      "to": "Brand Storytelling",
+      "weight": 0.7
+    },
+    {
+      "from": "Music Production",
+      "to": "Film Production",
+      "weight": 0.7
+    },
+    {
+      "from": "Sound Design",
+      "to": "Architectural Design",
+      "weight": 0.7
+    },
+    {
+      "from": "Virtual Reality (VR)",
+      "to": "Augmented Reality (AR)",
+      "weight": 0.7
+    },
+    {
+      "from": "Public Policy",
+      "to": "Public Health",
+      "weight": 0.7
+    },
+    {
+      "from": "Public Policy",
+      "to": "Public Relations",
+      "weight": 0.7
+    },
+    {
+      "from": "Public Policy",
+      "to": "Public Relations",
+      "weight": 0.7
+    },
+    {
+      "from": "Civic Technology (CivicTech)",
+      "to": "Marketing Technology (MarTech/AdTech)",
+      "weight": 0.7
+    },
+    {
+      "from": "Civic Technology (CivicTech)",
+      "to": "Construction Technology",
+      "weight": 0.7
+    },
+    {
+      "from": "Non-Profit Management",
+      "to": "Social Media Management",
+      "weight": 0.7
+    },
+    {
+      "from": "Non-Profit Management",
+      "to": "Time Management",
+      "weight": 0.7
+    },
+    {
+      "from": "Social Entrepreneurship",
+      "to": "Social Media Marketing",
+      "weight": 0.7
+    },
+    {
+      "from": "Social Entrepreneurship",
+      "to": "Social Media Management",
+      "weight": 0.7
+    },
+    {
+      "from": "Urban Planning",
+      "to": "Urban Planning",
+      "weight": 0.9
+    },
+    {
+      "from": "Smart Cities",
+      "to": "Smart Cities",
+      "weight": 0.9
+    },
+    {
+      "from": "Public Health",
+      "to": "Public Relations",
+      "weight": 0.7
+    },
+    {
+      "from": "Public Health",
+      "to": "Public Relations",
+      "weight": 0.7
+    },
+    {
+      "from": "Public Health",
+      "to": "Mental Health and Wellness",
+      "weight": 0.7
+    },
+    {
+      "from": "Angel Investing",
+      "to": "Impact Investing",
+      "weight": 0.7
+    },
+    {
+      "from": "Financial Modeling",
+      "to": "Financial Literacy",
+      "weight": 0.7
+    },
+    {
+      "from": "Digital Marketing",
+      "to": "Social Media Marketing",
+      "weight": 0.7
+    },
+    {
+      "from": "Digital Marketing",
+      "to": "Marketing Technology (MarTech/AdTech)",
+      "weight": 0.7
+    },
+    {
+      "from": "Digital Marketing",
+      "to": "Data-Driven Marketing",
+      "weight": 0.7
+    },
+    {
+      "from": "Digital Marketing",
+      "to": "Digital Media",
+      "weight": 0.7
+    },
+    {
+      "from": "Content Strategy",
+      "to": "Content Strategy",
+      "weight": 0.9
+    },
+    {
+      "from": "Social Media Marketing",
+      "to": "Marketing Technology (MarTech/AdTech)",
+      "weight": 0.7
+    },
+    {
+      "from": "Social Media Marketing",
+      "to": "Data-Driven Marketing",
+      "weight": 0.7
+    },
+    {
+      "from": "Social Media Marketing",
+      "to": "Social Media Management",
+      "weight": 0.8
+    },
+    {
+      "from": "Social Media Marketing",
+      "to": "Digital Media",
+      "weight": 0.7
+    },
+    {
+      "from": "Marketing Technology (MarTech/AdTech)",
+      "to": "Data-Driven Marketing",
+      "weight": 0.7
+    },
+    {
+      "from": "Marketing Technology (MarTech/AdTech)",
+      "to": "Construction Technology",
+      "weight": 0.7
+    },
+    {
+      "from": "Data-Driven Marketing",
+      "to": "Data Science",
+      "weight": 0.7
+    },
+    {
+      "from": "Branding",
+      "to": "Personal Branding",
+      "weight": 0.9
+    },
+    {
+      "from": "Public Relations",
+      "to": "Public Relations",
+      "weight": 0.9
+    },
+    {
+      "from": "Social Media Management",
+      "to": "Digital Media",
+      "weight": 0.7
+    },
+    {
+      "from": "Social Media Management",
+      "to": "Time Management",
+      "weight": 0.7
+    },
+    {
+      "from": "Web Development",
+      "to": "Mobile App Development",
+      "weight": 0.7
+    },
+    {
+      "from": "AI/Machine Learning",
+      "to": "Blockchain",
+      "weight": 0.6
+    },
+    {
+      "from": "AI/Machine Learning",
+      "to": "Online Learning",
+      "weight": 0.7
+    },
+    {
+      "from": "AI/Machine Learning",
+      "to": "Lifelong Learning",
+      "weight": 0.7
+    },
+    {
+      "from": "Online Learning",
+      "to": "Lifelong Learning",
+      "weight": 0.7
+    }
+  ]
+}
