@@ -177,6 +177,7 @@ export default function GraphPage() {
               profiles={profiles.filter(p => p.id !== currentUser.id)} // Exclude current user
               selectedInterest={selectedInterest}
               onCollaborate={handleCollaborate}
+              onClearFilter={() => setSelectedInterest(undefined)}
             />
           </div>
         </div>
