@@ -34,7 +34,7 @@ export function parseInterestHierarchy(interestText: string): SemanticGraphData 
   
   let currentCategory = '';
   
-  lines.forEach((line, index) => {
+  lines.forEach((line) => {
     if (!line.startsWith('\t')) {
       // Top-level category
       currentCategory = line.trim();
@@ -131,7 +131,7 @@ function generateSemanticLinks(nodes: SemanticNode[]): SemanticLink[] {
         semanticGroups
       );
       
-      if (similarity > 0.3) { // Only create links for meaningful similarity
+      if (similarity > 0.2) { // Only create links for meaningful similarity (lowered threshold)
         links.push({
           source: interest1.id,
           target: interest2.id,
@@ -181,7 +181,29 @@ function calculateSemanticSimilarity(
     }
   });
   
-  return maxGroupSimilarity;
+  // Enhanced semantic matching for better connections
+  const enhancedMatches = [
+    { keywords: ['ai', 'machine learning', 'artificial intelligence'], similarity: 0.8 },
+    { keywords: ['web development', 'mobile app', 'software'], similarity: 0.6 },
+    { keywords: ['sustainability', 'ecology', 'climate', 'green'], similarity: 0.7 },
+    { keywords: ['design', 'art', 'creative'], similarity: 0.6 },
+    { keywords: ['blockchain', 'crypto', 'bitcoin', 'web3'], similarity: 0.8 },
+    { keywords: ['vr', 'ar', 'virtual reality', 'augmented reality', 'metaverse'], similarity: 0.8 },
+    { keywords: ['architecture', 'building', 'construction', 'urban'], similarity: 0.6 },
+    { keywords: ['marketing', 'branding', 'social media'], similarity: 0.6 },
+    { keywords: ['finance', 'investment', 'venture'], similarity: 0.6 },
+    { keywords: ['education', 'learning', 'teaching'], similarity: 0.6 }
+  ];
+  
+  for (const match of enhancedMatches) {
+    const matches1 = match.keywords.filter(keyword => name1.includes(keyword)).length;
+    const matches2 = match.keywords.filter(keyword => name2.includes(keyword)).length;
+    if (matches1 > 0 && matches2 > 0) {
+      maxGroupSimilarity = Math.max(maxGroupSimilarity, match.similarity);
+    }
+  }
+  
+  return Math.max(maxGroupSimilarity, 0);
 }
 
 // Get interests by category
@@ -225,7 +247,7 @@ export function createVisualizationGraph(
     
     // Include semantic links between these interests
     const links = data.links.filter(link => 
-      link.type === 'semantic' && link.weight > 0.4 && 
+      link.type === 'semantic' && link.weight > 0.2 && 
       categoryInterests.some(n => n.id === link.source) && 
       categoryInterests.some(n => n.id === link.target)
     );
@@ -236,10 +258,10 @@ export function createVisualizationGraph(
   // Show all interests with semantic connections
   const interestNodes = data.nodes.filter(n => n.type === 'interest');
   
-  // Only include semantic links with reasonable weights
+  // Only include semantic links with reasonable weights (lowered threshold)
   const links = data.links.filter(link => 
     link.type === 'semantic' && 
-    link.weight > 0.4 && 
+    link.weight > 0.2 && 
     interestNodes.some(n => n.id === link.source) && 
     interestNodes.some(n => n.id === link.target)
   );

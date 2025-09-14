@@ -8,15 +8,43 @@ import {
   createVisualizationGraph,
   getInterestsByCategory,
   getRelatedInterests,
-  type SemanticGraphData,
-  type SemanticNode 
+  type SemanticGraphData
 } from '../lib/semantic-graph';
 
+// Types for D3 graph
+interface GraphNode {
+  id: string;
+  name: string;
+  type: 'interest';
+  level?: number;
+  category?: string;
+  x?: number;
+  y?: number;
+  fx?: number | null;
+  fy?: number | null;
+}
+
+interface GraphLink {
+  source: GraphNode;
+  target: GraphNode;
+  weight?: number;
+  linkType?: 'semantic';
+}
+
 // Custom D3 Force Graph Component
-const CustomForceGraph = ({ graphData, onNodeClick, width = 800, height = 384 }: any) => {
+const CustomForceGraph = ({ 
+  graphData, 
+  onNodeClick, 
+  width = 800, 
+  height = 384 
+}: {
+  graphData: { nodes: GraphNode[], links: GraphLink[] };
+  onNodeClick: (node: GraphNode) => void;
+  width?: number;
+  height?: number;
+}) => {
   const svgRef = useRef<SVGSVGElement>(null);
-  const [transform, setTransform] = useState({ x: 0, y: 0, k: 1 });
-  const d3Ref = useRef<any>(null);
+  const d3Ref = useRef<typeof import('d3') | null>(null);
 
   useEffect(() => {
     if (!svgRef.current || !graphData) return;
@@ -29,23 +57,22 @@ const CustomForceGraph = ({ graphData, onNodeClick, width = 800, height = 384 }:
 
       const { nodes, links } = graphData;
 
-      // Create zoom behavior
-      const zoomBehavior = d3.zoom()
+      // Create zoom behavior with type assertion
+      const zoomBehavior = d3.zoom<SVGSVGElement, unknown>()
         .scaleExtent([0.1, 4])
-        .on('zoom', (event) => {
+        .on('zoom', (event: d3.D3ZoomEvent<SVGSVGElement, unknown>) => {
           const { transform } = event;
-          setTransform({ x: transform.x, y: transform.y, k: transform.k });
-          g.attr('transform', transform);
+          g.attr('transform', transform.toString());
         });
 
-      svg.call(zoomBehavior as any);
+      (svg as d3.Selection<SVGSVGElement, unknown, null, undefined>).call(zoomBehavior as never);
 
       // Main group for all graph elements
       const g = svg.append('g');
 
-      // Create simulation with adjusted forces for better layout
-      const simulation = d3.forceSimulation(nodes)
-        .force('link', d3.forceLink(links).id((d: any) => d.id).distance(60))
+      // Create simulation with type assertions
+      const simulation = d3.forceSimulation(nodes as d3.SimulationNodeDatum[])
+        .force('link', d3.forceLink(links).id((d: unknown) => (d as GraphNode).id).distance(60))
         .force('charge', d3.forceManyBody().strength(-200))
         .force('center', d3.forceCenter(width / 2, height / 2))
         .force('collision', d3.forceCollide().radius(15));
@@ -56,7 +83,7 @@ const CustomForceGraph = ({ graphData, onNodeClick, width = 800, height = 384 }:
         .data(links)
         .enter().append('line')
         .attr('stroke', '#94a3b8')
-        .attr('stroke-width', (d: any) => Math.sqrt(d.weight || 1) * 1.5)
+        .attr('stroke-width', (d: GraphLink) => Math.sqrt(d.weight || 1) * 1.5)
         .attr('stroke-opacity', 0.6);
 
       // Create nodes
@@ -69,7 +96,7 @@ const CustomForceGraph = ({ graphData, onNodeClick, width = 800, height = 384 }:
         .attr('stroke', '#fff')
         .attr('stroke-width', 2)
         .style('cursor', 'pointer')
-        .call(d3.drag<SVGCircleElement, any>()
+        .call(d3.drag<SVGCircleElement, GraphNode>()
           .on('start', dragstarted)
           .on('drag', dragged)
           .on('end', dragended));
@@ -79,7 +106,7 @@ const CustomForceGraph = ({ graphData, onNodeClick, width = 800, height = 384 }:
         .selectAll('text')
         .data(nodes)
         .enter().append('text')
-        .text((d: any) => d.name)
+        .text((d: GraphNode) => d.name)
         .attr('font-size', '10px')
         .attr('font-family', 'Inter, sans-serif')
         .attr('fill', '#1f2937')
@@ -88,40 +115,40 @@ const CustomForceGraph = ({ graphData, onNodeClick, width = 800, height = 384 }:
         .style('pointer-events', 'none');
 
       // Add click handlers
-      node.on('click', (event: any, d: any) => {
+      node.on('click', (event: MouseEvent, d: GraphNode) => {
         if (onNodeClick) {
           onNodeClick(d);
         }
       });
 
       // Add hover effects
-      node.on('mouseenter', (event: any, d: any) => {
-        link.style('stroke', (l: any) => 
+      node.on('mouseenter', (event: MouseEvent, d: GraphNode) => {
+        link.style('stroke', (l: GraphLink) => 
           l.source === d || l.target === d ? '#ef4444' : '#94a3b8'
         );
-        link.style('stroke-width', (l: any) => 
+        link.style('stroke-width', (l: GraphLink) => 
           l.source === d || l.target === d ? 3 : Math.sqrt(l.weight || 1) * 1.5
         );
       }).on('mouseleave', () => {
         link.style('stroke', '#94a3b8');
-        link.style('stroke-width', (d: any) => Math.sqrt(d.weight || 1) * 1.5);
+        link.style('stroke-width', (d: GraphLink) => Math.sqrt(d.weight || 1) * 1.5);
       });
 
       // Update positions on tick
       simulation.on('tick', () => {
         link
-          .attr('x1', (d: any) => d.source.x)
-          .attr('y1', (d: any) => d.source.y)
-          .attr('x2', (d: any) => d.target.x)
-          .attr('y2', (d: any) => d.target.y);
+          .attr('x1', (d: GraphLink) => (d.source as GraphNode).x || 0)
+          .attr('y1', (d: GraphLink) => (d.source as GraphNode).y || 0)
+          .attr('x2', (d: GraphLink) => (d.target as GraphNode).x || 0)
+          .attr('y2', (d: GraphLink) => (d.target as GraphNode).y || 0);
 
         node
-          .attr('cx', (d: any) => d.x)
-          .attr('cy', (d: any) => d.y);
+          .attr('cx', (d: GraphNode) => d.x || 0)
+          .attr('cy', (d: GraphNode) => d.y || 0);
 
         labels
-          .attr('x', (d: any) => d.x)
-          .attr('y', (d: any) => d.y + 16);
+          .attr('x', (d: GraphNode) => d.x || 0)
+          .attr('y', (d: GraphNode) => (d.y || 0) + 16);
       });
 
       // Auto-fit the graph after simulation settles
@@ -137,31 +164,31 @@ const CustomForceGraph = ({ graphData, onNodeClick, width = 800, height = 384 }:
           const translate = [width / 2 - scale * midX, height / 2 - scale * midY];
 
           svg.transition().duration(750).call(
-            zoomBehavior.transform as any,
+            zoomBehavior.transform as never,
             d3.zoomIdentity.translate(translate[0], translate[1]).scale(scale)
           );
         }
       }, 1000);
 
-      function dragstarted(event: any) {
+      function dragstarted(event: d3.D3DragEvent<SVGCircleElement, GraphNode, GraphNode>) {
         if (!event.active) simulation.alphaTarget(0.3).restart();
         event.subject.fx = event.subject.x;
         event.subject.fy = event.subject.y;
       }
 
-      function dragged(event: any) {
+      function dragged(event: d3.D3DragEvent<SVGCircleElement, GraphNode, GraphNode>) {
         event.subject.fx = event.x;
         event.subject.fy = event.y;
       }
 
-      function dragended(event: any) {
+      function dragended(event: d3.D3DragEvent<SVGCircleElement, GraphNode, GraphNode>) {
         if (!event.active) simulation.alphaTarget(0);
         event.subject.fx = null;
         event.subject.fy = null;
       }
 
       // Store zoom behavior for external controls
-      (svgRef.current as any).__zoom__ = zoomBehavior;
+      (svgRef.current as SVGSVGElement & { __zoom__?: typeof zoomBehavior }).__zoom__ = zoomBehavior;
     });
   }, [graphData, onNodeClick, width, height]);
 
@@ -169,9 +196,9 @@ const CustomForceGraph = ({ graphData, onNodeClick, width = 800, height = 384 }:
     if (!d3Ref.current || !svgRef.current) return;
     const d3 = d3Ref.current;
     const svg = d3.select(svgRef.current);
-    const zoomBehavior = (svgRef.current as any).__zoom__;
-    if (zoomBehavior) {
-      svg.transition().duration(200).call(zoomBehavior.scaleBy, 1.5);
+    const zoomBehavior = (svgRef.current as SVGSVGElement & { __zoom__?: unknown }).__zoom__;
+    if (zoomBehavior && typeof zoomBehavior === 'object' && 'scaleBy' in zoomBehavior) {
+      svg.transition().duration(200).call(zoomBehavior.scaleBy as never, 1.5);
     }
   };
 
@@ -179,9 +206,9 @@ const CustomForceGraph = ({ graphData, onNodeClick, width = 800, height = 384 }:
     if (!d3Ref.current || !svgRef.current) return;
     const d3 = d3Ref.current;
     const svg = d3.select(svgRef.current);
-    const zoomBehavior = (svgRef.current as any).__zoom__;
-    if (zoomBehavior) {
-      svg.transition().duration(200).call(zoomBehavior.scaleBy, 1 / 1.5);
+    const zoomBehavior = (svgRef.current as SVGSVGElement & { __zoom__?: unknown }).__zoom__;
+    if (zoomBehavior && typeof zoomBehavior === 'object' && 'scaleBy' in zoomBehavior) {
+      svg.transition().duration(200).call(zoomBehavior.scaleBy as never, 1 / 1.5);
     }
   };
 
@@ -189,9 +216,9 @@ const CustomForceGraph = ({ graphData, onNodeClick, width = 800, height = 384 }:
     if (!d3Ref.current || !svgRef.current) return;
     const d3 = d3Ref.current;
     const svg = d3.select(svgRef.current);
-    const zoomBehavior = (svgRef.current as any).__zoom__;
-    if (zoomBehavior) {
-      svg.transition().duration(500).call(zoomBehavior.transform as any, d3.zoomIdentity);
+    const zoomBehavior = (svgRef.current as SVGSVGElement & { __zoom__?: unknown }).__zoom__;
+    if (zoomBehavior && typeof zoomBehavior === 'object' && 'transform' in zoomBehavior) {
+      svg.transition().duration(500).call(zoomBehavior.transform as never, d3.zoomIdentity);
     }
   };
 
@@ -237,26 +264,6 @@ interface InterestGraphProps {
   onInterestClick: (interest: string) => void;
   onPersonClick: (person: Profile) => void;
   selectedInterest?: string;
-}
-
-interface GraphNode {
-  id: string;
-  name: string;
-  type: 'person' | 'category' | 'interest';
-  profile?: Profile;
-  level?: number;
-  category?: string;
-  x?: number;
-  y?: number;
-  fx?: number;
-  fy?: number;
-}
-
-interface GraphLink {
-  source: string;
-  target: string;
-  weight?: number;
-  linkType?: 'hierarchical' | 'semantic' | 'person';
 }
 
 const INTEREST_DATA = `Sustainability and Ecology
@@ -621,14 +628,52 @@ export default function InterestGraph({ onInterestClick, onPersonClick, selected
       
       setSemanticData(data);
       
-      // Convert to force-graph format
+      // Convert to graph format (interests only)
       const vizData = createVisualizationGraph(data);
+      const convertedGraphData = {
+        nodes: vizData.nodes
+          .filter(node => node.type === 'interest')
+          .map(node => ({
+            id: node.id,
+            name: node.name,
+            type: 'interest' as const,
+            level: node.level,
+            category: node.category,
+          })) as GraphNode[],
+        links: vizData.links
+          .filter(link => link.type === 'semantic')
+          .map(link => {
+            const sourceNode = vizData.nodes.find(n => n.id === link.source && n.type === 'interest');
+            const targetNode = vizData.nodes.find(n => n.id === link.target && n.type === 'interest');
+            if (!sourceNode || !targetNode) return null;
+            return {
+              source: {
+                id: sourceNode.id,
+                name: sourceNode.name,
+                type: 'interest' as const,
+                level: sourceNode.level,
+                category: sourceNode.category,
+              },
+              target: {
+                id: targetNode.id,
+                name: targetNode.name,
+                type: 'interest' as const,
+                level: targetNode.level,
+                category: targetNode.category,
+              },
+              weight: link.weight,
+              linkType: 'semantic' as const
+            } as GraphLink;
+          })
+          .filter(link => link !== null) as GraphLink[]
+      };
+      
       console.log('✅ Created visualization data:', {
-        nodes: vizData.nodes.length,
-        links: vizData.links.length
+        nodes: convertedGraphData.nodes.length,
+        links: convertedGraphData.links.length
       });
       
-      setGraphData(vizData);
+      setGraphData(convertedGraphData);
       setLoading(false);
     } catch (err) {
       console.error('❌ Error loading semantic data:', err);
@@ -699,7 +744,7 @@ export default function InterestGraph({ onInterestClick, onPersonClick, selected
         <div className="w-full h-96 bg-white rounded-xl border border-gray-200 overflow-hidden">
           <CustomForceGraph
             graphData={graphData}
-            onNodeClick={(node: any) => {
+            onNodeClick={(node: GraphNode) => {
               // All nodes are interests now
               onInterestClick(node.name);
             }}

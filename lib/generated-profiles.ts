@@ -141,7 +141,7 @@ export const generatedProfiles: Profile[] = [
       "Construction Technology",
       "Ecology"
     ],
-    "availability": "Mornings",
+    "availability": "Flexible",
     "links": {
       "site": "kofihernandez.com"
     },
@@ -182,7 +182,7 @@ export const generatedProfiles: Profile[] = [
       "Virtual Reality (VR) Development",
       "Fashion Design"
     ],
-    "availability": "Mornings",
+    "availability": "Flexible",
     "links": {
       "linkedin": "linkedin.com/in/yuiokafor"
     },
@@ -260,7 +260,7 @@ export const generatedProfiles: Profile[] = [
       "Film Production",
       "Data-Driven Marketing"
     ],
-    "availability": "Afternoons",
+    "availability": "Weekends",
     "links": {
       "linkedin": "linkedin.com/in/ryomoore"
     },
@@ -416,7 +416,7 @@ export const generatedProfiles: Profile[] = [
       "Change Management",
       "Public Health"
     ],
-    "availability": "Afternoons",
+    "availability": "Weekends",
     "links": {
       "linkedin": "linkedin.com/in/asantekofi"
     },
@@ -521,7 +521,7 @@ export const generatedProfiles: Profile[] = [
       "Personal Branding",
       "Time Management"
     ],
-    "availability": "Mornings",
+    "availability": "Flexible",
     "links": {
       "linkedin": "linkedin.com/in/fenggonzalez",
       "site": "fenggonzalez.io"
@@ -683,7 +683,7 @@ export const generatedProfiles: Profile[] = [
       "Personal Branding",
       "Film Production"
     ],
-    "availability": "Mornings",
+    "availability": "Flexible",
     "links": {
       "linkedin": "linkedin.com/in/chrisdavis"
     },
@@ -836,7 +836,7 @@ export const generatedProfiles: Profile[] = [
       "Digital Media",
       "Art History"
     ],
-    "availability": "Mornings",
+    "availability": "Flexible",
     "links": {
       "site": "koaliu.tech"
     },
@@ -1114,7 +1114,7 @@ export const generatedProfiles: Profile[] = [
       "Public Health",
       "Augmented Reality (AR)"
     ],
-    "availability": "Afternoons",
+    "availability": "Weekends",
     "links": {
       "linkedin": "linkedin.com/in/josepark",
       "site": "josepark.dev"
@@ -1156,7 +1156,7 @@ export const generatedProfiles: Profile[] = [
       "Financial Modeling",
       "ESG"
     ],
-    "availability": "Afternoons",
+    "availability": "Weekends",
     "links": {
       "linkedin": "linkedin.com/in/rajpark",
       "site": "rajpark.io"
@@ -1512,7 +1512,7 @@ export const generatedProfiles: Profile[] = [
       "Negotiation",
       "E-commerce"
     ],
-    "availability": "Mornings",
+    "availability": "Flexible",
     "links": {
       "linkedin": "linkedin.com/in/priyawong",
       "site": "priyawong.tech"
@@ -1666,7 +1666,7 @@ export const generatedProfiles: Profile[] = [
       "Hawaiian History & Mythology",
       "Sustainable Agriculture"
     ],
-    "availability": "Mornings",
+    "availability": "Flexible",
     "links": {
       "linkedin": "linkedin.com/in/vikramseo",
       "site": "vikramseo.io"
@@ -1748,7 +1748,7 @@ export const generatedProfiles: Profile[] = [
       "Mindfulness and Meditation",
       "Personal Branding"
     ],
-    "availability": "Mornings",
+    "availability": "Flexible",
     "links": {},
     "createdAt": 1751674707877
   },
@@ -1823,7 +1823,7 @@ export const generatedProfiles: Profile[] = [
       "BIM",
       "Conservation"
     ],
-    "availability": "Mornings",
+    "availability": "Flexible",
     "links": {
       "linkedin": "linkedin.com/in/makoarodriguez"
     },
@@ -1867,7 +1867,7 @@ export const generatedProfiles: Profile[] = [
       "Waste Reduction",
       "Construction Technology"
     ],
-    "availability": "Afternoons",
+    "availability": "Weekends",
     "links": {
       "linkedin": "linkedin.com/in/keoniwang"
     },
@@ -1909,7 +1909,7 @@ export const generatedProfiles: Profile[] = [
       "Angel Investing",
       "Animation & Motion Graphics"
     ],
-    "availability": "Afternoons",
+    "availability": "Weekends",
     "links": {
       "linkedin": "linkedin.com/in/jordanwong",
       "site": "jordanwong.com"
@@ -1950,7 +1950,7 @@ export const generatedProfiles: Profile[] = [
       "Online Learning",
       "Climate Change Science"
     ],
-    "availability": "Afternoons",
+    "availability": "Weekends",
     "links": {},
     "createdAt": 1751242707877
   },
@@ -2020,7 +2020,7 @@ export const generatedProfiles: Profile[] = [
       "Virtual Reality (VR)",
       "Public Relations"
     ],
-    "availability": "Mornings",
+    "availability": "Flexible",
     "links": {
       "linkedin": "linkedin.com/in/laurenwilson"
     },
@@ -2202,7 +2202,7 @@ export const generatedProfiles: Profile[] = [
       "Virtual Reality (VR) Development",
       "Cybersecurity"
     ],
-    "availability": "Afternoons",
+    "availability": "Weekends",
     "links": {
       "linkedin": "linkedin.com/in/rinanakamura"
     },
@@ -2271,7 +2271,7 @@ export const generatedProfiles: Profile[] = [
       "Curriculum Development",
       "Web3"
     ],
-    "availability": "Afternoons",
+    "availability": "Weekends",
     "links": {
       "linkedin": "linkedin.com/in/yukiasante"
     },
@@ -2308,7 +2308,7 @@ export const generatedProfiles: Profile[] = [
       "Renewable Energy",
       "Educational Psychology"
     ],
-    "availability": "Mornings",
+    "availability": "Flexible",
     "links": {
       "linkedin": "linkedin.com/in/rohanshah"
     },
@@ -2427,7 +2427,7 @@ export const generatedProfiles: Profile[] = [
       "Corporate Social Responsibility",
       "Green Building"
     ],
-    "availability": "Afternoons",
+    "availability": "Weekends",
     "links": {
       "linkedin": "linkedin.com/in/rohanbrown"
     },
@@ -2504,7 +2504,7 @@ export const generatedProfiles: Profile[] = [
       "Public Health",
       "Non-Profit Management"
     ],
-    "availability": "Mornings",
+    "availability": "Flexible",
     "links": {
       "linkedin": "linkedin.com/in/kavyaanderson",
       "site": "kavyaanderson.dev"
@@ -2625,7 +2625,7 @@ export const generatedProfiles: Profile[] = [
       "FinTech",
       "Art History"
     ],
-    "availability": "Afternoons",
+    "availability": "Weekends",
     "links": {
       "linkedin": "linkedin.com/in/rajyamamoto"
     },
@@ -2745,7 +2745,7 @@ export const generatedProfiles: Profile[] = [
       "Green Building",
       "Web Development"
     ],
-    "availability": "Mornings",
+    "availability": "Flexible",
     "links": {
       "linkedin": "linkedin.com/in/rileynakamura",
       "site": "rileynakamura.io"
@@ -2857,7 +2857,7 @@ export const generatedProfiles: Profile[] = [
       "Market Research",
       "Virtual Reality (VR) Development"
     ],
-    "availability": "Afternoons",
+    "availability": "Weekends",
     "links": {
       "linkedin": "linkedin.com/in/luisgarcia",
       "site": "luisgarcia.io"
@@ -3023,7 +3023,7 @@ export const generatedProfiles: Profile[] = [
       "Corporate Finance",
       "Augmented Reality (AR)"
     ],
-    "availability": "Mornings",
+    "availability": "Flexible",
     "links": {
       "linkedin": "linkedin.com/in/akirahan"
     },
@@ -3129,7 +3129,7 @@ export const generatedProfiles: Profile[] = [
       "Music Production",
       "Financial Modeling"
     ],
-    "availability": "Afternoons",
+    "availability": "Weekends",
     "links": {
       "site": "davidramirez.com"
     },
@@ -3289,7 +3289,7 @@ export const generatedProfiles: Profile[] = [
       "Educational Psychology",
       "Hula"
     ],
-    "availability": "Mornings",
+    "availability": "Flexible",
     "links": {
       "linkedin": "linkedin.com/in/lilee"
     },
@@ -3399,7 +3399,7 @@ export const generatedProfiles: Profile[] = [
       "Game Design",
       "Cryptocurrency"
     ],
-    "availability": "Afternoons",
+    "availability": "Weekends",
     "links": {
       "linkedin": "linkedin.com/in/kenjijain",
       "site": "kenjijain.dev"
@@ -3441,7 +3441,7 @@ export const generatedProfiles: Profile[] = [
       "Public Health",
       "Educational Psychology"
     ],
-    "availability": "Afternoons",
+    "availability": "Weekends",
     "links": {
       "linkedin": "linkedin.com/in/elenawatanabe",
       "site": "elenawatanabe.dev"
@@ -3484,7 +3484,7 @@ export const generatedProfiles: Profile[] = [
       "E-commerce",
       "Interactive Storytelling"
     ],
-    "availability": "Afternoons",
+    "availability": "Weekends",
     "links": {},
     "createdAt": 1747786707878
   },
@@ -3516,7 +3516,7 @@ export const generatedProfiles: Profile[] = [
       "Waste Reduction",
       "Real Estate Investment"
     ],
-    "availability": "Afternoons",
+    "availability": "Weekends",
     "links": {
       "linkedin": "linkedin.com/in/sakurajohnson"
     },
@@ -3554,7 +3554,7 @@ export const generatedProfiles: Profile[] = [
       "ESG",
       "Ecology"
     ],
-    "availability": "Mornings",
+    "availability": "Flexible",
     "links": {},
     "createdAt": 1747613907878
   },
@@ -3788,7 +3788,7 @@ export const generatedProfiles: Profile[] = [
       "Land Management",
       "Animation & Motion Graphics"
     ],
-    "availability": "Afternoons",
+    "availability": "Weekends",
     "links": {
       "linkedin": "linkedin.com/in/elenareddy",
       "site": "elenareddy.com"

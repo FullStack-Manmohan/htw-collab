@@ -7,6 +7,9 @@ import InterestGraph from '../../../components/InterestGraph';
 import PeoplePanel from '../../../components/PeoplePanel';
 import EventDraftModal from '../../../components/EventDraftModal';
 
+// Mock current user - in a real app this would come from auth
+const MOCK_USER_ID = '1'; // Kai Nakamura from seed data
+
 export default function GraphPage() {
   const [profiles, setProfiles] = useState<Profile[]>([]);
   const [selectedInterest, setSelectedInterest] = useState<string>();
@@ -16,24 +19,8 @@ export default function GraphPage() {
 
   useEffect(() => {
     // Load initial data
-    const allProfiles = getProfiles();
-    setProfiles(allProfiles);
-    
-    // Use the first profile as the current user, or create a mock user
-    const mockUser = allProfiles[0] || {
-      id: 'mock-user',
-      name: 'You',
-      role: 'HTW Participant',
-      city: 'Honolulu',
-      bio: 'Exploring collaboration opportunities at Honolulu Tech Week',
-      skills: [],
-      interests: ['Software & Technology', 'Networking Skills', 'Innovation'],
-      availability: 'Flexible' as const,
-      links: {},
-      createdAt: Date.now()
-    };
-    
-    setCurrentUser(mockUser);
+    setProfiles(getProfiles());
+    setCurrentUser(getProfileById(MOCK_USER_ID));
   }, []);
 
   const handleInterestClick = (interest: string) => {
